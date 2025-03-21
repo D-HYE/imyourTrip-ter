@@ -1,0 +1,38 @@
+.subMain{
+    padding-bottom: 7.5rem;
+
+    .sectionBanner{
+        height: 300px; padding-top: 100px;
+        text-align: center;
+        background: url("../../public/img/main_img/mainslide2.jpg") no-repeat center/cover;
+        h3{
+            margin-bottom: 32px;
+            font-family: var(--theJamsil-bold); font-size: var(--main-slide); 
+        }
+        p{
+            font-size: var(--mediumbig-text); font-weight: 700;
+        }
+    }
+
+    .sectionList{
+        padding: 40px 0 60px;
+        ul{
+            gap: 80px;
+            a{
+                font-family: var(--theJamsil-medium); font-size: var(--mediumbig-text);
+                span{ 
+                    display: block;
+                    width: 24px; height: 24px; margin-left: 10px;
+                    background: url("../../public/img/icon/tab_icon/feelter.svg") no-repeat center/contain;
+                }
+            }
+            .active a{ 
+                color: var(--trip-blue);
+                span{
+                    background-image: url("../../public/img/icon/tab_icon/c_feelter.svg");
+                }
+            }
+        }
+    }
+
+}

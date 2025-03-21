@@ -1,0 +1,259 @@
+.page_login{
+    .section_banner{
+        height: 246px;
+        margin-bottom: 40px;
+        background-image: url("https://trip-ter.vercel.app/img/banner/banner_img1.jpg");
+    }
+    .signup_area{
+        max-width: 500px;
+        .signup_tab{
+            li{
+                padding: 0 54px;
+                font-family: var(--theJamsil-medium); font-size: var(--small-text); color: var(--trip-white);
+                line-height: 60px;
+                background: var(--trip-gray1);
+                &:first-child{
+                    border-radius: 30px 5px 5px 30px;
+                }
+                &:last-child{
+                    border-radius: 5px 30px 30px 5px ;
+                }
+                &.active{
+                    background: var(--trip-skyblue) ;
+                }
+            }
+        }
+
+        .signup_step1{
+            padding: 60px 0;
+            h5{
+                margin-bottom: 40px;
+                span{
+                    font-size: var(--semismall-text); font-family: var(--theJamsil-medium);
+                }
+            }
+            h6{
+                margin-bottom: 20px;
+                font-size: var(--small-text); font-family: var(--theJamsil-regular);
+            }
+            fieldset{
+                margin-top: 12px;
+                div{
+                    display: none; 
+                    height: 70px;
+                    margin: 16px 0 8px 36px; padding: 16px;
+                    background: var(--trip-gray2);
+                    border: 1px solid var(--trip-gray3); border-radius: 5px;
+                    overflow-y: scroll;
+                    p{
+                        font-size: var(--desc-text); line-height: 1.6;
+                    }
+                }
+                input[type="checkbox"]:checked + span + div{
+                    display: block;
+                }
+                span{
+                    font-size: var(--small-text);
+                }
+            }
+            .option_checkbox{margin-top: 40px;}
+
+        }
+
+        .signup_step2{
+            padding: 40px 0;
+            fieldset{
+                margin-bottom: 40px;
+                .fieldset_tit{
+                    display: block;
+                    width: 100%; margin-bottom: 5px;
+                    font-size: var(--small-text); font-family: var(--theJamsil-medium);
+                }
+                input:not([type="checkbox"]){
+                    display: block;
+                    width: 100%; padding: 4px;
+                    font-size: var(--desc-text); line-height: 24px;
+                    outline: none; border-bottom: 1px solid var(--trip-black);
+                }
+                button{
+                    display: block;
+                    margin-left: 20px; padding: 0 20px;
+                    font-size: var(--small-text); font-family: var(--theJamsil-medium);
+                    line-height: 40px; white-space: nowrap;
+                    background: var(--trip-gray1); border-radius: 5px;
+                    &:hover{
+                        background: var(--trip-blue);
+                        color: var(--trip-white);
+                    }
+                }
+                &.fieldset4{
+                    span{
+                        display: block;
+                        margin: 0 10px;
+                        font-size: var(--semismall-text);
+                    }
+                }
+                &.fieldset7,
+                &.fieldset8{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .submit_btn{
+            display: block;
+            width: 100%;
+            background: var(--trip-gray1);
+            font-size: var(--semismall-text); font-family: var(--theJamsil-medium); line-height: 60px;
+            border-radius: 5px;
+            &:hover, &.active{
+                background: var(--trip-blue);
+                color: var(--trip-white);
+            }
+        }
+
+    }
+
+    .signup_result{
+        text-align: center;
+        .img_box img{
+            max-width: 400px;
+        }
+        h3{
+            margin: 32px 0;
+            font-size: var(--semibig-text); font-family: var(--theJamsil-medium);
+            span{
+                font-family: var(--theJamsil-medium); color: var(--trip-black);
+            }
+        }
+        p{
+            font-size: var(--medium-text);
+            font-weight: 500;
+        }
+        .btn_wrap{
+            margin-top: 60px;
+            a{
+                display: block;
+                width: 244px;
+                line-height: 40px; color: var(--trip-white); font-size: var(--semismall-text);
+                background: var(--trip-blue); border-radius: 5px;
+            }
+        }   
+    }
+}
+
+// -----board
+
+.page_plan{
+    .section_list ul{
+        li:last-child{
+            a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/makeplan.svg");
+            }
+            &.active a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_makeplan.svg");
+            }
+        }
+    }
+}
+
+
+.page_triptalk{
+    .section_list ul{
+        li:nth-child(1){
+            a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/seeplan.svg");
+            }
+            &.active a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_seeplan.svg");
+            }
+        }
+        li:nth-child(2){
+            a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/community.svg");
+            }
+            &.active a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_community.svg");
+            }
+        }
+        li:nth-child(3){
+            a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/accompany.svg");
+            }
+            &.active a span{
+                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_accompany.svg");
+            }
+        }
+    }
+    .icon_box{
+        width: 24px; height: 24px;
+        background: url("https://trip-ter.vercel.app/img/icon/list.svg") no-repeat center/contain;
+        text-indent: -10000px;
+    }
+    .board_filter{
+        .icon1{
+            &.active{
+                background-image: url("https://trip-ter.vercel.app/img/icon/list_active.svg");
+            }
+        }
+        .icon2{
+            background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list.svg");
+            &.active{
+                background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list_active.svg");
+            }
+        }
+    }
+
+
+    
+    .board_findPlan{
+        .board_filter{
+            border-bottom: 1px solid var(--trip-gray1);
+        }
+    }
+
+    .board_findFriend{
+        .board_list{
+            table{
+                .post_id{width: 8.021%;}
+                .post_tit{max-width: 400px;}
+                .post_nickname{width: 16.0428%;}
+                .post_date{width: 12.032%;}
+                .post_view{width: 6.684%;}
+
+                tbody{
+                    tr{
+                        td{
+                            &.post_id,
+                            &.post_date,
+                            &.post_view{color: var(--trip-gray3);}
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .view_area{
+        h3{
+            padding: 16px 0;
+            border-bottom: 1px  solid var(--trip-gray1);
+            font-size: var(--semibig-text);
+        }
+        div{
+            padding: 8px 0;
+            border-bottom: 1px  solid var(--trip-gray1);
+        }
+        ul li{
+            padding: 4px 8px;
+            background: var(--trip-gray2); 
+        }
+        p{
+            padding: 20px 8px;
+            min-height: 500px;
+            line-height: 1.6;
+        }
+    }
+}

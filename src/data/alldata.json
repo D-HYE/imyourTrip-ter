@@ -1,0 +1,421 @@
+{
+  "tabList":{
+    "tripRoute": {
+        "myFeelter": {
+            "name": "MY FEEL:TER",
+            "link": "/tripRoute/myFeelter",
+            "description": "나만을 위한 여행, 특별한 나만의 여행 만들어보세요♡",
+            "sectionName": "a"
+        },
+        "planMaker": {
+            "name": "계획짜기",
+            "link": "/tripRoute/planMaker",
+            "description": "나만을 위한 여행, 나만을 위한 이벤트도 놓치지마세요!",
+            "sectionName": "b"
+        }
+    },
+    "tripTalk": {
+        "findPlan": {
+            "name": "계획 둘러보기",
+            "link": "/tripTalk/findPlan",
+            "description": "다양한 여행자님들의 계획을 둘러보세요!",
+            "sectionName": "a"
+        },
+        "findReview": {
+            "name": "후기 둘러보기",
+            "link": "/tripTalk/findReview",
+            "description": "다양한 장소에서의 실시간 후기를 둘러보세요!",
+            "sectionName": "b"
+        },
+        "findFriend": {
+            "name": "동행구해요",
+            "link": "/tripTalk/findFriend",
+            "description": "여행을 함께 할 동행을 구해보세요!",
+            "sectionName": "c"
+        }
+    },
+    "tripterEvent": {
+        "event1": {
+            "name": "이벤트1",
+            "link": "/tripterEvent/event1",
+            "description": "event1",
+            "sectionName": "a"
+        },
+        "event2": {
+            "name": "이벤트2",
+            "link": "/tripterEvent/event2",
+            "description": "event2",
+            "sectionName": "b"
+        },
+        "event3": {
+            "name": "이벤트3",
+            "link": "/tripterEvent/event3",
+            "description": "event3",
+            "sectionName": "c"
+        },
+        "event4": {
+            "name": "이벤트4",
+            "link": "/tripterEvent/event4",
+            "description": "event4",
+            "sectionName": "c"
+        }
+    }
+  },
+  "slide" :{   
+    "mainSlides": [
+      {
+        "title": "라스베이거스",
+        "english": "Las Vegas",
+        "subtitle": "야경의 끝판왕"
+      },
+      {
+        "title": "언제가도 좋은 제주",
+        "english": "",
+        "subtitle": "제주도 구석구석"
+      },
+      {
+        "title": "아이슬란드",
+        "english": "",
+        "subtitle": "버킷리스트 1순위 여행지 대자연의 웅장함"
+      },
+      {
+        "title": "특별기획 테마여행",
+        "english": "",
+        "subtitle": "트립터와 함께 떠나보세요"
+      }
+
+    ],
+    "mdSlides": [
+      {
+        "title": "밤 낮 없이 반짝반짝",
+        "subtitle": "라스베가스 2인 25만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide1.jpg",
+        "alt": "라스베가스",
+        "description": "밤 낮 없이 반짝반짝"
+      },
+      {
+        "title": "머글들의 마법 세상 체험기",
+        "subtitle": "도쿄 워너 브라더스 2인 25만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide2.jpg",
+        "alt": "도쿄",
+        "description": "머글들의 마법 세상 체험기"
+      },
+      {
+        "title": "마이 프레셔스~!<span>반지를 찾아서</span>",
+        "subtitle": "뉴질랜드 2인 52만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide3.jpg",
+        "alt": "뉴질랜드",
+        "description": "마이 프레셔스~! 반지를 찾아서"
+      },
+      {
+        "title": "내이름은 니기하야미<span>코하쿠누시야</span>",
+        "subtitle": "대만 지우펀 15만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide4.jpg",
+        "alt": "지우펀",
+        "description": "내이름은 니기하야미 코하쿠누시야"
+      },
+      {
+        "title": "동화속 세상 그 자체!",
+        "subtitle": "베트남 푸꾸옥 33만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide5.jpg",
+        "alt": "푸꾸옥",
+        "description": "동화속 세상 그 자체!"
+      },
+      {
+        "title": "라라라라라라라~<span>날 좋아 한다고</span>",
+        "subtitle": "산토리니 125만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide6.jpg",
+        "alt": "산토리니",
+        "description": "라라라라라라라~ 날 좋아 한다고"
+      },
+      {
+        "title": "소고기는 넣지 않아 나마스떼",
+        "subtitle": "타지마할-갠지스강 45만원부터",
+        "href": "#none",
+        "img": "/img/main_img/md_slide7.jpg",
+        "alt": "타지마할",
+        "description": "소고기는 넣지 않아 나마스떼"
+      }
+    ]
+  },
+  "myfeelterQ":{
+    "q1": {
+      "question": "어디로 떠나고 싶은가요?",
+      "answers": [
+        {
+          "label": "국내 여행",
+          "value": "a",
+          "src": "/img/myfeelterimage/1-1.jpg"
+        },
+        {
+          "label": "해외 여행",
+          "value": "b",
+          "src": "/img/myfeelterimage/1-2.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q2": {
+      "question": "여행 기간은 어떻게 되시나요?",
+      "answers": [
+        {
+          "label": "2일 이내",
+          "value": "a",
+          "src": "/img/myfeelterimage/2-1.jpg"
+        },
+        {
+          "label": "7일 이내",
+          "value": "b",
+          "src": "/img/myfeelterimage/2-2.jpg"
+        },
+        {
+          "label": "8일 이상",
+          "value": "c",
+          "src": "/img/myfeelterimage/2-3.jpg"
+        },
+        {
+          "label": "한 달 살기 등 장기 여행",
+          "value": "d",
+          "src": "/img/myfeelterimage/2-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q3": {
+      "question": "최대 예산 범위를 알려주세요",
+      "answers": [
+        {
+          "label": "50만원 이하",
+          "value": "a",
+          "src": "/img/myfeelterimage/3-1.jpg"
+        },
+        {
+          "label": "100만원 이하",
+          "value": "b",
+          "src": "/img/myfeelterimage/3-2.jpg"
+        },
+        {
+          "label": "300만원 이하",
+          "value": "c",
+          "src": "/img/myfeelterimage/3-3.jpg"
+        },
+        {
+          "label": "300만원 이상",
+          "value": "d",
+          "src": "/img/myfeelterimage/3-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q4": {
+      "question": "나의 여행 스타일은?",
+      "answers": [
+        {
+          "label": "즉흥형",
+          "value": "a",
+          "src": "/img/myfeelterimage/4-1.jpg"
+        },
+        {
+          "label": "계획형",
+          "value": "b",
+          "src": "/img/myfeelterimage/4-2.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q5": {
+      "question": "여행에서 가장 선호하는 숙소 유형은?",
+      "answers": [
+        {
+          "label": "고급 호텔/리조트",
+          "value": "a",
+          "src": "/img/myfeelterimage/5-1.jpg"
+        },
+        {
+          "label": "가성비 호텔",
+          "value": "b",
+          "src": "/img/myfeelterimage/5-2.jpg"
+        },
+        {
+          "label": "게스트하우스/호스텔",
+          "value": "c",
+          "src": "/img/myfeelterimage/5-3.jpg"
+        },
+        {
+          "label": "현지 민박",
+          "value": "d",
+          "src": "/img/myfeelterimage/5-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q6": {
+      "question": "숙소를 선택하는 기준은?",
+      "answers": [
+        {
+          "label": "시설과 서비스",
+          "value": "a",
+          "src": "/img/myfeelterimage/6-1.jpg"
+        },
+        {
+          "label": "위치와 접근성",
+          "value": "b",
+          "src": "/img/myfeelterimage/6-2.jpg"
+        },
+        {
+          "label": "후기 및 평점",
+          "value": "c",
+          "src": "/img/myfeelterimage/6-3.jpg"
+        },
+        {
+          "label": "가격대",
+          "value": "d",
+          "src": "/img/myfeelterimage/6-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q7": {
+      "question": "여행 중 이동 수단으로 선호하는 것은?",
+      "answers": [
+        {
+          "label": "대중교통",
+          "value": "a",
+          "src": "/img/myfeelterimage/7-1.jpg"
+        },
+        {
+          "label": "렌트(오토바이, 자전거 포함)",
+          "value": "b",
+          "src": "/img/myfeelterimage/7-2.jpg"
+        },
+        {
+          "label": "택시",
+          "value": "c",
+          "src": "/img/myfeelterimage/7-3.jpg"
+        },
+        {
+          "label": "걷기",
+          "value": "d",
+          "src": "/img/myfeelterimage/7-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q8": {
+      "question": "여행 중 가장 즐기고 싶은 활동은?",
+      "answers": [
+        {
+          "label": "유명 관광지 방문",
+          "value": "a",
+          "src": "/img/myfeelterimage/8-1.jpg"
+        },
+        {
+          "label": "액티비티",
+          "value": "b",
+          "src": "/img/myfeelterimage/8-2.jpg"
+        },
+        {
+          "label": "역사/문화체험",
+          "value": "c",
+          "src": "/img/myfeelterimage/8-3.jpg"
+        },
+        {
+          "label": "쇼핑&맛집 탐방",
+          "value": "d",
+          "src": "/img/myfeelterimage/8-4.jpg"
+        },
+        {
+          "label": "자연 풍경",
+          "value": "e",
+          "src": "/img/myfeelterimage/8-5.jpg"
+        }
+      ],
+      "className": "table3"
+    },
+    "q9": {
+      "question": "여행지를 선택하는 기준 1순위는?",
+      "answers": [
+        {
+          "label": "일정에 맞춤",
+          "value": "a",
+          "src": "/img/myfeelterimage/9-1.jpg"
+        },
+        {
+          "label": "예산에 맞춤",
+          "value": "b",
+          "src": "/img/myfeelterimage/9-2.jpg"
+        },
+        {
+          "label": "여행지의 안전",
+          "value": "c",
+          "src": "/img/myfeelterimage/9-3.jpg"
+        },
+        {
+          "label": "새로운 여행지",
+          "value": "d",
+          "src": "/img/myfeelterimage/9-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q10": {
+      "question": "추구하는 여행 스타일은?",
+      "answers": [
+        {
+          "label": "자유로운 탐험가",
+          "value": "a",
+          "src": "/img/myfeelterimage/10-1.jpg"
+        },
+        {
+          "label": "완벽한 플래너",
+          "value": "b",
+          "src": "/img/myfeelterimage/10-2.jpg"
+        },
+        {
+          "label": "휴식이 우선인 힐링러",
+          "value": "c",
+          "src": "/img/myfeelterimage/10-3.jpg"
+        },
+        {
+          "label": "핵심만 콕콕! 알뜰 여행자",
+          "value": "d",
+          "src": "/img/myfeelterimage/10-4.jpg"
+        }
+      ],
+      "className": "table2"
+    },
+    "q11": {
+      "question": "여행 중 가장 중요한 정보는?",
+      "answers": [
+        {
+          "label": "음식점 추천",
+          "value": "a",
+          "src": "/img/myfeelterimage/11-1.jpg"
+        },
+        {
+          "label": "교통 수단과 경로",
+          "value": "b",
+          "src": "/img/myfeelterimage/11-2.jpg"
+        },
+        {
+          "label": "현지 문화와 규칙",
+          "value": "c",
+          "src": "/img/myfeelterimage/11-3.jpg"
+        },
+        {
+          "label": "후기 정보",
+          "value": "d",
+          "src": "/img/myfeelterimage/11-4.jpg"
+        }
+      ],
+      "className": "table2"
+    }
+  }
+
+}

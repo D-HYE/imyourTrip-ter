@@ -1,0 +1,80 @@
+@media only screen and (min-width: 769px){
+    .simple_feelter{
+        display: block !important;
+    }
+}
+
+.simple_feelter{
+    top: 50%; right: 13.542%; transform: translateY(-50%); z-index: 10;
+    width: 100%; max-width: 28.125rem;
+    min-height: 500px;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, .5); backdrop-filter: blur(5px);
+    transition: .3s;
+    .simple_feelter_tit{
+        margin-bottom: 2.5rem;
+        font-size: var(--medium-text); font-weight: 700;
+        text-align: center;
+    }
+    .simple_feelter_cont{
+        fieldset{margin-bottom: 1.5rem;}
+        legend{
+            margin-bottom: 0.5rem;
+            font-size: var(--semismall-text); font-weight: 600
+        }
+        .btn_wrap{
+            gap: 0.75rem;
+            .simple_answer{
+                padding: 0.25rem 1rem;
+                font-size: var(--small-text);
+                border-radius: 20px; border: 1px solid var(--trip-gray1); background: var(--trip-white);
+                cursor: pointer;    
+            }
+            input[type='radio']:checked + .simple_answer{
+                color: var(--trip-white);
+                background: var(--trip-blue);
+                border-color: var(--trip-blue);
+            }
+        }
+        .img_box{
+            width: 100%;
+            max-height: 20.125rem;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .submit_btn{
+        width: 100%; height: 3.75rem; margin-top: 1.25rem;
+        font-size: var(--small-text);
+        background: var(--trip-yellow); border-radius: 5px;
+        transition: .3s;
+        cursor: pointer;
+
+        &.invalid{
+            background: var(--trip-gray2);
+            color: var(--trip-gray3);
+            cursor: auto;
+        }
+
+        &:not(.invalid):hover{
+            color: var(--trip-yellow);
+            background: var(--trip-blue);
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .simple_feelter{right: 2.5%;}
+}
+
+@media only screen and (max-width: 768px) {
+    .simple_feelter{
+        display: none;
+        max-width: 46rem;
+        right: 50%; transform: translate(50%, -50%);    
+    }
+}
