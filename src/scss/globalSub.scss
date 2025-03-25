@@ -36,3 +36,165 @@
     }
 
 }
+
+.select_box{
+    position: relative;
+    min-width: 140px;
+    font-size: var(--small-text);
+    .select_btn{
+        padding: 10px 0 10px 36px;
+        cursor: pointer;
+        &::before{
+            content: "";
+            position: absolute; top: 10px; left: 6px;
+            display: block;
+            width: 24px; height: 24px;
+            background: url("https://trip-ter.vercel.app/img/icon/three-slider-horizontal.svg") no-repeat center/18px;
+
+        }
+        .arrow{
+            display: block;
+            width: 24px; height: 24px;
+            background: url("https://trip-ter.vercel.app/img/icon/polygon-bk.svg") no-repeat center/contain;
+        }
+    }
+    .option_list{
+        display: none;
+        position: absolute; left: 0; right: 0; top: calc(100% - 8px); z-index: 1;
+        padding: 20px 10px;
+        background: var(--trip-white);
+        border-radius: 5px; border: 1px solid var(--trip-gray1);
+        cursor: pointer;
+
+        ul{gap: 20px;}
+        li:hover{color: var(--trip-blue);}
+    }
+
+    &.active{
+        .select_btn{
+            .arrow{
+                transform: rotate(180deg);
+                //background-image: url("https://trip-ter.vercel.app/img/icon/polygon-bl.svg");
+            }
+        }
+        .option_list{display: block;}
+    }
+}
+
+.board_area{
+    .board_wrap{
+        .board_filter{
+            padding: 0 10px;
+        }
+        .board_list{
+            .table_board{
+                width: 100%;
+                border-collapse: collapse;
+
+                thead{
+                    background: var(--trip-blue);
+                    th{
+                        font-size: var(--desc-text); color: var(--trip-yellow); font-weight: normal; line-height: 40px;
+                        
+                    }
+                }
+                tbody{
+                    tr{
+                        border-bottom: 1px solid var(--trip-gray2);
+                        font-size: var(--desc-text);
+
+                        td{
+                            line-height: 40px;
+                            &:not(.post_tit){
+                                text-align: center;
+                            }
+
+                            &.post_tit{
+                                a{
+                                    font-weight: 500;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                b{
+                                    font-weight: 800;
+                                    color: var(--trip-blue);
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+            .galley_board{
+                padding: 20px 10px 0;
+                li{
+                    width: 30.22%;
+                    .img_box a{
+                        display: block;
+                        height: 240px;
+                        background: url("https://trip-ter.vercel.app/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
+                        border-radius: 5px;
+                        .float_info{
+                            right: 0; bottom: 15px;
+                            max-width: 180px; padding: 10px;
+                            background: var(--trip-yellow); border-radius: 25px 0px 0px 25px;
+                            b{  
+                                display: block;
+                                padding-left: 24px;
+                                color: var(--trip-blue); font-weight: 800; line-height: 24px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                background: url("https://trip-ter.vercel.app/img/icon/marker.svg") no-repeat left/24px;
+                            }
+                        }
+                    }
+                    .desc_box{
+                        padding: 10px 4px 40px 4px;
+                        .post_tit{
+                            a{
+                                font-weight: 500;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            b{
+                                color: var(--trip-blue); font-weight: 800;
+                            }
+                        }
+                        .post_nickname{
+                            h6{
+                                padding: 10px 0;
+                                font-size: var(--small-text); font-weight: normal;
+                            }
+                        }
+                        .post_date, .post_view{
+                            font-size: var(--desc-text);
+                            color: var(--trip-gray1);
+                        }
+                    }
+                }
+            }
+
+        }
+        .board_pagenation{
+            padding-top: 30px;
+            .icon1{
+                background-image: url("https://trip-ter.vercel.app/img/icon/polygon-left-gr.svg");
+            }
+            .icon2{
+                background-image: url("https://trip-ter.vercel.app/img/icon/polygon-right-bl.svg");
+            }
+            .num{
+                color: var(--trip-gray3);
+                cursor: pointer;
+                &.active{
+                    font-weight: 700;
+                    color: var(--trip-blue);
+                }
+            }
+        }
+    }
+}

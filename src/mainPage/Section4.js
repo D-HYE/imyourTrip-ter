@@ -1,18 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-function Section4() {
-    const [data, setData] = useState([]);
+function Section4({tabData}) {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    useEffect(() => {
-        fetch("/data/mainTabMenu.json")
-          .then((res) => res.json())
-          .then((json) => setData(json))
-          .catch((error) => console.error("Error fetching data:", error));
-    }, []);
-
-    if (data.length === 0) return <p>Loading...</p>;
+    if (!tabData) return <p>Loading...</p>;
 
     
     return (
@@ -22,26 +14,26 @@ function Section4() {
                     지금 가장 인기있는 <span>여행지를 만나보세요</span>
                 </h3>
                 <ul className="tab_menu d-flex justify-content-center flex-wrap" id="tabMenu">
-                    {data.map((t, i) => (
+                    {tabData.map((item, idx) => (
                         <li 
-                            key={t.tabid} 
-                            className={activeIndex === i ? "active" : ""}
-                            onClick={() => setActiveIndex(i)}
+                            key={item.tabid} 
+                            className={activeIndex === idx ? "active" : ""}
+                            onClick={() => setActiveIndex(idx)}
                         >
-                            {t.tabnm}
+                            {item.tabnm}
                         </li>
                     ))}
                 </ul>
                 <ul className="tab_contents d-flex justify-content-between" id="tabContent">
-                    {data[activeIndex].tablist.map((t, i) => (
+                    {tabData[activeIndex].tablist.map(item => (
                         <li 
-                            key={t.src} 
+                            key={item.src} 
                             className="d-flex align-items-end content_desc"
-                            style={{ backgroundImage: `url("${t.src}")` }}
+                            style={{ backgroundImage: `url("${item.src}")` }}
                         >
-                            <Link to={t.href} className="d-flex align-items-center justify-content-center">
-                                <b>{t.title}</b>
-                                <span>{t.desc}</span>
+                            <Link to={item.href} className="d-flex align-items-center justify-content-center">
+                                <b>{item.title}</b>
+                                <span>{item.desc}</span>
                             </Link>
                         </li>
                     ))}

@@ -1,13 +1,19 @@
 
-import Feelter from './Section1_feelter';
+import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
+import Feelter from './Section1_feelter';
 
-export default function Section1(){
+export default function Section1({slideData}){
     const feelterRef = useRef(null);
+    const mainSlides = slideData["mainSlides"]
+
+    if (!mainSlides) return <p>Loading...</p>;
+
+
     const toggleFeelter = () => {
         if (feelterRef.current) {
             feelterRef.current.style.display = 
@@ -23,38 +29,19 @@ export default function Section1(){
                     autoplay={{ delay: 3000}}
                     loop = {true}
                 className="main_swiper">
-                        <SwiperSlide className="swiper-slide1">
-                            <a href="#none" className="">
+                    {mainSlides.map((item, idx) => (
+                        <SwiperSlide key={item.src}
+                            className={`swiper-slide${idx + 1}`}
+                            style={{ backgroundImage: `url("${item.src}")` }}
+                        >
+                            <Link to="#none" className="">
                                 <div className="slide_desc abs">
-                                    <h2>라스베이거스<span>Las Vegas</span></h2>
-                                    <p>야경의 끝판왕</p>
+                                    <h2>{item.title}{item.english && <span>{item.english}</span>}</h2>
+                                    <p>{item.subtitle}</p>
                                 </div>                                                   
-                            </a>
+                            </Link>
                         </SwiperSlide>
-                        <SwiperSlide className="swiper-slide2">
-                            <a href="#none"className="">
-                                <div className="slide_desc abs">
-                                    <h2>언제가도 좋은 제주<span></span></h2>
-                                    <p>제주도 구석구석</p>
-                                </div>                                                
-                            </a>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide3">
-                            <a href="#none"className="">
-                                <div className="slide_desc abs">
-                                    <h2>아이슬란드,<span></span></h2>
-                                    <p>버킷리스트 1순위 여행지<br/>대자연의 웅장함</p>
-                                </div>                                                   
-                            </a>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide4">
-                            <a href="#none"className="">
-                                <div className="slide_desc abs">
-                                    <h2>특별기획 테마여행<span></span></h2>
-                                    <p>트립터와 함께 떠나보세요</p>
-                                </div>                                                    
-                            </a>
-                        </SwiperSlide>
+                    ))}
                         <div class="swiper-pagination"></div>
                 </Swiper>
                 <div className="simple_feelter abs" ref={feelterRef}>

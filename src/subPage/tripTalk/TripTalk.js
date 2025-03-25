@@ -32,8 +32,9 @@ function TripTalk({dataInfo}) {
                         }
                         
                     </ul>
-                </div> 
+                </div>
                 <Content activeTab={activeTab}></Content>
+                
             </section>  
         </main>
 

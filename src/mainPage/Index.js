@@ -7,13 +7,16 @@ import Section6 from './Section6';
 import Section7 from './Section7';
 
 
-export default function Main(){
+export default function Main({alldata}){
+    const slideData = alldata["slide"];
+    const tabData = alldata["mainTabMenu"];
+
     return(
         <main id="sectionWrap">
-            <Section1/>
-            <Section2/>
+            <Section1 slideData={slideData}/>
+            <Section2 slideData={slideData}/>
             <Section3/>
-            <Section4/>
+            <Section4 tabData={tabData}/>
             <Section5/>
             <Section6/>
             <Section7/>

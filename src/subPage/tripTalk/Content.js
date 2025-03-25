@@ -1,28 +1,30 @@
-import FindPlan from "./FindPlan";
-import FindReview from "./FindReview";
-import FindFriend from "./FindFriend";
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+
+import BoardList from "../../components/BoardList"
+import ReviewList from "../../components/ReviewList"
+import BoardView from "../../components/BoardView"
+
 
 export default function Content ({ activeTab }) {
-    let content;
+    const { postID } = useParams();
 
-    switch (activeTab) {
-        case 'findPlan':
-            content = <FindPlan/>;
-            break;
-        case 'findReview':
-            content = <FindReview/>;
-            break;       
-        case 'findFriend':
-            content = <FindFriend/>;
-            break;       
-        default:
-            content = <div>선택된 탭이 없습니다.</div>;
-            break;
+    const [isListView, setIsListView] = useState(activeTab === "findPlan" ? false : true);
+    useEffect(() => {
+        setIsListView(activeTab === "findPlan" ? false : true);
+    }, [activeTab]);
+
+    if (postID) {
+        return <BoardView postID={postID}/>;
     }
 
     return (
-        <div className="sectionCont">
-            {content}
+        <div className="sectionCont container_m">
+            <div className="board_area">
+                {activeTab === "findPlan" || activeTab === "findFriend" ?
+                    (<BoardList isListView={isListView} setIsListView={setIsListView} />)
+                : (<ReviewList />)}
+            </div>
         </div>
     );
 }

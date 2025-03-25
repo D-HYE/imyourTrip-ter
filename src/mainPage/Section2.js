@@ -1,18 +1,12 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-export default function Section2(){
-    const [data, setData] = useState([]);
+export default function Section2({slideData}){
+    const mdSlides = slideData["mdSlides"]
 
-    useEffect(() => {
-        fetch("/data/slide.json")
-          .then((res) => res.json())
-          .then((json) => setData(json.mdSlides))
-          .catch((error) => console.error("Error fetching data:", error));
-      }, []);
+    if (!mdSlides) return <p>Loading...</p>;
 
     return(
         <div class="section section2">
@@ -28,14 +22,14 @@ export default function Section2(){
                 loop={true}
                 autoplay={{ delay: 3000 }}
             className="md_swiper">
-                {data.map((item ,index) => (
+                {mdSlides.map((item ,index) => (
                     <SwiperSlide key={index}>
                         <Link to={item.href}>
                             <div className="img_box">
                                 <img src={item.img} alt={item.alt} />
                             </div>
                             <div className="swiper_desc">
-                                <b className="d-flex align-items-center justify-content-end pc">{item.title}</b>
+                                <b className="d-flex align-items-center justify-content-end pc">{item.title}{item.titleSpan && <span>{item.titleSpan}</span>}</b>
                                 <p>{item.subtitle}</p>
                             </div>
                         </Link>
