@@ -1,0 +1,183 @@
+{
+    "airplane":{
+    "airways": {
+      "AS": {
+        "name": "에어서울",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_airseoul.png"
+      },
+      "OZ": {
+        "name": "아시아나항공",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_asiana.png"
+      },
+      "JN": {
+        "name": "진에어",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jinair.png"
+      },
+      "ZE": {
+        "name": "이스타항공",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_estar.png"
+      },
+      "KE": {
+        "name": "대한항공",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_koreanair.png"
+      },
+      "7C": {
+        "name": "제주항공",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jeju.png"
+      },
+      "TW": {
+        "name": "티웨이항공",
+        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_tway.png"
+      }
+    },
+    "flightproduct": [
+      {
+        "productId": "1234",
+        "go": {
+          "airline": "AS",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 06:25",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오전 10:25",
+          "price": "230,000"
+        },
+        "back": {
+          "airline": "AS",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 12:00",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 16:00",
+          "price": "250,000"
+        },
+        "created": "2023-03-01",
+        "updated": "2023-03-10"
+      },
+      {
+        "productId": "5678",
+        "go": {
+          "airline": "OZ",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 10:10",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오후 14:10",
+          "price": "270,000"
+        },
+        "back": {
+          "airline": "OZ",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 15:30",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 19:30",
+          "price": "230,000"
+        },
+        "created": "2023-02-15",
+        "updated": "2023-02-25"
+      },
+      {
+        "productId": "91011",
+        "go": {
+          "airline": "JN",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 09:00",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오후 13:00",
+          "price": "240,000"
+        },
+        "back": {
+          "airline": "JN",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 14:00",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 18:00",
+          "price": "230,000"
+        },
+        "created": "2023-01-20",
+        "updated": "2023-02-10"
+      },
+      {
+        "productId": "1213",
+        "go": {
+          "airline": "ZE",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오후 15:30",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오후 19:30",
+          "price": "300,000"
+        },
+        "back": {
+          "airline": "ZE",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오전 08:00",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오전 10:30",
+          "price": "280,000"
+        },
+        "created": "2023-02-05",
+        "updated": "2023-02-15"
+      },
+      {
+        "productId": "1415",
+        "go": {
+          "airline": "KE",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 06:25",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오전 10:25",
+          "price": "230,000"
+        },
+        "back": {
+          "airline": "KE",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 12:00",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 16:00",
+          "price": "212,000"
+        },
+        "created": "2023-03-05",
+        "updated": "2023-03-15"
+      },
+      {
+        "productId": "1617",
+        "go": {
+          "airline": "7C",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 07:00",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오전 11:00",
+          "price": "220,000"
+        },
+        "back": {
+          "airline": "7C",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 13:00",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 15:00",
+          "price": "260,000"
+        },
+        "created": "2023-01-10",
+        "updated": "2023-01-20"
+      },
+      {
+        "productId": "1819",
+        "go": {
+          "airline": "TW",
+          "depLoc": "인천 (ICN)",
+          "depTime": "오전 08:30",
+          "arrLoc": "가오슝 (KHH)",
+          "arrTime": "오후 12:30",
+          "price": "230,000"
+        },
+        "back": {
+          "airline": "TW",
+          "depLoc": "가오슝 (KHH)",
+          "depTime": "오후 14:30",
+          "arrLoc": "인천 (ICN)",
+          "arrTime": "오후 16:30",
+          "price": "300,000"
+        },
+        "created": "2023-02-20",
+        "updated": "2023-02-28"
+      }
+    ]
+  }
+}
