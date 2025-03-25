@@ -1,9 +1,9 @@
-import React from 'react';
-import useState
-
+import React, { useState, useEffect } from 'react';
+import hyodata from '../../data/hyodata.json'
 
 const PickAirplane = ({hyodata}) => {
     
+
     return (
         <div className="plane_list">
                 <div className="plane_left d-flex">
@@ -52,15 +52,15 @@ const PickAirplane = ({hyodata}) => {
                         </li>
                     </ul>
                     <div>
-                        <ul>
-                            <li></li>
-                            <li><img src="" alt="찜"/></li>
-                        </ul>
+                        <div className="share_heart_group d-flex gap-1">
+                            <button className="share-btn" alt="공유">
+                                <span className="share_icon"></span>
+                            </button>
+                            <button className="heart-btn" alt="찜">
+                                <span className="heart_icon"></span>
+                            </button>
+                        </div>   
                     </div>
-                </div>
-                <div className="plane_right">
-                    <p>금액</p>
-                    <button><span>계획에 담기</span></button>
                 </div>
             </div>
     );

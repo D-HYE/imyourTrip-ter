@@ -1,5 +1,7 @@
 import React from "react";
 import PickAirplane from "./PickAirplane";
+
+import element from "../../scss/elements.module.scss"
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
 
 export default function PlanMaker() {
@@ -29,7 +31,7 @@ export default function PlanMaker() {
                     <li className="tripcar_tab"><a href="#none">#트립카</a></li>
                 </ul>
             </div>
-            <div classNameName="plane_title d-flex justify-content-between align-items-center">
+            <div className="plane_title d-flex justify-content-between align-items-center">
                 <ul className="d-flex align-items-center gap-3">
                     <li className="plane_title_all">전체보기</li>
                     <li>
@@ -42,17 +44,31 @@ export default function PlanMaker() {
                                 <div className="filter_section d-flex flex-column gap-3">
                                     <div className="d-flex flex-column gap-2">
                                         <div className="filter_section_title">
+                                            <span className="title">유형</span>
+                                        </div>
+                                        <ul className="d-flex gap-3">
+                                            <li className="filter_radio d-flex align-items-center gap-1" >
+                                                <input type="checkbox" className={element.checkbox_label}/>
+                                                <span>왕복</span>
+                                            </li>
+                                            <li className="filter_radio d-flex align-items-center gap-1" >
+                                                <input type="checkbox" className={element.checkbox_label} />
+                                                <span>편도</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="d-flex flex-column gap-2">
+                                        <div className="filter_section_title">
                                             <span className="title">경유</span>
                                         </div>
                                         <ul className="d-flex gap-3">
                                             <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <button type="button" className=""></button>
+                                                <input type="checkbox" className={element.checkbox_label}/>
                                                 <span>직항</span>
                                             </li>
                                             <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <button type="button" className=""></button>
+                                                <input type="checkbox" className={element.checkbox_label} />
                                                 <span>1회이상 경유</span>
-                                               
                                             </li>
                                         </ul>
                                     </div>
