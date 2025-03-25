@@ -9,10 +9,22 @@ import BoardView from "../../components/BoardView"
 export default function Content ({ activeTab }) {
     const { postID } = useParams();
 
-    const [isListView, setIsListView] = useState(activeTab === "findPlan" ? false : true);
-    useEffect(() => {
-        setIsListView(activeTab === "findPlan" ? false : true);
-    }, [activeTab]);
+    let content;
+
+    switch (activeTab) {
+        case 'findPlan':
+            content = <BoardList boolean={false}/>;
+            break;
+        case 'findReview':
+            content = <ReviewList/>;
+            break;       
+        case 'findFriend':
+            content = <BoardList boolean={true}/>;
+            break;       
+        default:
+            content = <div>선택된 탭이 없습니다.</div>;
+            break;
+    }
 
     if (postID) {
         return <BoardView postID={postID}/>;
@@ -21,9 +33,7 @@ export default function Content ({ activeTab }) {
     return (
         <div className="sectionCont container_m">
             <div className="board_area">
-                {activeTab === "findPlan" || activeTab === "findFriend" ?
-                    (<BoardList isListView={isListView} setIsListView={setIsListView} />)
-                : (<ReviewList />)}
+                {content}
             </div>
         </div>
     );

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import SelectBox from "./SelectBox";
 import ListStyle from "./ListStyle"
 import GalleryList from "./GalleryStyle"
 
-const BoardList = ({ isListView, setIsListView }) => {
-    
+const BoardList = ({ boolean }) => {
+    const [isListView, setIsListView] = useState(boolean);
 
     return (
         <div className="board_wrap board_findFriend">

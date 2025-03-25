@@ -1,8 +1,8 @@
 .page_login{
-    .section_banner{
+    .sectionBanner{
         height: 246px;
         margin-bottom: 40px;
-        background-image: url("https://trip-ter.vercel.app/img/banner/banner_img1.jpg");
+        background-image: url("../../public/img/banner/banner_img1.jpg");
     }
     .signup_area{
         max-width: 500px;
@@ -101,7 +101,6 @@
         }
 
         .submit_btn{
-            display: block;
             width: 100%;
             background: var(--trip-gray1);
             font-size: var(--semismall-text); font-family: var(--theJamsil-medium); line-height: 60px;

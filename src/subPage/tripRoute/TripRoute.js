@@ -23,7 +23,7 @@ function TripRoute({dataInfo}) {
                             {
                             Object.entries(dataInfo["tripRoute"]).map(([key, list]) => (
                                 <li key={key} className={key === activeTab ? "active" : ""}>
-                                    <Link to={list.link} className="d-flex">
+                                    <Link to={list.link} className="d-flex align-items-center">
                                         {list.name}
                                         <span></span>
                                     </Link>
@@ -34,7 +34,7 @@ function TripRoute({dataInfo}) {
                         
                     </ul>
                 </div> 
-                <Content activeTab={activeTab}></Content>
+                <Content key={activeTab} activeTab={activeTab}></Content>
             </section>  
         </main>
 

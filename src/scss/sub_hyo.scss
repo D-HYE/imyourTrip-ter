@@ -77,220 +77,220 @@
     }
 }
 //계획짜기_항공
-#planmakerType1{
-    .wishlist_quick{   
-         background-color: var(--trip-yellow);
-         width: 64px;
-         aspect-ratio: 1 / 1;
-         border-radius: 50px;
-        .wishlist_icon{
-            background: url('../../public/img/icon/bag-03.svg') no-repeat center/cover;
-            width: 32px;
-            aspect-ratio: 1 / 1;
-        }
-    }
-    //저장된 계획
-    .plan_info{
-        background-color: var(--trip-blue);
-        padding: 0.625rem 1.25rem; 
-        border-radius: 1.875rem;
-        gap: 5rem;
-        margin-bottom: 2.5rem;
-        ul{
-            li{
-                font-size: var(--semismall-text);
-                color: var(--trip-white);
-                padding: 0.5rem;
-                a{
-                    font-size: var(--semismall-text);
-                    color: var(--trip-white); 
-                }
-            }
-        }
-        .plan_edit{
-            flex-grow: 1;
-        }
-    }
-    //상풍 페이지 탭
-    .tab_content{
-        ul li{
-            border: 0.0625rem solid var(--trip-blue);
-            border-radius: 1.25rem;
-            padding: 0.5rem 1rem;
-            a{
-                font-size: var(--small-text);
-                color: var(--trip-blue);
-            }
-            &.tripcar_tab{
-                border: 0.0625rem solid #FF7F50;
-                a{
-                    color: #FF7F50;
-                }
-            }
-            &.tabClick{
-                background-color: var(--trip-blue);
-                a{
-                    color: var(--trip-yellow);
-                }
-            }
 
-            &.tripcar_tab.tabClick{
-                background-color:#3EB489;
-                border: 0.0625rem solid #3EB489;
-                a{
-                    color: var(--trip-white);
-                }
+.wishlist_quick{   
+        background-color: var(--trip-yellow);
+        width: 64px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50px;
+    .wishlist_icon{
+        background: url('../../public/img/icon/bag-03.svg') no-repeat center/cover;
+        width: 32px;
+        aspect-ratio: 1 / 1;
+    }
+}
+//저장된 계획
+.plan_info{
+    background-color: var(--trip-blue);
+    padding: 0.625rem 1.25rem; 
+    border-radius: 1.875rem;
+    gap: 5rem;
+    margin-bottom: 2.5rem;
+    ul{
+        li{
+            font-size: var(--semismall-text);
+            color: var(--trip-white);
+            padding: 0.5rem;
+            a{
+                font-size: var(--semismall-text);
+                color: var(--trip-white); 
             }
         }
     }
-    .plane_title {
-        margin: 2.5rem 0 1.25rem 0;
-        .plane_title_all {
-            font-size: var(--mediumbig-text);
-            font-weight: 700;
+    .plan_edit{
+        flex-grow: 1;
+    }
+}
+//상풍 페이지 탭
+.tab_content{
+    ul li{
+        border: 0.0625rem solid var(--trip-blue);
+        border-radius: 1.25rem;
+        padding: 0.5rem 1rem;
+        a{
+            font-size: var(--small-text);
+            color: var(--trip-blue);
         }
-        .option_list{
-            .title{
-                font-size: var(--medium-text);
+        &.tripcar_tab{
+            border: 0.0625rem solid #FF7F50;
+            a{
+                color: #FF7F50;
             }
         }
-    
-        .before_btn,
-        .front_btn {
-            padding: 0.625rem 0.75rem;
-            border-radius: 1.25rem 0.3125rem 0.3125rem 1.25rem;
-    
-            a {
-                font-size: var(--semismall-text);
-                font-weight: 700;
-            }
-        }
-        .before_btn {
-            background-color: var(--trip-gray1);
-            padding-right: 1.5rem;
-    
-            a {
-                color: var(--trip-gary3);
-            }
-        }
-        .front_btn {
+        &.tabClick{
             background-color: var(--trip-blue);
-            border-radius: 0.3125rem 1.25rem 1.25rem 0.3125rem;
-            padding-left: 1.5rem;
-    
-            a {
+            a{
                 color: var(--trip-yellow);
             }
         }
-    }
-    //항공필터
-    .select_box{
-        .option_list {
-            width: fit-content;
-            height: auto;
-            .filter_section {
-                padding: 1rem;
-                .title {
-                    font-size: var(--medium-text);
-                    font-weight: 700;
-                }
-                li button {
-                    border: 1px solid;
-                    border-radius: 5px;
-                    width: 25px;
-                    height: 25px;
-                }
-                p {
-                    font-size: var(--semismall-text);
-                }
-                span {
-                    font-size: var(--small-text);
-                    white-space: nowrap;
-                }
-            }
-        }
-     
-        //range-slider 바
-        #sliderbar_go, #sliderbar_back {
-            .noUi-horizontal{
-                height: 10px;
-            }
-            .noUi-connect {
-                background: var(--trip-blue);
-                border-radius: 50px;
-            }
-            .noUi-handle {
-                background: var(--trip-white);
-                border: 1px solid var(--trip-blue); 
-                border-radius: 50%;
-                width: 24px;
-                height: 24px;
-            }
-            .noUi-handle:before, .noUi-handle:after{
-                display: none;
-            }
-        }
-    }
-    //항공권 정보
-    .plane_list{
-        .plane_left{
-            ul{
-                gap: 3.75rem;
-                li{
-                    gap: 3.75rem;
-                    .planeLogo{
-                        background-size: cover;
-                        background-position: center;
-                        width: 40px;
-                        height: 40px;
-                    }
-                    span{
-                        font-family: var(--theJamsil-bold);
-                    }
-            }
-                .plane_time p{
-                    font-size: var(--medium-text);
-                    &.airport{
-                        font-size: var(--semismall-text);
-                    }
-                }
-                .flight-time p{
-                    font-family: var(--small-text);
-                }
-                .arrow-right{
-                    display: inline-block;
-                    position: relative;
-                    width: 120px;
-                    height: 2px;
-                    background-color: black;
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        right: 0;
-                        top: 50%;
-                        width: 5px;
-                        height: 5px;
-                        border-right: 2px solid black;
-                        border-bottom: 2px solid black;
-                        transform: translateY(-50%) rotate(-45deg);
-    
-                    }
-                }
-            }
-            .share_heart_group{
-                .share_icon{
-                    background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg");                    
-                }
-                .heart_icon{
-                    background: url("https://trip-ter.vercel.app/img/icon/heart_bl.svg")
-                }
-            }    
 
+        &.tripcar_tab.tabClick{
+            background-color:#3EB489;
+            border: 0.0625rem solid #3EB489;
+            a{
+                color: var(--trip-white);
+            }
         }
     }
 }
+.plane_title {
+    margin: 2.5rem 0 1.25rem 0;
+    .plane_title_all {
+        font-size: var(--mediumbig-text);
+        font-weight: 700;
+    }
+    .option_list{
+        .title{
+            font-size: var(--medium-text);
+        }
+    }
+
+    .before_btn,
+    .front_btn {
+        padding: 0.625rem 0.75rem;
+        border-radius: 1.25rem 0.3125rem 0.3125rem 1.25rem;
+
+        a {
+            font-size: var(--semismall-text);
+            font-weight: 700;
+        }
+    }
+    .before_btn {
+        background-color: var(--trip-gray1);
+        padding-right: 1.5rem;
+
+        a {
+            color: var(--trip-gary3);
+        }
+    }
+    .front_btn {
+        background-color: var(--trip-blue);
+        border-radius: 0.3125rem 1.25rem 1.25rem 0.3125rem;
+        padding-left: 1.5rem;
+
+        a {
+            color: var(--trip-yellow);
+        }
+    }
+}
+//항공필터
+.select_box{
+    .option_list {
+        width: fit-content;
+        height: auto;
+        .filter_section {
+            padding: 1rem;
+            .title {
+                font-size: var(--medium-text);
+                font-weight: 700;
+            }
+            li button {
+                border: 1px solid;
+                border-radius: 5px;
+                width: 25px;
+                height: 25px;
+            }
+            p {
+                font-size: var(--semismall-text);
+            }
+            span {
+                font-size: var(--small-text);
+                white-space: nowrap;
+            }
+        }
+    }
+    
+    //range-slider 바
+    #sliderbar_go, #sliderbar_back {
+        .noUi-horizontal{
+            height: 10px;
+        }
+        .noUi-connect {
+            background: var(--trip-blue);
+            border-radius: 50px;
+        }
+        .noUi-handle {
+            background: var(--trip-white);
+            border: 1px solid var(--trip-blue); 
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+        }
+        .noUi-handle:before, .noUi-handle:after{
+            display: none;
+        }
+    }
+}
+//항공권 정보
+.plane_list{
+    .plane_left{
+        ul{
+            gap: 3.75rem;
+            li{
+                gap: 3.75rem;
+                .planeLogo{
+                    background-size: cover;
+                    background-position: center;
+                    width: 40px;
+                    height: 40px;
+                }
+                span{
+                    font-family: var(--theJamsil-bold);
+                }
+        }
+            .plane_time p{
+                font-size: var(--medium-text);
+                &.airport{
+                    font-size: var(--semismall-text);
+                }
+            }
+            .flight-time p{
+                font-family: var(--small-text);
+            }
+            .arrow-right{
+                display: inline-block;
+                position: relative;
+                width: 120px;
+                height: 2px;
+                background-color: black;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 5px;
+                    height: 5px;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid black;
+                    transform: translateY(-50%) rotate(-45deg);
+
+                }
+            }
+        }
+        .share_heart_group{
+            .share_icon{
+                background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg");                    
+            }
+            .heart_icon{
+                background: url("https://trip-ter.vercel.app/img/icon/heart_bl.svg")
+            }
+        }    
+
+    }
+}
+
 #quick{
-    display:none;
+display:none;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,36 +1,36 @@
 {
-    "airplane":{
-    "airways": {
-      "AS": {
-        "name": "에어서울",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_airseoul.png"
+  "airplane":{
+      "airways": {
+        "AS": {
+          "name": "에어서울",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_airseoul.png"
+        },
+        "OZ": {
+          "name": "아시아나항공",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_asiana.png"
+        },
+        "JN": {
+          "name": "진에어",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jinair.png"
+        },
+        "ZE": {
+          "name": "이스타항공",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_estar.png"
+        },
+        "KE": {
+          "name": "대한항공",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_koreanair.png"
+        },
+        "7C": {
+          "name": "제주항공",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jeju.png"
+        },
+        "TW": {
+          "name": "티웨이항공",
+          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_tway.png"
+        }
       },
-      "OZ": {
-        "name": "아시아나항공",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_asiana.png"
-      },
-      "JN": {
-        "name": "진에어",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jinair.png"
-      },
-      "ZE": {
-        "name": "이스타항공",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_estar.png"
-      },
-      "KE": {
-        "name": "대한항공",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_koreanair.png"
-      },
-      "7C": {
-        "name": "제주항공",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jeju.png"
-      },
-      "TW": {
-        "name": "티웨이항공",
-        "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_tway.png"
-      }
-    },
-    "flightproduct": [
+      "flightproduct": [
       {
         "productId": "1234",
         "go": {
@@ -177,7 +177,20 @@
         },
         "created": "2023-02-20",
         "updated": "2023-02-28"
+      },
+      {
+        "productId": "1819",
+        "go": {
+          "airline": "OZ",
+          "depLoc": "집",
+          "depTime": "오전 08:30",
+          "arrLoc": "집으로~~~",
+          "arrTime": "오후 12:30",
+          "price": "230,000"
+        },
+        "created": "2023-02-20",
+        "updated": "2023-02-28"
       }
-    ]
+      ]
   }
 }
