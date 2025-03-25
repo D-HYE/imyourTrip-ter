@@ -21,6 +21,7 @@
     div{
         height: 2.5rem;
     }
+    span,
     a{
         font-size: var(--m-small-text);
     }
@@ -82,24 +83,26 @@
     }   
 }
 
-body.scrolled{
-    #gnbbox{   
-        top:0;
-        height: 2.5rem;
-        .logo{
-            img{
-                width: 0;
-                transition: opacity 0.3s;
-            }
-
-        }       
-     } 
-     #gnb{
-            top:0;
-            height: 2.5rem;
-       
+.scrolled {
+    #gnbbox {
+      top: 0;
+      height: 2.5rem;
+      
+      .logo {
+        img {
+          width: 0;
+          opacity: 0; /* 이미지 숨김 효과 */
+          transition: opacity 0.3s ease, width 0.3s ease;
+        }
+      }
     }
-}
+  
+    #gnb {
+      top: 0;
+      height: 2.5rem;
+      transition: all 0.3s ease;
+    }
+  }
 
 #menu a {
     font-size: var(--semismall-text);
@@ -224,24 +227,26 @@ body.scrolled{
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
 }
-#hb-item{
+#hb-item {
     flex-grow: 1;
     height: 100%;
     font-size: var(--semismall-text);
-    font-family: var(--theJamsil-medium);        
-    .menu-icon{
+    
+    .menu-icon {
         background-color: white;
-        padding:0.75rem 2.25rem;
-        a{
+        padding: 0.75rem 2.25rem;
+        
+        a {  
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 0.875rem;
-            img{
-               margin: 0.625rem;
+
+            img {
+                margin: 0.625rem;
             }
-        }  
+        }
     }
 }
 // 메뉴리스트
