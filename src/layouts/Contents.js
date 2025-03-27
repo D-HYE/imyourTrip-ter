@@ -8,9 +8,8 @@ import TripterEvent from '../subPage/event/TripterEvent';
 import Product from '../subPage/products/Product';
 import Service from "../subPage/service/Service"
 
-import NotFound from '../components/NotFound'
+import NotFound from '../layouts/NotFound'
 
-//테스트
 
 import alldata  from '../data/alldata.json'
 

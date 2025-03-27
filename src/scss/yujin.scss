@@ -1,16 +1,23 @@
-
+    /* Font style */
+  //  --theJamsil-thin: 'TheJamsil100';
+  //  --theJamsil-light: 'TheJamsil300';
+  //  --theJamsil-regular: 'TheJamsil400';
+  //  --theJamsil-medium: 'TheJamsil500';
+  //  --theJamsil-bold: 'TheJamsil700';
+ //   --theJamsil-extrabold: 'TheJamsil800';
 //웹 퀵메뉴
+
 #quick{
     padding: 10px 0;
     position: fixed;
     left: 100%;
     top:50%;
 
-    border-radius: 116.811px;
+    border-radius: 117px;
     background: var(--Trip-blue, #0051D3);
 
-    width: 77.729px;
-    height: 171.96px;
+    width: 78px;
+    height: 172px;
     flex-shrink: 0;
     transform: translateX(0);
     transition: 0.5s;
@@ -56,13 +63,16 @@ body.scrolled{
        transform: translateX(calc(-100% - 20px));
     }
 }
+
+
+
             
 
 // 모바일 상단 어플 광고
 #mb-top{
     justify-content: space-between;
     // background: linear-gradient(to right, #dfe9f3, #ffffff); 
-    padding: 10px;
+    padding: 1rem;
     position: relative;
     background: url("https://trip-ter.vercel.app/img/logo/logo_TRT_bl.png") no-repeat center;
     background-size: cover;
@@ -75,8 +85,8 @@ body.scrolled{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                left: 30px;
-                margin-right: 20px;
+                left: 3rem;
+                margin-right: 2rem;
                 
             h5{
                 color: #111;
@@ -90,11 +100,11 @@ body.scrolled{
         color:#FFF;
         font-family: "Noto Sans";
         font-size: var(--m-mainbanner-en,12px);        
-        border-radius: 50px;
+        border-radius: 5rem;
         background: var(--Trip_blue, #0051D3);
         display: flex;
         align-items: center;
-        padding: 10px 15px;
+        padding: 1rem 1.5rem;
 
         justify-content: center;
        
@@ -115,8 +125,8 @@ body.scrolled{
 .section1{
      .simple_feelter_btn{
         position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
-        padding: 12px 10px;
-        background: rgba(0, 81, 211, .9); border-radius: 0 30px 30px 0;
+        padding: 1.2rem 1rem;
+        background: rgba(0, 81, 211, .9); border-radius: 0 3rem 3rem 0;
         cursor: pointer;
              a{
             color: #fff;
@@ -124,8 +134,8 @@ body.scrolled{
               
             .img_box
              {
-            width: 24px;
-            margin: 0 10px;
+            width: 2.4rem;
+            margin: 0 1rem;
              }
 
                  
@@ -133,27 +143,27 @@ body.scrolled{
     
 
     .icon_menu{
-        padding-top: 50px;
+        padding-top: 5rem;
         ul{
-            gap: 15px;
+            gap: 1.5rem;
           li{
-            max-width: 700px;
-            min-width: 100px;
-            padding: 20px;
+            max-width: 70rem;
+            min-width: 10rem;
+            padding: 2rem;
             background:var(--trip-skyblue);
 
-            border-radius: 10px;
+            border-radius: 1rem;
 
             @media (max-width:575px) {
                 flex-direction: column;
-                height: 140px;
-                border-radius: 100px 100px 10px 10px;
+                height: 14rem;
+                border-radius: 10rem 1rem 1rem 1rem;
             }
             
             
 
               p{
-                margin:5px;
+                margin:0.5rem;
                 color:var(--trip-blue)             
                 }
             }
@@ -317,6 +327,59 @@ body.scrolled{
           }
       }
   }
+
+}
+// 404 페이지
+.subMain{
+    font-family:'Noto Sans KR';
+    background-color: var(--trip-blue) ;
+    h1{
+        font-family: var(--theJamsil-extrabold) !important;
+        color: var(--trip-white);
+        font-size: 8rem;
+        font-weight: 900;
+        margin-top: 5rem;
+    }
+    h2{
+        font-family: var(--theJamsil-bold) !important;
+        color: var(--trip-yellow);
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 1.5rem;
+    }
+    p{
+        color: var(--trip-white);
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+
+    .button{
+        font-family: var(--theJamsil-bold);
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+
+    }
+    .button1{
+        color:var(--trip-blue);
+        background-color:var(--trip-white);
+        border-radius: 0.2rem;
+        font-size: 1.5rem;
+        padding: 0.3rem 2.5rem 0.3rem 2.5rem;
+        
+    }
+
+    .button2{
+        color:var(--trip-blue);
+        background-color:var(--trip-white);
+        border-radius: 0.2rem;
+        font-size: 1.5rem;
+        padding: 0.3rem 3.2rem 0.3rem 3.2rem;
+    }
+
 
 }
 
