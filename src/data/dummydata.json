@@ -1,0 +1,158 @@
+{
+    "findPlan": [
+        {
+            "postID": "1",
+            "postTitle": "타이틀타이틀타이틀타이틀1",
+            "postDate": "2025-00-00",
+            "postView": "001",
+            "userNickname": "유저닉네임1",
+            "userID": "user111",
+            "tripSpot": "여행지1",
+            "tripDate": "여행날짜1",
+            "src": "",
+            "desc": "11내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "2",
+            "postTitle": "타이틀타이틀타이틀타이틀2",
+            "postDate": "2025-00-00",
+            "postView": "002",
+            "userNickname": "유저닉네임2",
+            "userID": "user222",
+            "tripSpot": "여행지2",
+            "tripDate": "여행날짜2",
+            "src": "/img/review/review1.jpg",
+            "desc": "22내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "3",
+            "postTitle": "타이틀타이틀타이틀타이틀3",
+            "postDate": "2025-00-00",
+            "postView": "003",
+            "userNickname": "유저닉네임3",
+            "userID": "user333",
+            "tripSpot": "여행지3",
+            "tripDate": "여행날짜3",
+            "src": "",
+            "desc": "33내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "4",
+            "postTitle": "타이틀타이틀타이틀타이틀4",
+            "postDate": "2025-00-00",
+            "postView": "004",
+            "userNickname": "유저닉네임4",
+            "userID": "user444",
+            "tripSpot": "여행지4",
+            "tripDate": "여행날짜4",
+            "src": "",
+            "desc": "44내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "5",
+            "postTitle": "타이틀타이틀타이틀타이틀5",
+            "postDate": "2025-00-00",
+            "postView": "005",
+            "userNickname": "유저닉네임5",
+            "userID": "user555",
+            "tripSpot": "여행지5",
+            "tripDate": "여행날짜5",
+            "src": "/img/review/review2.jpg",
+            "desc": "55내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        }
+    ],
+    "findFriend": [
+        {
+            "postID": "6",
+            "postTitle": "타이틀타이틀타이틀타이틀6",
+            "postDate": "2025-00-00",
+            "postView": "006",
+            "userNickname": "유저닉네임6",
+            "userID": "user666",
+            "tripSpot": "여행지6",
+            "tripDate": "여행날짜1",
+            "src": "/img/review/review10.jpg",
+            "desc": "66내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "7",
+            "postTitle": "타이틀타이틀타이틀타이틀7",
+            "postDate": "2025-00-00",
+            "postView": "007",
+            "userNickname": "유저닉네임7",
+            "userID": "user777",
+            "tripSpot": "여행지7",
+            "tripDate": "여행날짜7",
+            "src": "",
+            "desc": "77내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "8",
+            "postTitle": "타이틀타이틀타이틀타이틀8",
+            "postDate": "2025-00-00",
+            "postView": "008",
+            "userNickname": "유저닉네임8",
+            "userID": "user888",
+            "tripSpot": "여행지8",
+            "tripDate": "여행날짜8",
+            "src": "/img/review/review11.jpg",
+            "desc": "88내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "9",
+            "postTitle": "타이틀타이틀타이틀타이틀9",
+            "postDate": "2025-00-00",
+            "postView": "009",
+            "userNickname": "유저닉네임9",
+            "userID": "user999",
+            "tripSpot": "여행지9",
+            "tripDate": "여행날짜9",
+            "src": "",
+            "desc": "99내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "10",
+            "postTitle": "타이틀타이틀타이틀타이틀10",
+            "postDate": "2025-00-00",
+            "postView": "010",
+            "userNickname": "유저닉네임10",
+            "userID": "user101010",
+            "tripSpot": "여행지10",
+            "tripDate": "여행날짜10",
+            "src": "/img/review/review12.jpg",
+            "desc": "1010내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        }
+    ],
+    "ask": [
+        {
+            "postID": "123",
+            "postTitle": "타이틀타이틀타이틀타이틀123",
+            "postDate": "2025-00-00",
+            "postView": "123",
+            "userNickname": "유저닉네임123",
+            "userID": "user123",
+            "src": "/img/review/review10.jpg",
+            "desc": "1234내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "456",
+            "postTitle": "타이틀타이틀타이틀타이틀456",
+            "postDate": "2025-00-00",
+            "postView": "456",
+            "userNickname": "유저닉네임456",
+            "userID": "user456",
+            "src": "/img/review/review10.jpg",
+            "desc": "4567내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        },
+        {
+            "postID": "789",
+            "postTitle": "타이틀타이틀타이틀타이틀789",
+            "postDate": "2025-00-00",
+            "postView": "789",
+            "userNickname": "유저닉네임789",
+            "userID": "user789",
+            "src": "/img/review/review10.jpg",
+            "desc": "8910내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용"
+        }
+    ]
+}

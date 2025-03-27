@@ -99,7 +99,7 @@ export default function Section1_feelter() {
                 <div className="simple_feelter_result">
                     <h4 className="simple_feelter_tit">추천 여행지 <span className="text-blue">{`${qna3Val==="A"?("제주도"):("부탄")}`}</span></h4>
                     <div className="simple_feelter_cont">
-                        <div className="img_box">
+                        <div className="img_box d-flex justify-content-center align-items-center">
                             {qna3Val==="A"?(<img src="/img/sample/sampleimg46.jpg" alt="샘플이미지1" />):(<img src="/img/sample/sampleimg62.jpg" alt="샘플이미지1" />)}
                             
                         </div>

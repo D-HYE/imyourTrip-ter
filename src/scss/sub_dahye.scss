@@ -141,7 +141,6 @@
     }
 }
 
-// -----board
 
 .page_plan{
     .sectionList ul{
@@ -156,7 +155,12 @@
     }
 }
 
+// -----board
 
+section:not(.findReviewSection) .board_area.container_m,
+.post_area.container_m{
+    padding: 0;
+}
 .page_triptalk{
     .sectionList ul{
         li:nth-child(1){
@@ -184,75 +188,6 @@
             }
         }
     }
-    .icon_box{
-        width: 24px; height: 24px;
-        background: url("../../public/img/icon/list.svg") no-repeat center/contain;
-        text-indent: -10000px;
-    }
-    .board_filter{
-        .icon1{
-            &.active{
-                background-image: url("../../public/img/icon/list_active.svg");
-            }
-        }
-        .icon2{
-            background-image: url("../../public/img/icon/gallery_list.svg");
-            &.active{
-                background-image: url("../../public/img/icon/gallery_list_active.svg");
-            }
-        }
-    }
 
 
-    
-    .board_findPlan{
-        .board_filter{
-            border-bottom: 1px solid var(--trip-gray1);
-        }
-    }
-
-    .board_findFriend{
-        .board_list{
-            table{
-                .post_id{width: 8.021%;}
-                .post_tit{max-width: 400px;}
-                .post_nickname{width: 16.0428%;}
-                .post_date{width: 12.032%;}
-                .post_view{width: 6.684%;}
-
-                tbody{
-                    tr{
-                        td{
-                            &.post_id,
-                            &.post_date,
-                            &.post_view{color: var(--trip-gray3);}
-                        }
-
-                    }
-                }
-
-            }
-        }
-    }
-
-    .view_area{
-        h3{
-            padding: 16px 0;
-            border-bottom: 1px  solid var(--trip-gray1);
-            font-size: var(--semibig-text);
-        }
-        div{
-            padding: 8px 0;
-            border-bottom: 1px  solid var(--trip-gray1);
-        }
-        ul li{
-            padding: 4px 8px;
-            background: var(--trip-gray2); 
-        }
-        p{
-            padding: 20px 8px;
-            min-height: 500px;
-            line-height: 1.6;
-        }
-    }
 }

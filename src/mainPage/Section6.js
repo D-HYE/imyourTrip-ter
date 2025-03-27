@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import reviewsData from '../data/review.json';
 
-function Section6() {
+function Section6({reviewsData}) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {

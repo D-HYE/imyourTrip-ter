@@ -4,7 +4,7 @@ import SelectBox from "./SelectBox";
 
 const ReviewList = () => {
     return (
-        <div className="board_wrap board_findReview">
+        <div className="board_area container_m">
             <div className="board_filter d-flex justify-content-end align-items-center">
                 <SelectBox>
                     <li className="option">최신순</li>

@@ -1,28 +1,26 @@
 import { Link, useParams } from 'react-router-dom';
 
-import Content from './Content';
+import SubContent from '../SubContent';
 
 
 function TripTalk({dataInfo}) {
     const { tab } = useParams();
-    const activeTab = tab || "findPlan";
   
 
     return (
         <main className="subMain page_triptalk">  
-            <section className={`${activeTab}Section`}>
+            <section className={`${tab}Section`}>
                 <div class="sectionBanner">
                     <div>
-                        <h3>{dataInfo["tripTalk"][activeTab].name}</h3>
-                        <p>{dataInfo["tripTalk"][activeTab].description}</p>
+                        <h3>{dataInfo?.["tripTalk"]?.[tab]?.name}</h3>
+                        <p>{dataInfo?.["tripTalk"]?.[tab]?.description}</p>
                     </div>
                 </div>
                 <div className="sectionList">
                     <ul className="d-flex justify-content-center container_m flex-wrap">
-                        
-                            {
+                        {
                             Object.entries(dataInfo["tripTalk"]).map(([key, list]) => (
-                                <li key={key} className={key === activeTab ? "active" : ""}>
+                                <li key={key} className={key === tab ? "active" : ""}>
                                     <Link to={list.link} className="d-flex align-items-center">
                                         {list.name}
                                         <span></span>
@@ -30,10 +28,11 @@ function TripTalk({dataInfo}) {
                                 </li>
                             ))
                         }
-                        
                     </ul>
                 </div>
-                <Content key={activeTab} activeTab={activeTab}></Content>
+                <div className="sectionCont">
+                    <SubContent key={tab} activeTab={tab}></SubContent>
+                </div>
                 
             </section>  
         </main>
