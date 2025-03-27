@@ -330,8 +330,7 @@ body.scrolled{
 
 }
 // 404 페이지
-.subMain{
-    font-family:'Noto Sans KR';
+.page_error{
     background-color: var(--trip-blue) ;
     h1{
         font-family: var(--theJamsil-extrabold) !important;
@@ -349,7 +348,7 @@ body.scrolled{
     }
     p{
         color: var(--trip-white);
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 300;
         margin-bottom: 3rem;
     }
@@ -361,7 +360,6 @@ body.scrolled{
         justify-content: center;
         gap: 2rem;
         margin-bottom: 3rem;
-
     }
     .button1{
         color:var(--trip-blue);
@@ -369,7 +367,6 @@ body.scrolled{
         border-radius: 0.2rem;
         font-size: 1.5rem;
         padding: 0.3rem 2.5rem 0.3rem 2.5rem;
-        
     }
 
     .button2{

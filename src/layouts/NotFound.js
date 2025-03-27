@@ -3,7 +3,7 @@ import img404 from "../img/error_bg.svg"
 
 export default function NotFound() {
     return (
-        <main className="subMain">
+        <main className="subMain page_error">
             <div className="container fontbasic" 
               style={{ textAlign: "center", padding: "50px" }}>
                         <h1>!</h1>
