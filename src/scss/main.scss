@@ -27,7 +27,7 @@
         cursor: pointer;
     
         .swiper-slide{     
-            background: url("https://trip-ter.vercel.app/img/main_img/mainslide1.jpg") no-repeat left/cover;
+            background: url("../../public/img/main_img/mainslide1.jpg") no-repeat left/cover;
             .slide_desc{
                 top: 10rem; left: 15.625%;
                 color: var(--trip-white);
@@ -44,16 +44,11 @@
                 }
             }    
         }
-        .swiper-slide2{
-            background-image: url("https://trip-ter.vercel.app/img/main_img/mainslide2.jpg");
-            .slide_desc{color: var(--trip-black);}
-        }
-        .swiper-slide3{background-image: url("https://trip-ter.vercel.app/img/main_img/mainslide3.jpg");}
+        .swiper-slide2,
         .swiper-slide4{
-            background-image: url("https://trip-ter.vercel.app/img/main_img/mainslide4.jpg");
             .slide_desc{color: var(--trip-black);}
         }
-    
+
         .swiper-pagination{
             left: 15.625%; bottom: 10rem;
             width: auto;
@@ -306,7 +301,7 @@
         left: 0;
     }
     100% {
-        left: -4682px;
+        left: -292.625rem;
     }
 }
 @keyframes review_marquee2 {
@@ -314,7 +309,7 @@
       right: 0;
     }
     100% {
-        right: -4682px;
+        right: -292.625rem;
     }
 }
 
@@ -424,7 +419,7 @@
             left: 0;
         }
         100% {
-            left: -3360px;
+            left: -210rem;
         }
     }
     @keyframes review_marquee2 {
@@ -432,7 +427,7 @@
           right: 0;
         }
         100% {
-            right: -3360px;
+            right: -210rem;
         }
     }
     
@@ -616,6 +611,7 @@
             .marquee_line{
                 gap: 1.6rem;
                 margin: 0.8rem 0;
+                animation-duration: 100s;
                 li{
                     width: 13rem; padding: 0.8rem 0.6rem;
                     .img_box{
@@ -639,7 +635,7 @@
             left: 0;
         }
         100% {
-            left: -2189px;
+            left: -438rem;
         }
     }
 

@@ -1,10 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import PickAirplane from "./PickAirplane";
 
+import {FillterBox} from "../../components/SelectBox"
 import element from "../../scss/elements.module.scss"
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
 
 export default function PlanMaker() {
+    const [isOneWay, setIsOneWay] = useState(false);
+
+    const toggleOneWay = () => {
+        setIsOneWay((prev) => !prev);
+    };
+
     return (
         <div className="container">
             <div className="plan_info d-flex align-items-center">
@@ -35,73 +42,81 @@ export default function PlanMaker() {
                 <ul className="d-flex align-items-center gap-3">
                     <li className="plane_title_all">전체보기</li>
                     <li>
-                        <div className="select_box">
-                            <div className="select_btn d-flex justify-content-between align-items-center ">
-                                <div className="selected_val">필터</div>
-                                <span className="arrow"></span>
+                        <FillterBox>
+                            <div className="d-flex flex-column gap-2">
+                                <div className="filter_section_title">
+                                    <span className="title">유형</span>
+                                </div>
+                                <ul className="d-flex gap-3">
+                                    <li className="filter_radio d-flex align-items-center gap-1">
+                                        <label className={element.checkbox_label}>
+                                            <input 
+                                                type="checkbox" 
+                                                checked={!isOneWay} 
+                                                onChange={toggleOneWay} 
+                                            />
+                                            <span>왕복</span>
+                                        </label>
+                                    </li>
+                                    <li className="filter_radio d-flex align-items-center gap-1">
+                                        <label className={element.checkbox_label}>
+                                            <input 
+                                                type="checkbox" 
+                                                checked={isOneWay} 
+                                                onChange={toggleOneWay} 
+                                            />
+                                            <span>편도</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="option_list">
-                                <div className="filter_section d-flex flex-column gap-3">
-                                    <div className="d-flex flex-column gap-2">
-                                        <div className="filter_section_title">
-                                            <span className="title">유형</span>
-                                        </div>
-                                        <ul className="d-flex gap-3">
-                                            <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <input type="checkbox" className={element.checkbox_label}/>
-                                                <span>왕복</span>
-                                            </li>
-                                            <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <input type="checkbox" className={element.checkbox_label} />
-                                                <span>편도</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="d-flex flex-column gap-2">
-                                        <div className="filter_section_title">
-                                            <span className="title">경유</span>
-                                        </div>
-                                        <ul className="d-flex gap-3">
-                                            <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <input type="checkbox" className={element.checkbox_label}/>
-                                                <span>직항</span>
-                                            </li>
-                                            <li className="filter_radio d-flex align-items-center gap-1" >
-                                                <input type="checkbox" className={element.checkbox_label} />
-                                                <span>1회이상 경유</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="d-flex flex-column gap-2">
-                                        <div className="filter_section_title ">
-                                            <span className="title">시간대</span>
-                                        </div>
-                                        <div>
-                                            <p>가는 날</p>
-                                            <span className="time_range">00:00 ~ 24:00</span>
-                                            <div className="timeTable py-2">
-                                                <div id="sliderbar_go"></div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>오는 날</p>
-                                            <span className="time_range">00:00 ~ 24:00</span>
-                                            <div className="timeTable py-2">
-                                                <div  id="sliderbar_back"></div>
-                                            </div>
-                                        </div>
+                            <div className="d-flex flex-column gap-2">
+                                <div className="filter_section_title">
+                                    <span className="title">경유</span>
+                                </div>
+                                <ul className="d-flex gap-3">
+                                <li className="filter_radio d-flex align-items-center gap-1" >
+                                        <label className={element.checkbox_label}>
+                                            <input type="checkbox" />
+                                            <span>직항</span>
+                                        </label>
+                                    </li>
+                                    <li className="filter_radio d-flex align-items-center gap-1" >
+                                        <label className={element.checkbox_label}>
+                                            <input type="checkbox" />
+                                            <span>1회이상 경유</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="d-flex flex-column gap-2">
+                                <div className="filter_section_title ">
+                                    <span className="title">시간대</span>
+                                </div>
+                                <div>
+                                    <p>가는 날</p>
+                                    <span className="time_range">00:00 ~ 24:00</span>
+                                    <div className="timeTable py-2">
+                                        <div id="sliderbar_go"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div>
+                                    <p>오는 날</p>
+                                    <span className="time_range">00:00 ~ 24:00</span>
+                                    <div className="timeTable py-2">
+                                        <div  id="sliderbar_back"></div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </FillterBox>
                     </li>
                 </ul>    
                 <ul className="d-flex gap-2">    
                     <li className="before_btn"><a href="#none">이전</a></li>
                     <li className="front_btn"><a href="#none">다음</a></li>
                 </ul>
-        </div>
-            <PickAirplane hyodata={hyodata} />
+            </div>
+            <PickAirplane hyodata={hyodata} isOneWay={isOneWay} />
         </div>
     );
 }

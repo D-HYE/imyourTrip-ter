@@ -1,8 +1,8 @@
 .page_login{
-    .section_banner{
+    .sectionBanner{
         height: 246px;
         margin-bottom: 40px;
-        background-image: url("https://trip-ter.vercel.app/img/banner/banner_img1.jpg");
+        background-image: url("../../public/img/banner/banner_img1.jpg");
     }
     .signup_area{
         max-width: 500px;
@@ -101,7 +101,6 @@
         }
 
         .submit_btn{
-            display: block;
             width: 100%;
             background: var(--trip-gray1);
             font-size: var(--semismall-text); font-family: var(--theJamsil-medium); line-height: 60px;
@@ -145,13 +144,13 @@
 // -----board
 
 .page_plan{
-    .section_list ul{
+    .sectionList ul{
         li:last-child{
             a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/makeplan.svg");
+                background-image: url("../../public/img/icon/tab_icon/makeplan.svg");
             }
             &.active a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_makeplan.svg");
+                background-image: url("../../public/img/icon/tab_icon/c_makeplan.svg");
             }
         }
     }
@@ -159,47 +158,47 @@
 
 
 .page_triptalk{
-    .section_list ul{
+    .sectionList ul{
         li:nth-child(1){
             a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/seeplan.svg");
+                background-image: url("../../public/img/icon/tab_icon/seeplan.svg");
             }
             &.active a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_seeplan.svg");
+                background-image: url("../../public/img/icon/tab_icon/c_seeplan.svg");
             }
         }
         li:nth-child(2){
             a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/community.svg");
+                background-image: url("../../public/img/icon/tab_icon/community.svg");
             }
             &.active a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_community.svg");
+                background-image: url("../../public/img/icon/tab_icon/c_community.svg");
             }
         }
         li:nth-child(3){
             a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/accompany.svg");
+                background-image: url("../../public/img/icon/tab_icon/accompany.svg");
             }
             &.active a span{
-                background-image: url("https://trip-ter.vercel.app/img/icon/tab_icon/c_accompany.svg");
+                background-image: url("../../public/img/icon/tab_icon/c_accompany.svg");
             }
         }
     }
     .icon_box{
         width: 24px; height: 24px;
-        background: url("https://trip-ter.vercel.app/img/icon/list.svg") no-repeat center/contain;
+        background: url("../../public/img/icon/list.svg") no-repeat center/contain;
         text-indent: -10000px;
     }
     .board_filter{
         .icon1{
             &.active{
-                background-image: url("https://trip-ter.vercel.app/img/icon/list_active.svg");
+                background-image: url("../../public/img/icon/list_active.svg");
             }
         }
         .icon2{
-            background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list.svg");
+            background-image: url("../../public/img/icon/gallery_list.svg");
             &.active{
-                background-image: url("https://trip-ter.vercel.app/img/icon/gallery_list_active.svg");
+                background-image: url("../../public/img/icon/gallery_list_active.svg");
             }
         }
     }

@@ -23,7 +23,7 @@ function TripTalk({dataInfo}) {
                             {
                             Object.entries(dataInfo["tripTalk"]).map(([key, list]) => (
                                 <li key={key} className={key === activeTab ? "active" : ""}>
-                                    <Link to={list.link} className="d-flex">
+                                    <Link to={list.link} className="d-flex align-items-center">
                                         {list.name}
                                         <span></span>
                                     </Link>
@@ -32,8 +32,9 @@ function TripTalk({dataInfo}) {
                         }
                         
                     </ul>
-                </div> 
-                <Content activeTab={activeTab}></Content>
+                </div>
+                <Content key={activeTab} activeTab={activeTab}></Content>
+                
             </section>  
         </main>
 

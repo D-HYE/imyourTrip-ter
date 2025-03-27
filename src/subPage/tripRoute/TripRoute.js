@@ -1,12 +1,12 @@
 import { Link, useParams } from 'react-router-dom';
 
 import Content from './Content';
-
+//Link를 useState 초기화 하는 방향으로 사유: a href=가 안 먹힘
 
 function TripRoute({dataInfo}) {
     const { tab } = useParams();
     const activeTab = tab || "myFeelter";
-  
+
 
     return (
         <main className="subMain page_plan">  
@@ -23,17 +23,18 @@ function TripRoute({dataInfo}) {
                             {
                             Object.entries(dataInfo["tripRoute"]).map(([key, list]) => (
                                 <li key={key} className={key === activeTab ? "active" : ""}>
-                                    <a href={list.link} className="d-flex">
+                                    <Link to={list.link} className="d-flex align-items-center">
                                         {list.name}
                                         <span></span>
-                                    </a>
+                                    </Link>
+                                    
                                 </li>
                             ))
                         }
                         
                     </ul>
                 </div> 
-                <Content activeTab={activeTab}></Content>
+                <Content key={activeTab} activeTab={activeTab}></Content>
             </section>  
         </main>
 
