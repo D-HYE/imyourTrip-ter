@@ -5,7 +5,7 @@ import User from '../subPage/user/User';
 import TripRoute from '../subPage/tripRoute/TripRoute';
 import TripTalk from '../subPage/tripTalk/TripTalk';
 import TripterEvent from '../subPage/event/TripterEvent';
-import NotFound from '../components/NotFound'
+import NotFound from '../layouts/NotFound'
 
 import alldata  from '../data/alldata.json'
 
