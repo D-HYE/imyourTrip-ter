@@ -10,7 +10,10 @@ body ::-webkit-scrollbar-thumb{
     border-radius: 12px;
 }
 
-
+main{
+    padding-top: 5rem;
+    overflow: hidden;
+}
 
 .container{
     max-width: 90rem;
@@ -22,13 +25,13 @@ body ::-webkit-scrollbar-thumb{
     padding: 0 0.5rem;
     margin: auto;
 }
-
-
-
-main{
-    padding-top: 5rem;
-    overflow: hidden;
+.img100 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+
 
 @media (min-width: 769px) {
     .mb{display: none !important;}

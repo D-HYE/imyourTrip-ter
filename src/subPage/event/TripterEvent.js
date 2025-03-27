@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 
-import Content from './Content';
+import SubContent from '../SubContent';
 
 
 function TripterEvent({dataInfo}) {
@@ -13,8 +13,8 @@ function TripterEvent({dataInfo}) {
             <section className={`${activeTab}Section`}>
                 <div class="sectionBanner">
                     <div>
-                        <h3>{dataInfo["tripterEvent"][activeTab].name}</h3>
-                        <p>{dataInfo["tripterEvent"][activeTab].description}</p>
+                        <h3>{dataInfo?.["tripterEvent"]?.[activeTab]?.name}</h3>
+                        <p>{dataInfo?.["tripterEvent"]?.[activeTab]?.description}</p>
                     </div>
                 </div>
                 <div className="sectionList">
@@ -33,7 +33,9 @@ function TripterEvent({dataInfo}) {
                         
                     </ul>
                 </div> 
-                <Content activeTab={activeTab}></Content>
+                <div className="sectionCont">
+                    <SubContent activeTab={activeTab}></SubContent>
+                </div>
             </section>  
         </main>
 

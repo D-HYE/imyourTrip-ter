@@ -8,17 +8,15 @@ import Section7 from './Section7';
 
 
 export default function Main({alldata}){
-    const slideData = alldata["slide"];
-    const tabData = alldata["mainTabMenu"];
 
     return(
         <main id="sectionWrap">
-            <Section1 slideData={slideData}/>
-            <Section2 slideData={slideData}/>
+            <Section1 slideData={alldata["slide"]}/>
+            <Section2 slideData={alldata["slide"]}/>
             <Section3/>
-            <Section4 tabData={tabData}/>
+            <Section4 tabData={alldata["mainTabMenu"]}/>
             <Section5/>
-            <Section6/>
+            <Section6 reviewsData={alldata["review"]}/>
             <Section7/>
         </main>
     );

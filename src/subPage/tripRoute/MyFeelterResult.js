@@ -70,7 +70,7 @@ const MyFeelterResult = ({answers}) => {
 
                 <div className="before-login"> 
                     <h3><span>트립터 여행자님들의 계획과 후기를 확인해보세요!</span></h3>
-                    <Link  to="/user"><button className="login_bt"><p className="login_bt_txt">로그인 하기</p></button></Link>
+                    <Link  to="/user/login"><button className="login_bt"><p className="login_bt_txt">로그인 하기</p></button></Link>
                 </div> 
             </div>
         </div>

@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 
-import SelectBox from "./SelectBox";
-import ListStyle from "./ListStyle"
-import GalleryList from "./GalleryStyle"
+import TableStyle, {GalleryStyle} from "./ListStyle"
 
-const BoardList = ({ boolean }) => {
+import SelectBox from "./SelectBox";
+import { SquareBtn } from '../styleComponents/ui';
+
+const BoardList = ({ boolean, postData }) => {
     const [isListView, setIsListView] = useState(boolean);
 
     return (
-        <div className="board_wrap board_findFriend">
+        <div className="board_area img100 container_m">
             <div className="board_filter d-flex justify-content-between align-items-center">
                 <SelectBox>
                     <li className="option">최신순</li>
@@ -31,7 +32,7 @@ const BoardList = ({ boolean }) => {
                 </div>
             </div>
 
-            {isListView ? <ListStyle /> : <GalleryList />}
+            {isListView ? <TableStyle postData={postData}/> : <GalleryStyle postData={postData}/>}
 
             <div className="board_pagenation">
                 <div className="pagenation_wrap d-flex justify-content-center align-items-center gap-2">
@@ -45,6 +46,9 @@ const BoardList = ({ boolean }) => {
                     </ul>
                     <button className="icon_box icon2">다음</button>
                 </div>
+            </div>
+            <div className="board_btn d-flex justify-content-end">
+                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="800">글쓰기</SquareBtn>
             </div>
         </div>                    
     );

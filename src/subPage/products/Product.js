@@ -1,44 +1,42 @@
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import SubContent from '../SubContent';
-//Link를 useState 초기화 하는 방향으로 사유: a href=가 안 먹힘
 
-function TripRoute({dataInfo}) {
-    const { tab } = useParams();
+const Prodcut = ({dataInfo}) => {
+    const { category, tab} = useParams()
+    const dataCategory = dataInfo?.["products"]?.[category]
 
     return (
-        <main className="subMain page_plan">  
+        <main className='subMain page_product'>
             <section className={`${tab}Section`}>
-                <div className="sectionBanner text-blue">
+                <div class="sectionBanner">
                     <div>
-                        <h3>{dataInfo?.["tripRoute"]?.[tab]?.name}</h3>
-                        <p>{dataInfo?.["tripRoute"]?.[tab]?.description}</p>
+                        <h3>{dataCategory?.[tab]?.name}</h3>
+                        <p>{dataCategory?.[tab]?.description}</p> 
                     </div>
                 </div>
                 <div className="sectionList">
                     <ul className="d-flex justify-content-center container_m flex-wrap">
-                        
-                            {
-                            Object.entries(dataInfo["tripRoute"]).map(([key, list]) => (
+                        {
+                            Object.entries(dataCategory).map(([key, list]) => (
                                 <li key={key} className={key === tab ? "active" : ""}>
                                     <Link to={list.link} className="d-flex align-items-center">
                                         {list.name}
                                         <span></span>
                                     </Link>
-                                    
                                 </li>
                             ))
                         }
-                        
                     </ul>
-                </div> 
-                <div className="sectionCont">
-                    <SubContent key={tab} activeTab={tab}></SubContent>
                 </div>
+                <div className="sectionCont">
+                    
+                </div>
+                
             </section>  
         </main>
-
     );
-}
+};
 
-export default TripRoute;
+export default Prodcut;
