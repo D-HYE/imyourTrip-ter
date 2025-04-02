@@ -1,12 +1,12 @@
 import React from 'react';
-import ListStyle from '../../components/ListStyle';
+import BoardListStyle from '../../components/BoardListStyle';
 
 const Ask = ({postData}) => {
     return (
         <div className="board_area">
             <div className="board_wrap">
                 <div className="board_list">
-                    <ListStyle postData={postData}/>
+                    <BoardListStyle postData={postData}/>
                 </div>
             </div>
         </div>

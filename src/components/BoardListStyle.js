@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ImgBox } from '../styleComponents/ui';
 
 const TableStyle = ({postData}) => {
     const path = useLocation();
@@ -42,10 +43,11 @@ export const GalleryStyle = ({postData}) => {
                 {postData.map(data => (
                     <li key={`post${data.tripSpot}`}>
                         <div className="">
-                            <div className="img_box rel"><Link to={`${path.pathname}/${data.postID}`} className="d-flex justify-content-center align-items-center">
+                            <ImgBox className='rel' height="15rem">
+                                <Link to={`${path.pathname}/${data.postID}`}>
                                 {data.src && <img src={`${data.src}`} alt={`${data.tripSpot}`}></img>}
-                                <div className="float_info abs"><b>{data.tripSpot}</b></div>
-                            </Link></div>
+                                <div className="float_info abs"><b>{data.tripSpot}</b></div></Link>
+                            </ImgBox>
                             <div className="desc_box">
                                 <div className="post_tit d-flex justify-content-between"><Link to={`${path.pathname}/${data.postID}`}>{data.postTitle}</Link><b>[00]</b></div>
                                 <div className="post_nickname"><h6>{data.userNickname}</h6></div>

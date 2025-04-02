@@ -166,26 +166,19 @@
             border-top: 1px solid var(--trip-gray1);;
             li{
                 width: 30.22%;
-                .img_box a{
-                    height: 15rem;
-                    background: url("../../public/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
-                    border-radius: 5px;
-                    overflow: hidden;
-                    .float_info{
-                        right: 0; bottom: 15px;
-                        max-width: 11.25rem; padding: 0.625rem;
-                        background: var(--trip-yellow); border-radius: 25px 0px 0px 25px;
-                        b{  
-                            display: block;
-                            padding-left: 1.5rem;
-                            font-size: var(--small-text); color: var(--trip-blue); font-weight: 800; line-height: 1.5rem;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            background: url("../../public/img/icon/marker.svg") no-repeat left/24px;
-                        }
+                .float_info{
+                    right: 0; bottom: 15px;
+                    max-width: 11.25rem; padding: 0.625rem;
+                    background: var(--trip-yellow); border-radius: 25px 0px 0px 25px;
+                    b{  
+                        display: block;
+                        padding-left: 1.5rem;
+                        font-size: var(--small-text); color: var(--trip-blue); font-weight: 800; line-height: 1.5rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        background: url("../../public/img/icon/marker.svg") no-repeat left/24px;
                     }
-                    
                 }
                 .desc_box{
                     padding: 0.625rem 0.25rem 2.5rem 0.25rem;
@@ -308,7 +301,6 @@
         }
     }
 }
-
 .post_area{
     .post_info{
         padding: 0 0.625rem;
@@ -375,8 +367,78 @@
         margin-top: 3.75rem;
     }
 }
-
 .comment{
     min-height: 200px;
     background: var(--trip-skyblue);
+}
+
+
+
+.product_item{
+    .img_box a{
+        background: url("../../public/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .info_box{
+        width: 100%;
+        .product_tit{
+            font-size: var(--semismall-text); font-weight: 800;
+        }
+        .product_info{
+            line-height: 1.45;
+            overflow: hidden;
+        }
+        .product_cost{
+            span{
+                font-size: var(--small-text);
+                color: var(--trip-gray1);
+                text-decoration: line-through;
+            }
+            b{font-size: var(--medium-text); font-weight: 800;}
+        }
+    }
+
+    &.productDefault{
+        .info_box{
+            max-width: 400px;
+            padding: 2rem 1.25rem;
+            .product_tit{margin-bottom: 1.5rem;}
+            .product_info{
+                height: 48px; margin-bottom: 2rem;
+                font-size: var(--small-text);
+            }
+            .product_cost{
+                margin-bottom: 2rem;
+                h6{font-size: var(--medium-text); font-weight: 800; color: var(--trip-blue);}
+            }
+
+        }
+        @media only screen and (max-width: 575px){
+            .info_wrap{
+                flex-direction: column;
+                .info_box{
+                    max-width: 100%;
+                    a{width: 100%;}
+                }
+            }
+        }
+    }
+    &.productHotel{
+        max-width: 320px;
+        padding: 1.25rem 0.625rem;
+        .product_tit{
+            text-align: center;
+        }
+        .product_info li{
+            font-size: var(--small-text); color: var(--trip-gray3); line-height: 1.45;
+            i{font-style: normal;}
+        }
+        button{
+            margin-top: 1rem;
+        }
+        @media only screen and (max-width: 575px){
+            max-width: 100%;
+        }
+    }
 }

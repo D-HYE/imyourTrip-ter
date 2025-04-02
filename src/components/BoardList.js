@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import TableStyle, {GalleryStyle} from "./ListStyle"
+import TableStyle, {GalleryStyle} from "./BoardListStyle"
 
 import SelectBox from "./SelectBox";
 import { SquareBtn } from '../styleComponents/ui';

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+import ProductList, { HotelList } from './ProductList';
 import SubContent from '../SubContent';
 
 const Prodcut = ({dataInfo}) => {
@@ -30,8 +31,9 @@ const Prodcut = ({dataInfo}) => {
                         }
                     </ul>
                 </div>
-                <div className="sectionCont">
-                    
+                <div className="sectionCont container">
+                    <ProductList/>
+                    <HotelList/>
                 </div>
                 
             </section>  
