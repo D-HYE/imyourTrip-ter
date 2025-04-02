@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
+
 import PickAirplane from "./PickAirplane";
 
 import {FillterBox} from "../../components/SelectBox"
@@ -8,8 +10,15 @@ import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가�
 export default function PlanMaker() {
     const [isOneWay, setIsOneWay] = useState(false);
 
+
     const toggleOneWay = () => {
         setIsOneWay((prev) => !prev);
+    };
+
+    const [activeTab, setActiveTab] = useState("");
+
+    const handleTabClick = (tabName) => {
+        setActiveTab(tabName);
     };
 
     return (
@@ -24,18 +33,20 @@ export default function PlanMaker() {
                     <li>인원 2명</li>
                 </ul> 
                 <ul className="plan_edit d-flex justify-content-end order-3">
-                    <li><a href="/">수정하기</a></li>
+                    <li><Link to="/">수정하기</Link></li>
                 </ul>           
             </div>
             <div className="tab_content">
                 <ul className="d-flex gap-3">
-                    <li><a href="#none">#항공권</a></li>
-                    <li><a href="#none">#숙소</a></li>
-                    <li><a href="#none">#투어</a></li>
-                    <li><a href="#none">#티켓</a></li>
-                    <li><a href="#none">#랜드마크</a></li>
-                    <li><a href="#none">#교통패스</a></li>
-                    <li className="tripcar_tab"><a href="#none">#트립카</a></li>
+                    {["#항공권", "#숙소", "#투어", "#티켓", "#랜드마크", "#교통패스", "#트립카"].map((tab) => (
+                        <li 
+                            key={tab}
+                            className={`${tab === "#트립카" ? "tripcar_tab" : ""} ${activeTab === tab ? "tabClick" : ""}`} 
+                            onClick={() => handleTabClick(tab)}
+                        >
+                            <Link to="#none">{tab}</Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="plane_title d-flex justify-content-between align-items-center">
@@ -48,26 +59,17 @@ export default function PlanMaker() {
                                     <span className="title">유형</span>
                                 </div>
                                 <ul className="d-flex gap-3">
-                                    <li className="filter_radio d-flex align-items-center gap-1">
-                                        <label className={element.checkbox_label}>
-                                            <input 
-                                                type="checkbox" 
-                                                checked={!isOneWay} 
-                                                onChange={toggleOneWay} 
-                                            />
-                                            <span>왕복</span>
-                                        </label>
-                                    </li>
-                                    <li className="filter_radio d-flex align-items-center gap-1">
-                                        <label className={element.checkbox_label}>
-                                            <input 
-                                                type="checkbox" 
-                                                checked={isOneWay} 
-                                                onChange={toggleOneWay} 
-                                            />
-                                            <span>편도</span>
-                                        </label>
-                                    </li>
+                                    {[
+                                        { label: "왕복", checked: !isOneWay, onChange: toggleOneWay },
+                                        { label: "편도", checked: isOneWay, onChange: toggleOneWay }
+                                    ].map(({ label, checked, onChange }) => (
+                                        <li key={label} className="filter_radio d-flex align-items-center gap-1">
+                                            <label className={element.checkbox_label}>
+                                                <input type="checkbox" checked={checked} onChange={onChange} />
+                                                <span>{label}</span>
+                                            </label>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="d-flex flex-column gap-2">
@@ -75,38 +77,29 @@ export default function PlanMaker() {
                                     <span className="title">경유</span>
                                 </div>
                                 <ul className="d-flex gap-3">
-                                <li className="filter_radio d-flex align-items-center gap-1" >
-                                        <label className={element.checkbox_label}>
-                                            <input type="checkbox" />
-                                            <span>직항</span>
-                                        </label>
-                                    </li>
-                                    <li className="filter_radio d-flex align-items-center gap-1" >
-                                        <label className={element.checkbox_label}>
-                                            <input type="checkbox" />
-                                            <span>1회이상 경유</span>
-                                        </label>
-                                    </li>
+                                    {["직항", "1회이상 경유"].map((label) => (
+                                        <li key={label} className="filter_radio d-flex align-items-center gap-1">
+                                            <label className={element.checkbox_label}>
+                                                <input type="checkbox" />
+                                                <span>{label}</span>
+                                            </label>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="d-flex flex-column gap-2">
                                 <div className="filter_section_title ">
                                     <span className="title">시간대</span>
                                 </div>
-                                <div>
-                                    <p>가는 날</p>
-                                    <span className="time_range">00:00 ~ 24:00</span>
-                                    <div className="timeTable py-2">
-                                        <div id="sliderbar_go"></div>
+                                {["가는 날", "오는 날"].map((day) => (
+                                    <div key={day}>
+                                        <p>{day}</p>
+                                        <span className="time_range">00:00 ~ 24:00</span>
+                                        <div className="timeTable py-2">
+                                            <div id={`sliderbar_${day === "가는 날" ? "go" : "back"}`}></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <p>오는 날</p>
-                                    <span className="time_range">00:00 ~ 24:00</span>
-                                    <div className="timeTable py-2">
-                                        <div  id="sliderbar_back"></div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>                                
                         </FillterBox>
                     </li>

@@ -43,6 +43,11 @@ export const ImgBox = styled.div`
     background: url("/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
     border-radius: ${p => p.borderRadius || "5px"};
     overflow: hidden;
+    a{
+        display: block;
+        height: 100%;
+    }
+        
     @media only screen and (max-width: 768px){
         width: 100%;
     }

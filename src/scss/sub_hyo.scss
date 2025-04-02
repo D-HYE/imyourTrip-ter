@@ -231,11 +231,18 @@
 }
 //항공권 정보
 .plane_list{
+    gap:3rem;
     .plane_left{
+        padding: 20px 20px 40px 20px;
+        border-bottom:2px solid var(--trip-gray1) ;
+        align-items: stretch;
         ul{
             gap: 3.75rem;
             li{
                 gap: 3.75rem;
+                .planeLogo_box{
+                    min-width: 136px;
+                }
                 .planeLogo img{
                     background-size: cover;
                     background-position: center;
@@ -288,9 +295,30 @@
         background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg") no-repeat center/cover;                    
     }
     .heart_icon{
-        background: url("https://trip-ter.vercel.app/img/icon/heart.svg") no-repeat center/cover;
+        background: url("../../public/img/icon/heart_bl.svg") no-repeat center/cover;
     }
 }    
+.plane_right{
+    border-left: 2px solid var(--trip-gray1);
+    .totalPrice span{
+        font-size: var(--mediumbig-text);
+        font-weight: 700;
+    }
+    button{
+        background-color: var(--trip-blue);
+        border-radius: 10px;
+        span{
+            font-size: var(--medium-text);
+            color: var(--trip-yellow);
+            padding: 16px 40px;
+            font-weight: 700;
+        }
+    }
+}
+#airplaneArea{
+    height: 800px;
+    overflow-y: scroll;
+}
 
 #quick{ 
 display:none;

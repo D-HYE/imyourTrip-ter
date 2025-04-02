@@ -48,7 +48,7 @@ const BoardList = ({ boolean, postData }) => {
                 </div>
             </div>
             <div className="board_btn d-flex justify-content-end">
-                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="800">글쓰기</SquareBtn>
+                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">글쓰기</SquareBtn>
             </div>
         </div>                    
     );
