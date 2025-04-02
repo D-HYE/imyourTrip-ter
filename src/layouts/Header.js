@@ -21,12 +21,12 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
     }, []);
   
     const toggleMenu = () => {
-        setIsMenuOpen(prevState => !prevState); // 현재 상태 반전
-        setIsDimVisible(prevState => !prevState); // 현재 상태 반전
+        setIsMenuOpen(prevState => !prevState); 
+        setIsDimVisible(prevState => !prevState); 
         
     };
     const supportMenu = () =>{
-        setSupportOpen(prevState => !prevState); // 현재 상태 반전
+        setSupportOpen(prevState => !prevState);
     }
 
     const handleOutsideClick = (e) => {
@@ -46,24 +46,30 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
     };
   }, []);
 
+  const submenuClick = () => {
+    setIsMenuOpen(false);
+    setSupportOpen(false);
+    setIsDimVisible(false);
+  };
+
   return (
     <header id="hd" className={isScrolled ? 'scrolled' : ''}>
     <div className="header_inner">
       <div id="user" className="trip-bl pc">
         <div className="py-1 container d-flex justify-content-end">
           <ul className="d-flex gap-3 align-items-center">
-            <li>
+            <li class="d-flex">
               <Link to="/user" className="text-white">로그인/회원가입</Link>
             </li>
             <li className="support rel" >
-              <span className={`text-white`} onClick={supportMenu}>
+              <span className="text-white d-flex" onClick={supportMenu}>
                 고객지원
                 <img src="https://trip-ter.vercel.app/img/icon/polygon-1.svg" alt="더보기" />
               </span>
               <ul className={`hide-menu abs ${supportOpen ? '' : 'd-none'}`}>
-                <li><Link to="/">이용가이드</Link></li>
-                <li><Link to="/">FAQ</Link></li>
-                <li><Link to="/">문의게시판</Link></li>
+                <li onClick={submenuClick}><Link to="/service/guide">이용가이드</Link></li>
+                <li onClick={submenuClick}><Link to="/service/faq">FAQ</Link></li>
+                <li onClick={submenuClick}><Link to="/service/ask">문의게시판</Link></li>
               </ul>
             </li>
           </ul>
@@ -144,55 +150,55 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
                 <a className="settings" href="/"><img className="d-block" src="https://trip-ter.vercel.app/img/icon/settings.svg" alt="설정" /></a>
               </div>
               <ul className="menu-icon d-flex justify-content-between">
-                <li><Link to="/user" className="heart" ><img src="https://trip-ter.vercel.app/img/icon/heart_02.svg" className="d-block" alt="내찜" /><span>내 찜</span></Link></li>
-                <li><Link to="/user"><img src="https://trip-ter.vercel.app/img/icon/travel.svg" className="d-block" alt="내여행" /><span>내 여행</span></Link></li>
-                <li><Link to="/user"><img src="https://trip-ter.vercel.app/img/icon/layer.svg" className="d-block" alt="가계부" /><span>내 가계부</span></Link></li>
-                <li><Link to="/user"><img src="https://trip-ter.vercel.app/img/icon/pencil-02.svg" className="d-block" alt="내후기" /><span>내 후기</span></Link></li>
+                <li><Link to="/user" className="heart" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/heart_02.svg" className="d-block" alt="내찜" /><span>내 찜</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/travel.svg" className="d-block" alt="내여행" /><span>내 여행</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/layer.svg" className="d-block" alt="가계부" /><span>내 가계부</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/pencil-02.svg" className="d-block" alt="내후기" /><span>내 후기</span></Link></li>
               </ul>
             </div>
 
             {/* 메뉴리스트 */}
             <div id="hb-list" className="d-flex flex-column">
               <ul className="tapPart d-flex flex-column">
-                <li className="feelter"><Link to="/tripRoute/myFeelter" className="d-flex align-items-center"><span className="text-blue">MY FEEL:TER</span></Link></li>
-                <li className="planner"><Link to="/tripRoute/planMaker" className="d-flex align-items-center"><span className="text-blue">계획짜기</span></Link></li>
+                <li className="feelter" onClick={submenuClick}><Link to="/tripRoute/myFeelter" className="d-flex align-items-center"><span className="text-blue">MY FEEL:TER</span></Link></li>
+                <li className="planner" onClick={submenuClick}><Link to="/tripRoute/planMaker" className="d-flex align-items-center"><span className="text-blue">계획짜기</span></Link></li>
               </ul>
               <div className="d-flex flex-column scroll">
                 <ul className="d-flex communitymenu flex-wrap">
-                  <li><Link to="/tripTalk/findFriend"  className="friendfind" >동행 구해요</Link></li>
-                  <li><Link to="/tripTalk/findPlan" className="planaround">계획 둘러보기</Link></li>
-                  <li><Link to="/tripTalk/findReview" className="reviewaround">후기 둘러보기</Link></li>
+                  <li><Link to="/tripTalk/findFriend"  className="friendfind" onClick={submenuClick}>동행 구해요</Link></li>
+                  <li><Link to="/tripTalk/findPlan" className="planaround" onClick={submenuClick}>계획 둘러보기</Link></li>
+                  <li><Link to="/tripTalk/findReview" className="reviewaround" onClick={submenuClick}>후기 둘러보기</Link></li>
                 </ul>
                 <ul className="d-flex communitymenu flex-wrap">
-                  <li><a className="mbrecomm" href="/">MD추천</a></li>
-                  <li><Link to="/tripterEvent" className="event">이벤트</Link></li>
+                  <li><Link to="/" className="mbrecomm" onClick={submenuClick}>MD추천</Link></li>
+                  <li><Link to="/tripterEvent" className="event" onClick={submenuClick}>이벤트</Link></li>
                 </ul>
                 <ul id="hb-sublist">
                   <li>
-                    <div><a href="/">항공권</a></div>
+                    <div><Link to="/">항공권</Link></div>
                     <ul className="sublist d-flex flex-wrap">
-                      <li><a href="/">특가항공</a></li>
-                      <li><a href="/">국내항공</a></li>
-                      <li><a href="/">국외항공</a></li>
+                      <li><Link to="/"  onClick={submenuClick}>특가항공</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>국내항공</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>국외항공</Link></li>
                     </ul>
                   </li>
                   <li>
-                    <div><a href="/">숙소</a></div>
+                    <div><Link to="/">숙소</Link></div>
                     <ul className="sublist d-flex flex-wrap">
-                      <li><a href="/">특가숙소</a></li>
-                      <li><a href="/">호텔</a></li>
-                      <li><a href="/">게스트하우스</a></li>
-                      <li><a href="/">펜션&캠핑</a></li>
+                      <li><Link to="/"  onClick={submenuClick}>특가숙소</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>호텔</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>게스트하우스</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>펜션&캠핑</Link></li>
                     </ul>
                   </li>
                   <li>
-                    <div><a href="/">티켓&투어</a></div>
+                    <div><Link to="/">티켓&투어</Link></div>
                     <ul id="ticket" className="sublist d-flex flex-wrap">
-                      <li><a className="allPass text-blue" href="/">올패스권</a></li>
-                      <li><a href="/">현지투어</a></li>
-                      <li><a href="/">테마파크</a></li>
-                      <li><a href="/">전시체험</a></li>
-                      <li><a href="/">철도여행</a></li>
+                      <li><Link className="allPass text-blue" to="/"  onClick={submenuClick}>올패스권</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>현지투어</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>테마파크</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>전시체험</Link></li>
+                      <li><Link to="/"  onClick={submenuClick}>철도여행</Link></li>
                     </ul>
                   </li>
                 </ul>

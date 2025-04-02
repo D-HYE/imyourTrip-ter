@@ -25,6 +25,11 @@
     a{
         font-size: var(--m-small-text);
     }
+    .support > span {
+        gap: 0.5rem;
+        cursor: pointer;
+
+    }
 }
 .hide-menu{
     width: 5rem;
