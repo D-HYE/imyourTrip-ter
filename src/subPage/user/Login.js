@@ -29,27 +29,27 @@ export default function Login() {
                 <ul className="d-flex">
                     <li id="naver">
                         <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
-                            <img src="https://trip-ter.vercel.app/img/logo/btn_naver.svg" alt=""/>
+                            <img src="https://d-hye.github.io/source/img/logo/btn_naver.svg" alt=""/>
                         </a>
                     </li>
                     <li id="kakao">
                         <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D21037dbe-09a9-4ce9-ab52-668e3ce85ff9#login">
-                        <img src="https://trip-ter.vercel.app/img/logo/btn_kakao.svg" alt=""/>
+                        <img src="https://d-hye.github.io/source/img/logo/btn_kakao.svg" alt=""/>
                         </a>
                     </li>
                     <li id="facebook">
                         <a href="https://www.facebook.com/?locale=ko_KR">
-                            <img src="https://trip-ter.vercel.app/img/logo/btn_facebook.svg" alt=""/>
+                            <img src="https://d-hye.github.io/source/img/logo/btn_facebook.svg" alt=""/>
                         </a>
                     </li>
                     <li id="google">
                         <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%25EA%25B5%25AC%25EA%25B8%2580%26oq%3D%25EA%25B5%25AC%25EA%25B8%2580%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOdIBBzQyNGowajGoAgCwAgA%26sourceid%3Dchrome%26ie%3DUTF-8%26sei%3DF8nHZ6b2FeGPvr0P_eqByAo&ec=GAZAAQ&hl=ko&ifkv=ASSHykpb5b2-iZDmyWCclyinka_eSS3zaRNJoUFq_7PSfC5yQT0uBiOSFLzk5xAXPcoZIO_UnYan&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1677412365%3A1741146394235713&ddm=1">
-                            <img src="https://trip-ter.vercel.app/img/logo/btn_google.svg" alt=""/>
+                            <img src="https://d-hye.github.io/source/img/logo/btn_google.svg" alt=""/>
                         </a>
                     </li>
                     <li id="apple">
                         <a href="#none">
-                            <img src="https://trip-ter.vercel.app/img/logo/btn_apple.svg" alt=""/>
+                            <img src="https://d-hye.github.io/source/img/logo/btn_apple.svg" alt=""/>
                         </a>
                     </li>
                 </ul>

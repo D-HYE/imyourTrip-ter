@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SquareBtn } from '../../styleComponents/ui';
 
+
 const PickAirplane = ({ hyodata, isOneWay }) => {
     const airplane = hyodata["airplane"];
     const [selectedAirlines, setSelectedAirlines] = useState([]);
@@ -13,6 +14,7 @@ const PickAirplane = ({ hyodata, isOneWay }) => {
 
         const roundTripProducts = airplane["flightproduct"].filter(product => product.back);
 
+        // 랜덤으로 4개의 항공사 선택
         for (let i = 0; i < 5; i++) {
             const randomAirlineKey = airlineKeys[Math.floor(Math.random() * airlineKeys.length)];
             randomAirlines.push(airplane["airways"][randomAirlineKey]);

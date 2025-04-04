@@ -43,7 +43,7 @@ export const GalleryStyle = ({postData}) => {
                 {postData.map(data => (
                     <li key={`post${data.tripSpot}`}>
                         <div className="">
-                            <ImgBox className='rel' height="15rem">
+                            <ImgBox className='rel img_box' height="15rem">
                                 <Link to={`${path.pathname}/${data.postID}`}>
                                 {data.src && <img src={`${data.src}`} alt={`${data.tripSpot}`}></img>}
                                 <div className="float_info abs"><b>{data.tripSpot}</b></div></Link>

@@ -12,7 +12,7 @@ function Section7() {
                 <div className="txt_box">
                     <h2>나보다 나를 더 잘 아는 <span>최고의 여행 메이트</span></h2>
                     <div className="logo">
-                        <img src="https://trip-ter.vercel.app/img/logo/logo_TRT_wh.svg" alt="트립:터"/>
+                        <img src="https://d-hye.github.io/source/img/logo/logo_TRT_wh.svg" alt="트립:터"/>
                     </div>
                 </div>
             </div>

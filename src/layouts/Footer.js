@@ -4,7 +4,7 @@ const Footer = () => {
         <div className="footerArea">
             <footer id="ft">
                 <div className="ftcontainer">
-                    <img src="/img/logo/logo_TRT_basic.svg" className="ftlogo"/>
+                    <img src="https://d-hye.github.io/source/img/logo/logo_TRT_basic.svg" alt="트립터" className="ftlogo"/>
                     <div>
                         <div className="footer_menu">
                             <ul>

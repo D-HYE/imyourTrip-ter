@@ -54,7 +54,7 @@ const BoardView = ({postData}) => {
             <BoardComment/>
             <div className="board_btn d-flex justify-content-center gap-2">
                 <SquareBtn background="var(--trip-gray1)">목록으로</SquareBtn>
-                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="800">수정하기</SquareBtn>
+                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">수정하기</SquareBtn>
             </div>
         </div>
     );

@@ -64,7 +64,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
             <li className="support rel" >
               <span className="text-white d-flex" onClick={supportMenu}>
                 고객지원
-                <img src="./img/icon/polygon-1.svg" alt="더보기" />
+                <img src="https://d-hye.github.io/source/img/icon/polygon-1.svg" alt="더보기" />
               </span>
               <ul className={`hide-menu abs ${supportOpen ? '' : 'd-none'}`}>
                 <li onClick={submenuClick}><Link to="/service/guide">이용가이드</Link></li>
@@ -80,13 +80,13 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
         <div id="gnb" className="container d-flex justify-content-between align-items-center">
           <h1 className="logo order-2 mx-auto">
             <Link to="/">
-              <img src="./img/logo/logo_TRT_basic.svg" alt="트립터" />
+              <img src="https://d-hye.github.io/source/img/logo/logo_TRT_basic.svg" alt="트립터" />
               <span className="d-none">트립터</span>
             </Link>
             </h1>
             <div className="hb-iconbox">
               <button id="hb-icon" className="p-0" onClick={toggleMenu}>
-                <img src="./img/icon/menu-all.svg" alt="메뉴" />
+                <img src="https://d-hye.github.io/source/img/icon/menu-all.svg" alt="메뉴" />
               </button>
             </div>
 
@@ -102,18 +102,18 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
               <li className="search">
                 <form action="/" className="d-flex align-items-center">
                   <input type="text" className={`search-bar pc ${isScrolled ? 'scrolled' : ''}`} name="search" placeholder="눈의 나라 훗카이도로~!" />
-                  <input type="image" className="search-icon py-0" src="./img/icon/search-02.svg" alt="검색" />
+                  <input type="image" className="search-icon py-0" src="https://d-hye.github.io/source/img/icon/search-02.svg" alt="검색" />
                 </form>
               </li>
               <li>
-                <button className="wishlist-btn p-0"><Link to="/"><img src="./img/icon/travel_bl.svg" alt="찜" /></Link></button>
+                <button className="wishlist-btn p-0"><Link to="/"><img src="https://d-hye.github.io/source/img/icon/travel_bl.svg" alt="찜" /></Link></button>
               </li>
             </ul>
           </div>
           <div id="mb-searchbox" className="d-none mb">
             <form action="/" className="mb-search d-flex align-items-center justify-content-end">
               <input type="text" className="mb-searchbar" name="search" placeholder="눈의 나라 훗카이도로~!" />
-              <input type="image" className="mb-searchicon" src="./img/icon/search-01.svg" alt="검색" />
+              <input type="image" className="mb-searchicon" src="https://d-hye.github.io/source/img/icon/search-01.svg" alt="검색" />
             </form>
           </div>
         </div>
@@ -123,7 +123,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
           <div id="hb-item" className="d-flex flex-column">
             <div className="d-flex justify-content-end">
               <button className="p16 mx-1" id="allMenuclose" onClick={toggleMenu}>
-                <img src="./img/icon/x-01.svg" className="d-block" alt="닫기" />
+                <img src="https://d-hye.github.io/source/img/icon/x-01.svg" className="d-block" alt="닫기" />
               </button>
             </div>
 
@@ -133,9 +133,9 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
                 <span>로그인/회원가입</span>
               </div>
               <ul className="social-icon d-flex justify-content-center gap-3">
-                <li><a className="naver" href="/"><img src="./img/icon/naver.svg" alt="naver" /></a></li>
-                <li><a className="kakao" href="/"><img src="./img/icon/kakao.svg" alt="kakao" /></a></li>
-                <li><a className="google" href="/"><img src="./img/icon/google.svg" alt="google" /></a></li>
+                <li><a className="naver" href="/"><img src="https://d-hye.github.io/source/img/icon/naver.svg" alt="naver" /></a></li>
+                <li><a className="kakao" href="/"><img src="https://d-hye.github.io/source/img/icon/kakao.svg" alt="kakao" /></a></li>
+                <li><a className="google" href="/"><img src="https://d-hye.github.io/source/img/icon/google.svg" alt="google" /></a></li>
               </ul>
             </div>
 
@@ -147,13 +147,13 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
                   <div className="hi"><span>안녕하세요!</span></div>
                   <div>트립터<span className="username">###</span>님</div>
                 </div>
-                <a className="settings" href="/"><img className="d-block" src="./img/icon/settings.svg" alt="설정" /></a>
+                <a className="settings" href="/"><img className="d-block" src="https://d-hye.github.io/source/img/icon/settings.svg" alt="설정" /></a>
               </div>
               <ul className="menu-icon d-flex justify-content-between">
-                <li><Link to="/user" className="heart" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/heart_02.svg" className="d-block" alt="내찜" /><span>내 찜</span></Link></li>
-                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/travel.svg" className="d-block" alt="내여행" /><span>내 여행</span></Link></li>
-                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/layer.svg" className="d-block" alt="가계부" /><span>내 가계부</span></Link></li>
-                <li><Link to="/user" onClick={submenuClick}><img src="https://trip-ter.vercel.app/img/icon/pencil-02.svg" className="d-block" alt="내후기" /><span>내 후기</span></Link></li>
+                <li><Link to="/user" className="heart" onClick={submenuClick}><img src="https://d-hye.github.io/source/img/icon/heart_02.svg" className="d-block" alt="내찜" /><span>내 찜</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://d-hye.github.io/source/img/icon/travel.svg" className="d-block" alt="내여행" /><span>내 여행</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://d-hye.github.io/source/img/icon/layer.svg" className="d-block" alt="가계부" /><span>내 가계부</span></Link></li>
+                <li><Link to="/user" onClick={submenuClick}><img src="https://d-hye.github.io/source/img/icon/pencil-02.svg" className="d-block" alt="내후기" /><span>내 후기</span></Link></li>
               </ul>
             </div>
 

@@ -1,6 +1,4 @@
 
-import img404 from "../img/error_bg.svg"
-
 export default function NotFound() {
     return (
         <main className="subMain page_error">
@@ -16,7 +14,7 @@ export default function NotFound() {
                             <button onClick={() => (window.location.href = "/") } className="button2">메인으로</button>
                         
                     </div>
-                    <img src={img404} alt="404 Error" />
+                    <img src="https://d-hye.github.io/source/img/illustrator/error_bg.svg" alt="404 Error" />
             </div>
         </main>
     );

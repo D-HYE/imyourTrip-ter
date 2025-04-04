@@ -4,7 +4,7 @@
     .sectionBanner{
         height: 18.75rem; padding-top: 6.25rem;
         text-align: center;
-        background: url("../../public/img/main_img/mainslide2.jpg") no-repeat center/cover;
+        background: url("https://d-hye.github.io/source/img/main_img/mainslide2.jpg") no-repeat center/cover;
         h3{
             margin-bottom: 2rem;
             font-family: var(--theJamsil-bold); font-size: var(--main-slide); 
@@ -23,13 +23,13 @@
                 span{ 
                     display: block;
                     width: 24px; height: 24px; margin-left: 0.625rem;
-                    background: url("../../public/img/icon/tab_icon/feelter.svg") no-repeat center/contain;
+                    background: url("https://d-hye.github.io/source/img/icon/tab_icon/feelter.svg") no-repeat center/contain;
                 }
             }
             .active a{ 
                 color: var(--trip-blue);
                 span{
-                    background-image: url("../../public/img/icon/tab_icon/c_feelter.svg");
+                    background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_feelter.svg");
                 }
             }
         }
@@ -49,13 +49,13 @@
             position: absolute; top: 10px; left: 0px;
             display: block;
             width: 24px; height: 24px;
-            background: url("../../public/img/icon/three-slider-horizontal.svg") no-repeat center/18px;
+            background: url("https://d-hye.github.io/source/img/icon/three-slider-horizontal.svg") no-repeat center/18px;
 
         }
         .arrow{
             display: block;
             width: 24px; height: 24px;
-            background: url("../../public/img/icon/polygon-bk.svg") no-repeat center/contain;
+            background: url("https://d-hye.github.io/source/img/icon/polygon-bk.svg") no-repeat center/contain;
         }
     }
     .option_list{
@@ -76,7 +76,7 @@
         .select_btn{
             .arrow{
                 transform: rotate(180deg);
-                //background-image: url("../../public/img/icon/polygon-bl.svg");
+                //background-image: url("https://d-hye.github.io/source/img/icon/polygon-bl.svg");
             }
         }
         .option_list{display: block;}
@@ -87,7 +87,7 @@
     .user_profile{
         width: 3.75rem;
         height: 3.75rem;
-        background: url("../../public/img/icon/user-profile-02.svg") no-repeat center/2.5rem, var(--trip-skyblue);
+        background: url("https://d-hye.github.io/source/img/icon/user-profile-02.svg") no-repeat center/2.5rem, var(--trip-skyblue);
         border-radius: 50%;
     }
 }
@@ -95,20 +95,20 @@
 .board_area{
     .icon_box{
         width: 24px; height: 24px;
-        background: url("../../public/img/icon/list.svg") no-repeat center/contain;
+        background: url("https://d-hye.github.io/source/img/icon/list.svg") no-repeat center/contain;
         text-indent: -10000px;
     }
     .board_filter{
         padding: 0 0.625rem;
         .icon1{
             &.active{
-                background-image: url("../../public/img/icon/list_active.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/list_active.svg");
             }
         }
         .icon2{
-            background-image: url("../../public/img/icon/gallery_list.svg");
+            background-image: url("https://d-hye.github.io/source/img/icon/gallery_list.svg");
             &.active{
-                background-image: url("../../public/img/icon/gallery_list_active.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/gallery_list_active.svg");
             }
         }
     }
@@ -179,7 +179,7 @@
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        background: url("../../public/img/icon/marker.svg") no-repeat left/24px;
+                        background: url("https://d-hye.github.io/source/img/icon/marker.svg") no-repeat left/24px;
                     }
                 }
                 .desc_box{
@@ -225,9 +225,9 @@
                                 }
                                 .rating{
                                     width: 16px; height: 16px;
-                                    background: url("../../public/img/icon/rate_off.svg") no-repeat center/contain;
+                                    background: url("https://d-hye.github.io/source/img/icon/rate_off.svg") no-repeat center/contain;
                                     &.giveStar{
-                                        background-image: url("../../public/img/icon/rate_on.svg");
+                                        background-image: url("https://d-hye.github.io/source/img/icon/rate_on.svg");
                                     }
                                 }
                             }
@@ -260,17 +260,17 @@
                             i{
                                 display: block;
                                 width: 16px; height: 16px;
-                                background: url("../../public/img/icon/heart_gr.svg") no-repeat center/contain;
+                                background: url("https://d-hye.github.io/source/img/icon/heart_gr.svg") no-repeat center/contain;
                             }
                             span{
                                 font-size: var(--desc-text);
                                 color: var(--trip-gray3);
                             }
                             &.commentCount i{
-                                background-image: url("../../public/img/icon/comment.svg");
+                                background-image: url("https://d-hye.github.io/source/img/icon/comment.svg");
                             }
                             &.viewCount i{
-                                background-image: url("../../public/img/icon/view.svg");
+                                background-image: url("https://d-hye.github.io/source/img/icon/view.svg");
                             }
                         }
                     }
@@ -278,7 +278,7 @@
                 .img_box{
                     width: 12.5rem;
                     height: 12.5rem;
-                    background: url("../../public/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
+                    background: url("https://d-hye.github.io/source/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
                     border-radius: 5px;
                 }
             }
@@ -287,10 +287,10 @@
     .board_pagenation{
         padding-top: 30px;
         .icon1{
-            background-image: url("../../public/img/icon/polygon-left-gr.svg");
+            background-image: url("https://d-hye.github.io/source/img/icon/polygon-left-gr.svg");
         }
         .icon2{
-            background-image: url("../../public/img/icon/polygon-right-bl.svg");
+            background-image: url("https://d-hye.github.io/source/img/icon/polygon-right-bl.svg");
         }
         .num{
             color: var(--trip-gray3);
@@ -378,7 +378,7 @@
 
 .product_item{
     .img_box a{
-        background: url("../../public/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
+        background: url("https://d-hye.github.io/source/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
         border-radius: 5px;
         overflow: hidden;
     }
