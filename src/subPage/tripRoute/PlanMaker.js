@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
 import PickAirplane from "./PickAirplane";
+import Wishlist from "../user/Wishlist";
 
 import {FillterBox} from "../../components/SelectBox"
 import element from "../../scss/elements.module.scss"
@@ -22,6 +23,8 @@ export default function PlanMaker() {
     };
 
     return (
+        <>
+        <Wishlist></Wishlist>
         <div className="container">
             <div className="plan_info d-flex align-items-center">
                 <ul className="d-flex order-1">
@@ -111,5 +114,6 @@ export default function PlanMaker() {
             </div>
             <PickAirplane hyodata={hyodata} isOneWay={isOneWay} />
         </div>
+        </>
     );
 }

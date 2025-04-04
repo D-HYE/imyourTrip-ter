@@ -77,7 +77,6 @@
     }
 }
 //계획짜기_항공
-
 .wishlist_quick{   
         background-color: var(--trip-yellow);
         width: 64px;
@@ -292,10 +291,15 @@
         height: 24px;
     }
     .share_icon{
-        background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg") no-repeat center/cover;                    
+        background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg") no-repeat center/cover;
+                            
     }
+
     .heart_icon{
-        background: url("../../public/img/icon/heart_bl.svg") no-repeat center/cover;
+        background: url("../../public/img/icon/heart.svg") no-repeat center/cover;
+        &.Heart{
+            background: url("../../public/img/icon/heart_bl.svg") no-repeat center/cover;
+        }
     }
 }    
 .plane_right{
@@ -304,22 +308,58 @@
         font-size: var(--mediumbig-text);
         font-weight: 700;
     }
-    button{
-        background-color: var(--trip-blue);
-        border-radius: 10px;
-        span{
-            font-size: var(--medium-text);
-            color: var(--trip-yellow);
-            padding: 16px 40px;
-            font-weight: 700;
-        }
-    }
 }
 #airplaneArea{
     height: 800px;
     overflow-y: scroll;
 }
+//장바구니퀵메뉴
+.wishlist_quick{   
+    background-color: var(--trip-yellow);
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50px;
+   .wishlist_quickicon{
+       background: url('https://trip-ter.vercel.app/img/icon/bag-03.svg') no-repeat center/cover;
+       width: 32px;
+       aspect-ratio: 1 / 1;
+   }
+}
+.wishlist_list{
+    .wishlist_title{
+        background-color: var(--trip-yellow);
+        border-radius: 20px 20px 0 0;
+        p{
+            
+            font-size: var(--mediumbig-text);
+        }
+    }
+    .wishlist_user_info div{
+        border-bottom: 1px solid var(--trip-gray2);
+        .small_title{
+            font-size: var(--small-text);
+            color: var(--trip-gray3);
+        }
+        .wishlist-info-item{
+            font-size: var(--medium-text);
+            font-weight: 700;
+        }
+    }
+    .wishlist_items{
+        padding: 1.25rem;
+        .semismall_text{
+            font-size: var(--semismall-text);
+            font-weight: 700
+        }
+        .medium_text{
+            font-size: var(--medium-text);
+        }
+    }
+    .wishlist_button{
+    }
+}
 
+//퀵메뉴
 #quick{ 
 display:none;
 }

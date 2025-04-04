@@ -22,7 +22,7 @@ const ProductList = () => {
                         </div>
                     </Link>
                     <div>
-                        <SquareBtn padding={[1, 2.5]} fontSize="var(--semismall-text)" fontWeight="800" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <SquareBtn padding={[1, 2.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@ export const HotelList = () => {
                         </div>
                     </Link>
                     <div>
-                        <SquareBtn width="100%" padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="800" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <SquareBtn width="100%" padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { SquareBtn } from '../../styleComponents/ui';
 
 const PickAirplane = ({ hyodata, isOneWay }) => {
     const airplane = hyodata["airplane"];
@@ -13,7 +13,6 @@ const PickAirplane = ({ hyodata, isOneWay }) => {
 
         const roundTripProducts = airplane["flightproduct"].filter(product => product.back);
 
-        // 랜덤으로 4개의 항공사 선택
         for (let i = 0; i < 5; i++) {
             const randomAirlineKey = airlineKeys[Math.floor(Math.random() * airlineKeys.length)];
             randomAirlines.push(airplane["airways"][randomAirlineKey]);
@@ -26,6 +25,10 @@ const PickAirplane = ({ hyodata, isOneWay }) => {
         setSelectedAirlines(randomAirlines);
         setSelectedProducts(randomProducts);
     }, [airplane]);
+const [isHeart, setIsHeart] = useState(false);
+const toggleHeart = (index) => {
+    setIsHeart((prev) =>({...prev,[index]:!prev[index]}) );}
+
 
     return (
         <div className="plane_list d-flex flex-column" id="airplaneArea">
@@ -81,12 +84,12 @@ const PickAirplane = ({ hyodata, isOneWay }) => {
                     </li>
                     )}
                 </ul>
-                <div class="share_heart_group d-flex align-items-end gap-1">
-                    <button class="share-btn" alt="공유">
-                        <span class="share_icon"></span>
+                <div className="share_heart_group d-flex align-items-end gap-1">
+                    <button className="share-btn" alt="공유">
+                        <span className="share_icon"></span>
                     </button>
-                    <button class="heart-btn" alt="찜">
-                        <span class="heart_icon"></span>
+                    <button className="heart-btn" alt="찜" onClick={()=>toggleHeart(index)}>
+                        <span className={isHeart[index] ? "heart_icon Heart" : "heart_icon"}></span>
                     </button>
                 </div>   
                 <div className="plane_right d-flex flex-column justify-content-end align-items-end gap-3 px-2">
@@ -96,13 +99,13 @@ const PickAirplane = ({ hyodata, isOneWay }) => {
                             .toLocaleString()}</span>
                     ) : (
                         <span>
-                            ₩{(parseInt(selectedProducts[index]?.go?.price.replace(',', '')) + 
+                            ₩{(parseInt(selectedProducts[index]?.go?.price.replace(',', '')) +
                             parseInt(selectedProducts[index]?.back?.price.replace(',', '')))
                             .toLocaleString()}
                         </span>
                     )}
                     </p>
-                    <button><span>계획에 담기</span></button>
+                    <SquareBtn padding={[1, 2.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
                 </div>
             </div>
             ))}

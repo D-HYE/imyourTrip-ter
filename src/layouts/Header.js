@@ -58,7 +58,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
       <div id="user" className="trip-bl pc">
         <div className="py-1 container d-flex justify-content-end">
           <ul className="d-flex gap-3 align-items-center">
-            <li>
+            <li className="d-flex">
               <Link to="/user" className="text-white">로그인/회원가입</Link>
             </li>
             <li className="support rel" >
@@ -175,30 +175,30 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
                 </ul>
                 <ul id="hb-sublist">
                   <li>
-                    <div><Link to="/products/airplane/onSale">항공권</Link></div>
+                    <div><Link to="/products/airplane/onSale" onClick={submenuClick} >항공권</Link></div>
                     <ul className="sublist d-flex flex-wrap">
-                      <li><Link to="/products/airplane/onSale">특가항공</Link></li>
-                      <li><Link to="/products/airplane/domestic">국내항공</Link></li>
-                      <li><Link to="/products/airplane/overseas">국외항공</Link></li>
+                      <li><Link to="/products/airplane/onSale" onClick={submenuClick}>특가항공</Link></li>
+                      <li><Link to="/products/airplane/domestic" onClick={submenuClick}>국내항공</Link></li>
+                      <li><Link to="/products/airplane/overseas" onClick={submenuClick}>국외항공</Link></li>
                     </ul>
                   </li>
                   <li>
-                    <div><Link to="/products/accommodation/onSale">숙소</Link></div>
+                    <div><Link to="/products/accommodation/onSale" onClick={submenuClick}>숙소</Link></div>
                     <ul className="sublist d-flex flex-wrap">
-                      <li><Link to="/products/accommodation/onSale">특가숙소</Link></li>
-                      <li><Link to="/products/accommodation/hotel">호텔</Link></li>
-                      <li><Link to="/products/accommodation/guestHouse">게스트하우스</Link></li>
-                      <li><Link to="/products/accommodation/countryside">펜션&캠핑</Link></li>
+                      <li><Link to="/products/accommodation/onSale" onClick={submenuClick}>특가숙소</Link></li>
+                      <li><Link to="/products/accommodation/hotel" onClick={submenuClick}>호텔</Link></li>
+                      <li><Link to="/products/accommodation/guestHouse" onClick={submenuClick}>게스트하우스</Link></li>
+                      <li><Link to="/products/accommodation/countryside" onClick={submenuClick}>펜션&캠핑</Link></li>
                     </ul>
                   </li>
                   <li>
-                    <div><Link to="/products/reservation/allPass">티켓&투어</Link></div>
+                    <div><Link to="/products/reservation/allPass" onClick={submenuClick}>티켓&투어</Link></div>
                     <ul id="ticket" className="sublist d-flex flex-wrap">
-                      <li><Link className="allPass text-blue" to="/products/reservation/allPass">올패스권</Link></li>
-                      <li><Link to="/products/reservation/localTour">현지투어</Link></li>
-                      <li><Link to="/products/reservation/themePark">테마파크</Link></li>
-                      <li><Link to="/products/reservation/ticket">전시체험</Link></li>
-                      <li><Link to="/products/reservation/train">철도여행</Link></li>
+                      <li><Link className="allPass text-blue" to="/products/reservation/allPass" onClick={submenuClick}>올패스권</Link></li>
+                      <li><Link to="/products/reservation/localTour" onClick={submenuClick}>현지투어</Link></li>
+                      <li><Link to="/products/reservation/themePark" onClick={submenuClick}>테마파크</Link></li>
+                      <li><Link to="/products/reservation/ticket" onClick={submenuClick}>전시체험</Link></li>
+                      <li><Link to="/products/reservation/train" onClick={submenuClick}>철도여행</Link></li>
                     </ul>
                   </li>
                 </ul>
