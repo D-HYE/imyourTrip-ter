@@ -3,7 +3,7 @@ function Section3() {
         <div className="section section3">
             <div id="trt_info" className="container d-flex justify-content-between align-items-end">
                 <div className="img_box d-flex justify-content-center align-items-end  pc">
-                    <img src="https://trip-ter.vercel.app/img/illustrator/trtillustrator.png" alt="당신을 위한 플랫폼"/>
+                    <img src="https://d-hye.github.io/source/img/illustrator/trtillustrator.png" alt="당신을 위한 플랫폼"/>
                 </div>
                 <div className="txt_box">
                     <h3>J이고 싶은 P, <span>당신을 위한 플랫폼</span></h3>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 
 import MyFeelter from "./tripRoute/MyFeelter";
@@ -10,20 +10,42 @@ import Event3 from "./event/Event3";
 import Event4 from "./event/Event4";
 
 import Guide from "./service/Guide"
-import Ask from "./service/Ask"
 import FAQ from "./service/FAQ"
 
 import BoardList from "../components/BoardList"
 import ReviewList from "../components/ReviewList"
 import BoardView from "../components/BoardView"
 
+import { fetchPostData } from "../api"
 import testData from "../data/dummydata.json"
+
+
+
 
 
 export default function SubContent ({ activeTab }) {
     const { postID } = useParams();
-
+    const [postData, setPostData] = useState([]);
     let content;
+
+    useEffect(() => {
+    
+        const fetchData = async () => {
+            try {
+            const data = await fetchPostData(activeTab);
+            setPostData([...data]);
+            } catch (error) {
+            console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+       
+        if (activeTab === 'findFriend') {
+            fetchPostData(activeTab); //
+        }
+    }, [activeTab])
+
 
     switch (activeTab) {
         //tripRoute
@@ -40,7 +62,6 @@ export default function SubContent ({ activeTab }) {
             content = !postID 
                 ? <BoardList boolean={false} postData={postData} />
                 : <BoardView postID={postID} postData={postData.find(post => post.postID === postID)} />;
-            
             break;
         }
 
@@ -49,7 +70,6 @@ export default function SubContent ({ activeTab }) {
             break;
 
         case 'findFriend': {
-            const postData = testData["findFriend"];
             content = !postID 
                 ? <BoardList boolean={true} postData={postData} />
                 : <BoardView postID={postID} postData={postData.find(post => post.postID === postID)} />;

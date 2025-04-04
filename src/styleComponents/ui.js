@@ -40,7 +40,7 @@ export const IconBtn = styled.button`
 export const ImgBox = styled.div`
     width: ${p => p.width || "100%"};
     height: ${p => p.height || "100%"};
-    background: url("/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
+    background: url("https://d-hye.github.io/source/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
     border-radius: ${p => p.borderRadius || "5px"};
     overflow: hidden;
     a{

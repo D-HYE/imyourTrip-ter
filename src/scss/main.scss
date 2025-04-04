@@ -5,14 +5,14 @@
 .swiper-button-prev,
 .swiper-button-next{
     width: 78px; height: 78px;
-    background: url("https://trip-ter.vercel.app/img/icon/arrow-left.svg") no-repeat 15px 50%/48px, var(--trip-blue); border-radius: 40px;
+    background: url("https://d-hye.github.io/source/img/icon/arrow-left.svg") no-repeat 15px 50%/48px, var(--trip-blue); border-radius: 40px;
     text-indent: -9999px;
     transition: .3s;
 
     &:hover{width: 156px;}
 }
 .swiper-button-next{
-    background-image: url("https://trip-ter.vercel.app/img/icon/arrow-right.svg");
+    background-image: url("https://d-hye.github.io/source/img/icon/arrow-right.svg");
     background-position: calc(100% - 15px) 50%;
 }
 
@@ -183,7 +183,7 @@
         li{
             width: 23.077%; height: 22.917vw;
             border-radius: 15px; overflow: hidden;
-            background: url("https://trip-ter.vercel.app/img/review/review3.jpg") no-repeat center/cover;
+            background: url("https://d-hye.github.io/source/img/review/review3.jpg") no-repeat center/cover;
 
             a{
                 flex-direction: column;
@@ -316,7 +316,7 @@
 /* section7 */
 .section7{
     position: relative;
-    background: url("https://trip-ter.vercel.app/img/main_img/bgimg1.jpg") no-repeat right center/cover;
+    background: url("https://d-hye.github.io/source/img/main_img/bgimg1.jpg") no-repeat right center/cover;
     .container{
         height: 27.5rem;
         .qrimg{

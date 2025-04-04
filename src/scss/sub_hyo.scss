@@ -5,10 +5,10 @@
         .back_btn{
             width: 2rem;
             height: 2rem;
-            background: url("../../public/img/icon/arrow-left_black.svg") no-repeat center/contain;
+            background: url("https://d-hye.github.io/source/img/icon/arrow-left_black.svg") no-repeat center/contain;
             cursor: pointer;
             &.none-active{
-                background-image: url("../../public/img/icon/arrow-left_gray.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/arrow-left_gray.svg");
                 cursor: default;
             }
         }
@@ -35,7 +35,7 @@
             width: 100%;
             height: 100%;
             border-radius: 1.25rem;
-            background:url('../../public/img/myfeelterimage/1-1.jpg') no-repeat center/cover;
+            background:url('https://d-hye.github.io/source/img/myfeelterimage/1-1.jpg') no-repeat center/cover;
             cursor: pointer;
             &::before{
                 content: "";
@@ -84,7 +84,7 @@
         aspect-ratio: 1 / 1;
         border-radius: 50px;
     .wishlist_icon{
-        background: url('../../public/img/icon/bag-03.svg') no-repeat center/cover;
+        background: url('https://d-hye.github.io/source/img/icon/bag-03.svg') no-repeat center/cover;
         width: 32px;
         aspect-ratio: 1 / 1;
     }
@@ -292,10 +292,10 @@
         height: 24px;
     }
     .share_icon{
-        background: url("https://trip-ter.vercel.app/img/icon/tab_icon/upload.svg") no-repeat center/cover;                    
+        background: url("https://d-hye.github.io/source/img/icon/tab_icon/upload.svg") no-repeat center/cover;                    
     }
     .heart_icon{
-        background: url("../../public/img/icon/heart_bl.svg") no-repeat center/cover;
+        background: url("https://d-hye.github.io/source/img/icon/heart_bl.svg") no-repeat center/cover;
     }
 }    
 .plane_right{

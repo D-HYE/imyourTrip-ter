@@ -2,7 +2,7 @@
     .sectionBanner{
         height: 246px;
         margin-bottom: 40px;
-        background-image: url("../../public/img/banner/banner_img1.jpg");
+        background-image: url("https://d-hye.github.io/source/img/banner/banner_img1.jpg");
     }
     .signup_area{
         max-width: 500px;
@@ -146,10 +146,10 @@
     .sectionList ul{
         li:last-child{
             a span{
-                background-image: url("../../public/img/icon/tab_icon/makeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/makeplan.svg");
             }
             &.active a span{
-                background-image: url("../../public/img/icon/tab_icon/c_makeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_makeplan.svg");
             }
         }
     }
@@ -165,26 +165,26 @@ section:not(.findReviewSection) .board_area.container_m,
     .sectionList ul{
         li:nth-child(1){
             a span{
-                background-image: url("../../public/img/icon/tab_icon/seeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/seeplan.svg");
             }
             &.active a span{
-                background-image: url("../../public/img/icon/tab_icon/c_seeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_seeplan.svg");
             }
         }
         li:nth-child(2){
             a span{
-                background-image: url("../../public/img/icon/tab_icon/community.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/community.svg");
             }
             &.active a span{
-                background-image: url("../../public/img/icon/tab_icon/c_community.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_community.svg");
             }
         }
         li:nth-child(3){
             a span{
-                background-image: url("../../public/img/icon/tab_icon/accompany.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/accompany.svg");
             }
             &.active a span{
-                background-image: url("../../public/img/icon/tab_icon/c_accompany.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_accompany.svg");
             }
         }
     }

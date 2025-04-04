@@ -3,31 +3,31 @@
       "airways": {
         "AS": {
           "name": "에어서울",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_airseoul.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_airseoul.png"
         },
         "OZ": {
           "name": "아시아나항공",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_asiana.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_asiana.png"
         },
         "JN": {
           "name": "진에어",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jinair.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_jinair.png"
         },
         "ZE": {
           "name": "이스타항공",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_estar.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_estar.png"
         },
         "KE": {
           "name": "대한항공",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_koreanair.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_koreanair.png"
         },
         "7C": {
           "name": "제주항공",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_jeju.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_jeju.png"
         },
         "TW": {
           "name": "티웨이항공",
-          "logo": "https://trip-ter.vercel.app/img/sub_img/planmaker/airplane_tway.png"
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_tway.png"
         }
       },
       "flightproduct": [

@@ -54,15 +54,15 @@ export default function Section1({slideData}){
                             <p>나의 여행 스타일 설정하기</p>
                         </div>
                         <div className="img_box d-flex">
-                            <img src="https://trip-ter.vercel.app/img/icon/arrow-right.svg" alt="arrow"/>
+                            <img src="https://d-hye.github.io/source/img/icon/arrow-right.svg" alt="arrow"/>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="promo_banner">
                 <a href="#none" className="d-flex justify-content-center align-items-center">
-                    <img src="https://trip-ter.vercel.app/img/banner/event.jpg" alt="여름 성수기 이벤트" className="pc"/>
-                    <img src="https://trip-ter.vercel.app/img/banner/event_mb.jpg" alt="여름 성수기 이벤트" className="mb"/>
+                    <img src="https://d-hye.github.io/source/img/banner/event.jpg" alt="여름 성수기 이벤트" className="pc"/>
+                    <img src="https://d-hye.github.io/source/img/banner/event_mb.jpg" alt="여름 성수기 이벤트" className="mb"/>
                 </a>
             </div>
             <div className="mb icon_menu">
@@ -70,7 +70,7 @@ export default function Section1({slideData}){
                     <ul className="d-flex justify-content-center">
                         <li className="d-flex align-items-center justify-content-center">
                             <p>
-                                <img src="https://trip-ter.vercel.app/img/icon/pencil_m.svg" alt=""/>
+                                <img src="https://d-hye.github.io/source/img/icon/pencil_m.svg" alt=""/>
                                 </p>
                         <p className="">
                             계획짜기
@@ -78,7 +78,7 @@ export default function Section1({slideData}){
                         </li>
                         <li className="d-flex align-items-center justify-content-center">
                             <p>
-                                <img src="https://trip-ter.vercel.app/img/icon/triptalk_m.svg" alt=""/>
+                                <img src="https://d-hye.github.io/source/img/icon/triptalk_m.svg" alt=""/>
                             </p>
                             <p className="">
                                 트립톡
@@ -86,7 +86,7 @@ export default function Section1({slideData}){
                         </li>
                         <li className="d-flex  align-items-center justify-content-center">
                             <p>
-                            <img src="https://trip-ter.vercel.app/img/icon/event.svg" alt=""/>
+                            <img src="https://d-hye.github.io/source/img/icon/event.svg" alt=""/>
                             </p>
                             <p className="">
                                 이벤트
