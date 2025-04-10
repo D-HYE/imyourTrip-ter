@@ -53,42 +53,42 @@ export default function Section1_feelter() {
                             <legend>나의 여행 스타일은?</legend>
                             <div className="btn_wrap d-flex">
                                 <input id="qna1-1" className="d-none" type="radio" name="qna1" value="계획형" onChange={() => handleRadioChange('qna1', '9')} />
-                                <label className="simple_answer" for="qna1-1">계획형</label>
+                                <label className="simple_answer" htmlFor="qna1-1">계획형</label>
                                 <input id="qna1-2" className="d-none" type="radio" name="qna1" value="즉흥형" onChange={() => handleRadioChange('qna1', '1')} />
-                                <label className="simple_answer" for="qna1-2">즉흥형</label>
+                                <label className="simple_answer" htmlFor="qna1-2">즉흥형</label>
                                 <input id="qna1-3" className="d-none" type="radio" name="qna1" value="아무거나" onChange={() => handleRadioChange('qna1', '5')} />
-                                <label className="simple_answer" for="qna1-3">아무거나</label>
+                                <label className="simple_answer" htmlFor="qna1-3">아무거나</label>
                             </div>
                         </fieldset>
                         <fieldset className="filset2">
                             <legend>여행지 선택의 1순위는?</legend>
                             <div className="btn_wrap d-flex">
                                 <input id="qna2-1" className="d-none" type="radio" name="qna2" value="음식" onChange={() => handleRadioChange('qna2', '1')} />
-                                <label className="simple_answer" for="qna2-1">음식</label>
+                                <label className="simple_answer" htmlFor="qna2-1">음식</label>
                                 <input id="qna2-2" className="d-none" type="radio" name="qna2" value="액티비티" onChange={() => handleRadioChange('qna2', '2')} />
-                                <label className="simple_answer" for="qna2-2">액티비티</label>
+                                <label className="simple_answer" htmlFor="qna2-2">액티비티</label>
                                 <input id="qna2-3" className="d-none" type="radio" name="qna2" value="호텔" onChange={() => handleRadioChange('qna2', '3')} />
-                                <label className="simple_answer" for="qna2-3">호텔</label>
+                                <label className="simple_answer" htmlFor="qna2-3">호텔</label>
                                 <input id="qna2-4" className="d-none" type="radio" name="qna2" value="관광명소" onChange={() => handleRadioChange('qna2', '4')} />
-                                <label className="simple_answer" for="qna2-4">관광명소</label>
+                                <label className="simple_answer" htmlFor="qna2-4">관광명소</label>
                             </div>
                         </fieldset>
                         <fieldset className="filset3">
                             <legend>나의 여행 스타일은?</legend>
                             <div className="btn_wrap d-flex">
                                 <input id="qna3-1" className="d-none" type="radio" name="qna3" value="짧게 여러 번" onChange={() => handleRadioChange('qna3', 'A')} />
-                                <label className="simple_answer" for="qna3-1">짧게 여러 번</label>
+                                <label className="simple_answer" htmlFor="qna3-1">짧게 여러 번</label>
                                 <input id="qna3-2" className="d-none" type="radio" name="qna3" value="길게 한 번에" onChange={() => handleRadioChange('qna3', 'B')} />
-                                <label className="simple_answer" for="qna3-2">길게 한 번에</label>
+                                <label className="simple_answer" htmlFor="qna3-2">길게 한 번에</label>
                             </div>
                         </fieldset>
                         <fieldset className="filset4">
                             <legend>나의 여행 스타일은?</legend>
                             <div className="btn_wrap d-flex">
                                 <input id="qna4-1" className="d-none" type="radio" name="qna4" value="가성비" onChange={() => handleRadioChange('qna4', '1')} />
-                                <label className="simple_answer" for="qna4-1">가성비</label>
+                                <label className="simple_answer" htmlFor="qna4-1">가성비</label>
                                 <input id="qna4-2" className="d-none" type="radio" name="qna4" value="여행은 플렉스" onChange={() => handleRadioChange('qna4', '9')} />
-                                <label className="simple_answer" for="qna4-2">여행은 플렉스</label>
+                                <label className="simple_answer" htmlFor="qna4-2">여행은 플렉스</label>
                             </div>
                         </fieldset>
                     </div>
@@ -104,7 +104,7 @@ export default function Section1_feelter() {
                             
                         </div>
                     </div>
-                    <Link to="/tripRoute"><button className="submit_btn">MY FEEL:TER 추천 더 보기 &gt;</button></Link>
+                    <Link to="/tripRoute/myFeelter"><button className="submit_btn">MY FEEL:TER 추천 더 보기 &gt;</button></Link>
                 </div>
 
             )}

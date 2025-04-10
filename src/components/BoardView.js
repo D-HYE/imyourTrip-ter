@@ -9,12 +9,12 @@ const BoardView = ({postData}) => {
     return (
         <div className="post_area img100 container_m">
             <div className="post_info">
-                <h5 className="post_tit">{postData.postTitle}</h5>
+                <h5 className="post_tit">{postData.postTit}</h5>
                 <ul className="d-flex justify-content-between py-1">
-                    <li>{postData.userNickname} &#40;{postData.userID}&#41;</li>
+                    <li>{postData.userInfo?.userNickname} &#40;{postData.userInfo?.userID}&#41;</li>
                     <li className="d-flex">
-                        <div className="post_date">{postData.postDate}</div>
-                        <div className="viewCount">조회<span>{postData.postView}</span></div>
+                        <div className="post_date">{new Date(postData.postDate).toLocaleString('ko-KR')}</div>
+                        <div className="viewCount">조회<span>{postData.viewCount}</span></div>
                     </li>
                 </ul>
             </div>
@@ -33,13 +33,13 @@ const BoardView = ({postData}) => {
                 </div>
                 <div className="dsec_box">
                     {postData.src && <img src={`${postData.src}`} alt={`${postData.tripSpot}`}></img>}
-                    <p>{postData.desc}</p>
+                    <p>{postData.postCont}</p>
                 </div>
                 <div className="user_info d-flex flex-column align-items-end">
                     <div className="d-flex gap-1">
                         <div className="user_profile"></div>
                         <div className="user_desc">
-                            <div className="nickname">{postData.userNickname}</div>
+                            <div className="nickname">{postData.userInfo?.userNickname}</div>
                             <ul className="verification d-flex flex-column gap-1">
                                 <li>본인 인증 <span>완료</span></li>
                                 <li className="checked">장소 인증 <span>완료</span></li>
@@ -47,7 +47,7 @@ const BoardView = ({postData}) => {
                         </div>
                     </div>
                     <div className="user_plus">
-                        <Link to="/"><span>{postData.userNickname}</span>님의 게시글 더 보기&gt;</Link>   
+                        <Link to="/"><span>{postData.userInfo?.userNickname}</span>님의 게시글 더 보기&gt;</Link>   
                     </div>
                 </div>
             </div>

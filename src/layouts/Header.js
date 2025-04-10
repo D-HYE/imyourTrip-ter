@@ -59,7 +59,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
         <div className="py-1 container d-flex justify-content-end">
           <ul className="d-flex gap-3 align-items-center">
             <li>
-              <Link to="/user" className="text-white">로그인/회원가입</Link>
+              <Link to="/user/login" className="text-white">로그인/회원가입</Link>
             </li>
             <li className="support rel" >
               <span className="text-white d-flex" onClick={supportMenu}>
@@ -142,7 +142,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
             {/* 로그인 후 */}
             <div className="mainheader">
               <div className="user-box d-flex align-content-end justify-content-between">
-                <div className="profileicon"><img src="./img/icon/user-profile-02.svg" className="d-block" alt="" /></div>
+                <div className="profileicon"><img src="https://d-hye.github.io/source/img/icon/user-profile-02.svg" className="d-block" alt="" /></div>
                 <div className="userprofile">
                   <div className="hi"><span>안녕하세요!</span></div>
                   <div>트립터<span className="username">###</span>님</div>

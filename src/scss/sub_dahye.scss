@@ -71,20 +71,26 @@
                 }
                 input:not([type="checkbox"]){
                     display: block;
-                    width: 100%; padding: 4px;
+                    width: 100%; padding: 4px; margin-bottom: 1px;
                     font-size: var(--desc-text); line-height: 24px;
                     outline: none; border-bottom: 1px solid var(--trip-black);
+                    &:focus{
+                        color: var(--trip-blue); margin-bottom: 0;
+                        border-bottom: 2px solid var(--trip-blue);
+                    }
                 }
                 button{
-                    display: block;
-                    margin-left: 20px; padding: 0 20px;
-                    font-size: var(--small-text); font-family: var(--theJamsil-medium);
+                    margin-left: 20px;
+                    font-family: var(--theJamsil-medium);
                     line-height: 40px; white-space: nowrap;
-                    background: var(--trip-gray1); border-radius: 5px;
                     &:hover{
                         background: var(--trip-blue);
                         color: var(--trip-white);
                     }
+                }
+                .error_message{
+                    padding-top: 1rem;
+                    font-size: var(--desc-text); color: var(--trip-red);
                 }
                 &.fieldset4{
                     span{
@@ -100,11 +106,8 @@
             }
         }
 
-        .submit_btn{
-            width: 100%;
-            background: var(--trip-gray1);
-            font-size: var(--semismall-text); font-family: var(--theJamsil-medium); line-height: 60px;
-            border-radius: 5px;
+        .btn_wrap button{
+            font-family: var(--theJamsil-medium); line-height: 60px;
             &:hover, &.active{
                 background: var(--trip-blue);
                 color: var(--trip-white);

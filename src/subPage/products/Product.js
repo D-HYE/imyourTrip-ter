@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import ProductList from './ProductList';
 
-import DefaultList, { HotelList, AirplaneList } from './ProductList';
+
 import SubContent from '../SubContent';
 
 const Prodcut = ({dataInfo}) => {
@@ -11,7 +12,7 @@ const Prodcut = ({dataInfo}) => {
     return (
         <main className='subMain page_product'>
             <section className={`${tab}Section`}>
-                <div class="sectionBanner">
+                <div class="sectionBanner pc">
                     <div>
                         <h3>{dataCategory?.[tab]?.name}</h3>
                         <p>{dataCategory?.[tab]?.description}</p> 
@@ -32,9 +33,7 @@ const Prodcut = ({dataInfo}) => {
                     </ul>
                 </div>
                 <div className="sectionCont container">
-                    <AirplaneList/>
-                    <DefaultList/>
-                    <HotelList/>
+                    <ProductList category={category} tab={tab} />
                 </div>
                 
             </section>  

@@ -12,6 +12,9 @@
     --trip-gray3: #777;
     --trip-black: rgba(17, 17, 17, 1);
     --trip-skyblue: rgba(171, 198, 240, 1);
+    --trip-red: #FF6A6A;
+    --trip-sun: #FF7F50;
+    --trip-green: #3EB489;
 
     /* Text-size styles */
     --main-slide: 4rem;

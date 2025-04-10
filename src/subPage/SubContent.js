@@ -16,16 +16,15 @@ import BoardList from "../components/BoardList"
 import ReviewList from "../components/ReviewList"
 import BoardView from "../components/BoardView"
 
-import { fetchPostData } from "../api"
+import { fetchPostData } from "../api/board"
 import testData from "../data/dummydata.json"
-
-
 
 
 
 export default function SubContent ({ activeTab }) {
     const { postID } = useParams();
     const [postData, setPostData] = useState([]);
+
     let content;
 
     useEffect(() => {
@@ -33,17 +32,14 @@ export default function SubContent ({ activeTab }) {
         const fetchData = async () => {
             try {
             const data = await fetchPostData(activeTab);
-            setPostData([...data]);
+            setPostData(data ?? []);
             } catch (error) {
             console.error("Error fetching data:", error);
             }
         };
 
         fetchData();
-       
-        if (activeTab === 'findFriend') {
-            fetchPostData(activeTab); //
-        }
+
     }, [activeTab])
 
 
@@ -72,7 +68,7 @@ export default function SubContent ({ activeTab }) {
         case 'findFriend': {
             content = !postID 
                 ? <BoardList boolean={true} postData={postData} />
-                : <BoardView postID={postID} postData={postData.find(post => post.postID === postID)} />;
+                : <BoardView postID={postID} postData={postData.find(post => post.postID === Number(postID))} />;   
             break;
         }
             

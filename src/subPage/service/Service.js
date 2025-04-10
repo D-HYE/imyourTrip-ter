@@ -9,7 +9,7 @@ const Service = ({dataInfo}) => {
     return (
         <main className="subMain page_service">  
             <section className={`${tab}Section`}>
-                <div class="sectionBanner">
+                <div class="sectionBanner pc">
                     <div>
                         <h3>{dataInfo?.["service"]?.[tab]?.name}</h3>
                         <p>{dataInfo?.["service"]?.[tab]?.description}</p>

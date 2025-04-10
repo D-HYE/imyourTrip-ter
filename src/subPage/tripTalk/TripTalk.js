@@ -10,7 +10,7 @@ function TripTalk({dataInfo}) {
     return (
         <main className="subMain page_triptalk">  
             <section className={`${tab}Section`}>
-                <div class="sectionBanner">
+                <div class="sectionBanner pc">
                     <div>
                         <h3>{dataInfo?.["tripTalk"]?.[tab]?.name}</h3>
                         <p>{dataInfo?.["tripTalk"]?.[tab]?.description}</p>

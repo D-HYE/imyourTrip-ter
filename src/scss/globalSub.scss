@@ -1,6 +1,5 @@
 .subMain{
     padding-bottom: 7.5rem;
-
     .sectionBanner{
         height: 18.75rem; padding-top: 6.25rem;
         text-align: center;
@@ -17,7 +16,7 @@
     .sectionList{
         padding: 2.5rem 0 3.75rem;
         ul{
-            gap: 5rem;
+            gap: 5rem; row-gap: 1.5rem;
             a{
                 font-family: var(--theJamsil-medium); font-size: var(--mediumbig-text);
                 span{ 
@@ -34,7 +33,18 @@
             }
         }
     }
-
+    @media only screen and (max-width: 768px){
+        .sectionList{
+            padding: 4rem 1rem 2rem;
+            ul{
+                gap: 2rem; row-gap: 1rem;
+                a{
+                    font-size: var(--semismall-text);
+                    span{margin-left: .4rem;}
+                }
+            }
+        }
+    }
 }
 
 .select_box{
@@ -374,8 +384,6 @@
     background: var(--trip-skyblue);
 }
 
-
-
 .product_item{
     .img_box a{
         background: url("https://d-hye.github.io/source/img/icon/image.svg") no-repeat center/24px, var(--trip-gray1);
@@ -428,6 +436,7 @@
     }
     &.productHotel{
         max-width: 320px;
+        width: 100%;
         padding: 1.25rem 0.625rem;
         .product_tit{
             text-align: center;

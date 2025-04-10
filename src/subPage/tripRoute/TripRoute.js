@@ -9,7 +9,7 @@ function TripRoute({dataInfo}) {
     return (
         <main className="subMain page_plan">  
             <section className={`${tab}Section`}>
-                <div className="sectionBanner text-blue">
+                <div className="sectionBanner text-blue pc">
                     <div>
                         <h3>{dataInfo?.["tripRoute"]?.[tab]?.name}</h3>
                         <p>{dataInfo?.["tripRoute"]?.[tab]?.description}</p>
