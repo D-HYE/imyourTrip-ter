@@ -76,19 +76,8 @@
         }
     }
 }
-//계획짜기_항공
-.wishlist_quick{   
-        background-color: var(--trip-yellow);
-        width: 64px;
-        aspect-ratio: 1 / 1;
-        border-radius: 50px;
-    .wishlist_icon{
-        background: url('https://d-hye.github.io/source/img/icon/bag-03.svg') no-repeat center/cover;
-        width: 32px;
-        aspect-ratio: 1 / 1;
-    }
-}
-//저장된 계획
+
+//계획짜기_ 저장된 계획
 .plan_info{
     background-color: var(--trip-blue);
     padding: 0.625rem 1.25rem; 
@@ -295,8 +284,12 @@
     }
 
     .heart_icon{
-        background: url("https://d-hye.github.io/source/img/icon/heart_bl.svg") no-repeat center/cover;
+        background: url("https://d-hye.github.io/source/img/icon/heart.svg") no-repeat center/cover;
+        &.Heart{
+            background: url("https://d-hye.github.io/source/img/icon/heart_bl.svg") no-repeat center/cover;
+        }
     }
+
 }    
 .plane_right{
     border-left: 2px solid var(--trip-gray1);
@@ -311,10 +304,14 @@
 }
 //장바구니퀵메뉴
 .wishlist_quick{   
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     background-color: var(--trip-yellow);
     width: 64px;
     aspect-ratio: 1 / 1;
     border-radius: 50px;
+    z-index: 1000;
    .wishlist_quickicon{
        background: url('https://trip-ter.vercel.app/img/icon/bag-03.svg') no-repeat center/cover;
        width: 32px;
@@ -322,12 +319,24 @@
    }
 }
 .wishlist_list{
+    position: fixed;
+    bottom: 7rem;
+    // right: 2rem;
+    background: #fff;
+    border: 3px solid var(--trip-yellow);
+    border-radius: 24px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 100;
+    &.open{
+        transform: translateX(0);
+    }    
     .wishlist_title{
         background-color: var(--trip-yellow);
         border-radius: 20px 20px 0 0;
         p{
-            
-            font-size: var(--mediumbig-text);
+            b{font-size: var(--medium-text);}
+            span{font-size:var(--semismall-text);}
         }
     }
     .wishlist_user_info div{
@@ -337,21 +346,32 @@
             color: var(--trip-gray3);
         }
         .wishlist-info-item{
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             font-size: var(--medium-text);
             font-weight: 700;
         }
     }
     .wishlist_items{
-        padding: 1.25rem;
-        .semismall_text{
-            font-size: var(--semismall-text);
-            font-weight: 700
+        margin: 1.25rem;
+        overflow-y: scroll;
+        height: 200px;
+        .wishlist_{
+            padding-bottom: 1.5rem;
         }
-        .medium_text{
-            font-size: var(--medium-text);
+        li{
+            font-size: var(--small-text);
+            color: var(--trip-gray3);
+            a{
+                font-size: var(--semismall-text);
+                color: var(--trip-black);
+                
+            }
         }
     }
-    .wishlist_button{
+    .wishBtn{
+        padding: 0 2rem 2rem;
     }
 }
 
@@ -385,9 +405,10 @@ display:none;
                             opacity: 1;
                         }
                 } 
-        }
-    }  
-    } 
+            }
+        }  
+    }
+
 }
 @media only screen and (max-width: 575px){
     #myfeelter {
@@ -398,4 +419,12 @@ display:none;
             }
         }
     }
+    //계획짜기_ 저장된 계획
+    //.plan_info{
+
+    //}
+    //계획짜기_항공
+    //#airplaneArea{
+         
+   // }
 }
