@@ -4,12 +4,13 @@ import SignUp from "./SignUp";
 
 export default function User() {
     const { page } = useParams();
+    const defaultpage = page || "login"; // 로그인 유무가 쓰일지
 
     return (
         <main className='subMain page_login'>
             <section>
                 <div className="sectionBanner pc"></div>
-                {page === "login" ? <Login /> : <SignUp />}
+                {defaultpage === "login" ? <Login /> : <SignUp />}
             </section>
         </main>
     );

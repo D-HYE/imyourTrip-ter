@@ -58,8 +58,8 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
       <div id="user" className="trip-bl pc">
         <div className="py-1 container d-flex justify-content-end">
           <ul className="d-flex gap-3 align-items-center">
-            <li>
-              <Link to="/user/login" className="text-white">로그인/회원가입</Link>
+            <li className="d-flex">
+              <Link to="/user" className="text-white">로그인/회원가입</Link>
             </li>
             <li className="support rel" >
               <span className="text-white d-flex" onClick={supportMenu}>
@@ -175,7 +175,7 @@ const [supportOpen,setSupportOpen] = useState(false); // 고객센터
                 </ul>
                 <ul id="hb-sublist">
                   <li>
-                    <div><Link to="/products/airplane/onSale" onClick={submenuClick}>항공권</Link></div>
+                    <div><Link to="/products/airplane/onSale" onClick={submenuClick} >항공권</Link></div>
                     <ul className="sublist d-flex flex-wrap">
                       <li><Link to="/products/airplane/onSale" onClick={submenuClick}>특가항공</Link></li>
                       <li><Link to="/products/airplane/domestic" onClick={submenuClick}>국내항공</Link></li>
