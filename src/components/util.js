@@ -1,9 +1,9 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 
-function SelectBox({ children }) {
-  const [isOpen, setIsOpen] = useState(false); // 드롭다운 열림 여부
-  const [selectedValue, setSelectedValue] = useState(children[0].props.children); // 첫 번째 옵션 기본 선택
-  const selectBoxRef = useRef(null); // 외부 클릭 감지용
+export function SelectBox({ children }) {
+  const [isOpen, setIsOpen] = useState(false); 
+  const [selectedValue, setSelectedValue] = useState(children[0].props.children); 
+  const selectBoxRef = useRef(null); // 외부 클릭 감지
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
@@ -26,7 +26,10 @@ function SelectBox({ children }) {
           <ul className="d-flex flex-column">
             {React.Children.map(children, (child) =>
               React.cloneElement(child, {
-                onClick: () => handleOptionClick(child.props.children),
+                onClick: (e) => {
+                  child.props.onClick?.(e); // 기존 onClick 실행
+                  handleOptionClick(child.props.children); // 선택값 갱신
+                },
                 className: `option ${selectedValue === child.props.children ? "selected" : ""}`,
               })
             )}
@@ -36,6 +39,7 @@ function SelectBox({ children }) {
     </div>
   );
 }
+
 //항공&호텔 필터
 export function FillterBox({ children }) {
   const [isOpen, setIsOpen] = useState(false); // 드롭다운 열림 여부
@@ -68,5 +72,17 @@ export function FillterBox({ children }) {
   );
 }
 
+// 상대시간
+export function RelativeTime(dateString) {
+  const now = new Date();
+  const date = new Date(dateString);
+  const diffInSeconds = Math.floor((now - date) / 1000);
 
-export default SelectBox;
+  if (diffInSeconds < 60) return '방금 전';
+  if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)}분 전`;
+  if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)}시간 전`;
+  if (diffInSeconds < 2592000) return `${Math.floor(diffInSeconds / 86400)}일 전`;
+  if (diffInSeconds < 31536000) return `${Math.floor(diffInSeconds / 2592000)}달 전`;
+  return `${Math.floor(diffInSeconds / 31536000)}년 전`;
+
+}

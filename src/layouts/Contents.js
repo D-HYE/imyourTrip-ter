@@ -22,7 +22,6 @@ import '../scss/sub_dahye.scss';
 
 export default function Contents(){
     const tabData = alldata["tabList"]
-
     return(
         <div className="contentsArea">
 

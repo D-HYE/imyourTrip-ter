@@ -17,11 +17,12 @@ import ReviewList from "../components/ReviewList"
 import BoardView from "../components/BoardView"
 
 import { fetchPostData } from "../api/board"
+import allData from "../data/alldata.json"
 import testData from "../data/dummydata.json"
 
 
 
-export default function SubContent ({ activeTab }) {
+export default function SubContent ({ activeTab, alldata }) {
     const { postID } = useParams();
     const [postData, setPostData] = useState([]);
 
@@ -62,7 +63,7 @@ export default function SubContent ({ activeTab }) {
         }
 
         case 'findReview':
-            content = <ReviewList />;
+            content = <ReviewList review={allData["review"]}/>;
             break;
 
         case 'findFriend': {

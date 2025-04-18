@@ -23,9 +23,13 @@ function Section6({reviewsData}) {
           <div className="txt_box">
             <div className="user_info d-flex pc">
               <b className="review_user">{review.nickname}</b>
-              <i className="review_rate">{review.rating}</i>
+              <div className="ratingWrap d-flex align-items-center">
+                {[...Array(5)].map((_, i) => (
+                  <div className={`rating ${i < review.rating ? "giveStar" : ""}`} key={i}></div>
+                ))}
+              </div>
             </div>
-            <p className="review_txt pc">{review.desc}</p>
+            <p className="review_txt pc">{review.title}</p>
             <div className="user_info mb">
               <b className="review_user">{review.nickname} 님의 후기</b>
             </div>

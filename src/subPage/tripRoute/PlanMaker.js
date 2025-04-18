@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PickAirplane from "./PickAirplane";
 import Wishlist from "../user/Wishlist";
 
-import {FillterBox} from "../../components/SelectBox"
+import {FillterBox} from "../../components/util"
 import element from "../../scss/elements.module.scss"
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
 

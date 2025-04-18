@@ -12,7 +12,7 @@ const TableStyle = ({postData}) => {
                         <th className="post_id"></th>
                         <th className="post_tit">제목</th>
                         <th className="post_nickname">작성자</th>
-                        <th className="post_date">작성일</th>
+                        <th className="post_time">작성일</th>
                         <th className="post_view">조회</th>
                     </tr>
                 </thead>
@@ -22,8 +22,8 @@ const TableStyle = ({postData}) => {
                             <td className="post_id">{data.postID}</td>
                             <td className="post_tit d-flex gap-1"><Link to={`${path.pathname}/${data.postID}`}>{data.postTit}</Link><b>[00]</b></td>
                             <td className="post_nickname"><span>{data.userInfo?.userNickname}</span></td>
-                            <td className="post_date"><span>{data.postDate.slice(0, 10)}</span></td>
-                            <td className="post_view"><span>{data.viewCount}</span></td>
+                            <td className="post_time"><span>{data.postedAt.slice(0, 10)}</span></td>
+                            <td className="post_view"><span>{data.views}</span></td>
                         </tr>
                     ))}
                 </tbody>
@@ -51,8 +51,8 @@ export const GalleryStyle = ({postData}) => {
                                 <div className="post_tit d-flex justify-content-between"><Link to={`${path.pathname}/${data.postID}`}>{data.postTit}</Link><b>[00]</b></div>
                                 <div className="post_nickname"><h6>{data.userNickname}</h6></div>
                                 <div className="d-flex justify-content-between">
-                                    <span className="post_date">{data.postDate.slice(0, 10)}</span>
-                                    <span className="post_view">조회 {data.viewCount}</span>
+                                    <span className="post_time">{data.postedAt.slice(0, 10)}</span>
+                                    <span className="post_view">조회 {data.views}</span>
                                 </div>
                             </div>
                         </div>

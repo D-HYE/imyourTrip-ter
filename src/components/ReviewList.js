@@ -1,54 +1,82 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import SelectBox from "./SelectBox";
+import { ImgBox } from '../styleComponents/ui';
+import { SelectBox, RelativeTime } from './util';
 
-const ReviewList = () => {
+
+
+const ReviewList = ({ review }) => {
+    const [sortedData, setSortedData] = useState([]);
+    useEffect(() => {
+        if (review && review.length > 0) {
+            const sorted = [...review].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+            setSortedData(sorted);
+        }
+    }, [review]);
+
+    const handleSort = (sortType) => {
+        let sorted = [];
+        switch (sortType) {
+            case "latest":
+              sorted = [...review].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+              break;
+            case "views":
+              sorted = [...review].sort((a, b) => b.views - a.views);
+              break;
+            case "likes":
+              sorted = [...review].sort((a, b) => b.likes - a.likes);
+              break;
+            default:
+              sorted = [...review];
+          }
+          setSortedData(sorted);
+    };
+
     return (
         <div className="board_area container_m">
             <div className="board_filter d-flex justify-content-end align-items-center">
                 <SelectBox>
-                    <li className="option">최신순</li>
-                    <li className="option">조회수순</li>
-                    <li className="option">좋아요순</li>
+                    <li onClick={() => handleSort("latest")}>최신순</li>
+                    <li onClick={() => handleSort("views")}>조회수순</li>
+                    <li onClick={() => handleSort("likes")}>좋아요순</li>
                 </SelectBox>
             </div>
             <div className="board_list">
                 <ul className="live_board">
-                    <li>
-                        <Link to="#none" className="d-flex justify-content-between align-items-center">
-                            <div className="desc_box">
-                                <div className="post_info d-flex">
-                                    <div className="user_info d-flex align-items-center">
-                                        <div className="user_profile"></div>
-                                        <div className="user_desc">
-                                            <div className="nickname">닉네임닉네임닉네임</div>
-                                            <ul className="ratingWrap d-flex">
-                                                <li className="rating giveStar"></li>
-                                                <li className="rating giveStar"></li>
-                                                <li className="rating giveStar"></li>
-                                                <li className="rating "></li>
-                                                <li className="rating "></li>
-                                            </ul>
+                    {sortedData.map((data) => (
+                        <li key={data.idx}>
+                            <Link to={`${data.href}`} className="d-flex justify-content-between align-items-center">
+                                <div className="desc_box">
+                                    <div className="post_info d-flex">
+                                        <div className="user_info d-flex align-items-center">
+                                            <div className="user_profile"></div>
+                                            <div className="user_desc">
+                                                <div className="nickname">{data.nickname}</div>
+                                                <div className="ratingWrap d-flex align-items-center">
+                                                    {[...Array(5)].map((_, i) => (
+                                                        <div className={`rating ${i < data.rating ? "giveStar" : ""}`} key={i}></div>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div className="post_time"><span>{RelativeTime(data.postedAt)}</span></div>
                                     </div>
-                                    <div className="post_time"><span>00시간</span> 전</div>
+                                    <div className="desc">
+                                        <h5>{data.title}</h5>
+                                        <p>{data.content}</p>
+                                    </div>
+                                    <div className="response_wrap d-flex justify-content-end">
+                                        <div className="d-flex post_like"><i></i><span>{data.likes}</span></div>
+                                        <div className="d-flex post_comment"><i></i><span>{data.comments}</span></div>
+                                        <div className="d-flex post_view"><i></i><span>{data.views}</span></div>
+                                    </div>
                                 </div>
-                                <div className="desc">
-                                    <h5>타이틀 조회수 아이콘이 자꾸 저장이 이상하게 됩니다 요상하다 요상해</h5>
-                                    <p>내용은 두 줄만 나옵니다 매우 귀찮기 때문에 ...처리는 나중에 처리하겠습니다 미래의 나에게 넘기기~</p>
-                                </div>
-                                <div className="response_wrap d-flex justify-content-end">
-                                    <div className="d-flex likeCount"><i></i><span>000</span></div>
-                                    <div className="d-flex commentCount"><i></i><span>000</span></div>
-                                    <div className="d-flex viewCount"><i></i><span>000</span></div>
-
-                                </div>
-                            </div>
-                            <div className="img_box">
-
-                            </div>
-                        </Link>
-                    </li>
+                                <ImgBox className='img_box d-flex justify-content-center align-items-center'>
+                                    <img src={`${data.img}`} alt={`${data.alt}`} />
+                                </ImgBox>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="board_pagenation">

@@ -13,7 +13,6 @@ export const fetchPostData = async (tableName) => {
                 )
               `)
         if (error) throw error; 
-        console.log("data 👉", data);   
         return data;
         
     } catch (err) {
