@@ -31,6 +31,15 @@ main{
     object-fit: cover;
 }
 
+.rating{
+    width: 16px; height: 16px;
+    background: url("https://d-hye.github.io/source/img/icon/rate_off.svg") no-repeat center/contain;
+}
+.rating.giveStar{
+    background-image: url("https://d-hye.github.io/source/img/icon/rate_on.svg");
+}
+
+
 
 
 @media (min-width: 769px) {

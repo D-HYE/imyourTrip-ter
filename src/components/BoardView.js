@@ -13,8 +13,8 @@ const BoardView = ({postData}) => {
                 <ul className="d-flex justify-content-between py-1">
                     <li>{postData.userInfo?.userNickname} &#40;{postData.userInfo?.userID}&#41;</li>
                     <li className="d-flex">
-                        <div className="post_date">{new Date(postData.postDate).toLocaleString('ko-KR')}</div>
-                        <div className="viewCount">조회<span>{postData.viewCount}</span></div>
+                        <div className="post_time">{new Date(postData.postedAt).toLocaleString('ko-KR')}</div>
+                        <div className="post_view">조회 <span>{postData.views}</span></div>
                     </li>
                 </ul>
             </div>
