@@ -321,7 +321,6 @@
 .wishlist_list{
     position: fixed;
     bottom: 7rem;
-    // right: 2rem;
     background: #fff;
     border: 3px solid var(--trip-yellow);
     border-radius: 24px;
@@ -330,6 +329,7 @@
     z-index: 100;
     &.open{
         transform: translateX(0);
+        right: 2rem;
     }    
     .wishlist_title{
         background-color: var(--trip-yellow);
