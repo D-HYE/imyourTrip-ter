@@ -23,9 +23,13 @@ function Section6({reviewsData}) {
           <div className="txt_box">
             <div className="user_info d-flex pc">
               <b className="review_user">{review.nickname}</b>
-              <i className="review_rate">{review.rating}</i>
+              <div className="ratingWrap d-flex align-items-center">
+                {[...Array(5)].map((_, i) => (
+                  <div className={`rating ${i < review.rating ? "giveStar" : ""}`} key={i}></div>
+                ))}
+              </div>
             </div>
-            <p className="review_txt pc">{review.desc}</p>
+            <p className="review_txt pc">{review.title}</p>
             <div className="user_info mb">
               <b className="review_user">{review.nickname} 님의 후기</b>
             </div>
@@ -42,7 +46,7 @@ function Section6({reviewsData}) {
       <div className="section section6">
         <h3 className="section_tit">실시간 후기</h3>
         <div className="page_view container d-flex justify-content-end">
-            <Link to="#none">후기 더 보기&gt;</Link>
+            <Link to="/tripTalk/findReview">후기 더 보기&gt;</Link>
         </div>
         <div className="marquee_area">
           <div className="marquee_wrap">

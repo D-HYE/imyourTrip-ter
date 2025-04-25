@@ -10,7 +10,7 @@ function Section5() {
             <div className="container">
                     <ul className="d-flex justify-content-between">
                         <li className="img_box">
-                            <Link to="#none">
+                            <Link to="/tripterEvent">
                                 <img src="https://d-hye.github.io/source/img/banner/coupon_event.jpg" alt="트립터 후기 이벤트" />
                             </Link>
                         </li>

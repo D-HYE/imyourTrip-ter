@@ -9,7 +9,7 @@
             font-family: var(--theJamsil-bold); font-size: var(--main-slide); 
         }
         p{
-            font-size: var(--mediumbig-text); font-weight: 800;
+            font-size: var(--mediumbig-text); font-weight: 700;
         }
     }
 
@@ -33,6 +33,13 @@
             }
         }
     }
+
+    button.icon_box{
+        width: 24px; height: 24px;
+        background: url("https://d-hye.github.io/source/img_seo/favicon.svg") no-repeat center/contain;
+        text-indent: -10000px;
+    }
+
     @media only screen and (max-width: 768px){
         .sectionList{
             padding: 4rem 1rem 2rem;
@@ -103,14 +110,10 @@
 }
 
 .board_area{
-    .icon_box{
-        width: 24px; height: 24px;
-        background: url("https://d-hye.github.io/source/img/icon/list.svg") no-repeat center/contain;
-        text-indent: -10000px;
-    }
     .board_filter{
         padding: 0 0.625rem;
         .icon1{
+            background-image: url("https://d-hye.github.io/source/img/icon/list.svg");
             &.active{
                 background-image: url("https://d-hye.github.io/source/img/icon/list_active.svg");
             }
@@ -122,7 +125,7 @@
             }
         }
     }
-
+    
     .board_list{
         .table_board{
             width: 100%;
@@ -130,7 +133,7 @@
             .post_id{width: 8.021%;}
             .post_tit{max-width: 400px;}
             .post_nickname{width: 16.0428%;}
-            .post_date{width: 12.032%;}
+            .post_time{width: 12.032%;}
             .post_view{width: 6.684%;}
 
             thead{
@@ -159,12 +162,12 @@
                                 text-overflow: ellipsis;
                             }
                             b{
-                                font-weight: 800;
+                                font-weight: 700;
                                 color: var(--trip-blue);
                             }
                         }
                         &.post_id,
-                        &.post_date,
+                        &.post_time,
                         &.post_view{color: var(--trip-gray3);}
                     }
 
@@ -185,7 +188,7 @@
                     b{  
                         display: block;
                         padding-left: 1.5rem;
-                        font-size: var(--small-text); color: var(--trip-blue); font-weight: 800; line-height: 1.5rem;
+                        font-size: var(--small-text); color: var(--trip-blue); font-weight: 700; line-height: 1.5rem;
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -202,7 +205,7 @@
                             white-space: nowrap;
                             text-overflow: ellipsis;
                         }
-                        b{color: var(--trip-blue); font-weight: 800;}
+                        b{color: var(--trip-blue); font-weight: 700;}
                     }
                     .post_nickname{
                         h6{
@@ -210,7 +213,7 @@
                             font-size: var(--small-text); font-weight: normal;
                         }
                     }
-                    .post_date, .post_view{
+                    .post_time, .post_view{
                         font-size: var(--desc-text);
                         color: var(--trip-gray1);
                     }
@@ -231,14 +234,7 @@
                                 .nickname{
                                     padding-bottom: 0.625rem;
                                     font-size: var(--small-text);
-                                    font-weight: 800;
-                                }
-                                .rating{
-                                    width: 16px; height: 16px;
-                                    background: url("https://d-hye.github.io/source/img/icon/rate_off.svg") no-repeat center/contain;
-                                    &.giveStar{
-                                        background-image: url("https://d-hye.github.io/source/img/icon/rate_on.svg");
-                                    }
+                                    font-weight: 700;
                                 }
                             }
                         }
@@ -252,15 +248,16 @@
                         margin-top: 0.625rem;
                         padding-left: 4.375rem;
                         h5{
-                            font-size: var(--small-text); font-weight: 800;
+                            font-size: var(--small-text); font-weight: 700;
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
                         }
                         p{
-                            margin: 1.25rem 0;
+                            height: 50px; margin: 1.25rem 0;
                             font-size: var(--desc-text); color: var(--trip-gray3);
                             line-height: 1.45;
+                            overflow: hidden;
                         }
                     }
                     .response_wrap{
@@ -276,10 +273,10 @@
                                 font-size: var(--desc-text);
                                 color: var(--trip-gray3);
                             }
-                            &.commentCount i{
+                            &.post_comment i{
                                 background-image: url("https://d-hye.github.io/source/img/icon/comment.svg");
                             }
-                            &.viewCount i{
+                            &.post_view i{
                                 background-image: url("https://d-hye.github.io/source/img/icon/view.svg");
                             }
                         }
@@ -307,18 +304,19 @@
             font-size: var(--small-text);
             cursor: pointer;
             &.active{
-                font-weight: 800;
+                font-weight: 700;
                 color: var(--trip-blue);
             }
         }
     }
 }
+
 .post_area{
     .post_info{
         padding: 0 0.625rem;
         border-bottom: 1px solid var(--trip-gray1);
         .post_tit{
-            font-size: var(--medium-text); font-weight: 800;
+            font-size: var(--medium-text); font-weight: 700;
             line-height: 1.45;
         }
         li{
@@ -336,7 +334,7 @@
                 b{
                     display: block;
                     padding: 0.625rem; padding-right: 1rem;
-                    font-size: var(--small-text); color: var(--trip-yellow); font-weight: 800;
+                    font-size: var(--small-text); color: var(--trip-yellow); font-weight: 700;
                     background: var(--trip-blue); border-radius: 0 20px 20px 0;
                 }
                 span{
@@ -356,7 +354,7 @@
             padding: 3.125rem 0;
             .nickname{
                 margin-bottom: 1rem;
-                font-size: var(--small-text); font-weight: 800;
+                font-size: var(--small-text); font-weight: 700;
             }
             .verification{
                 li{
@@ -371,7 +369,7 @@
             .user_plus{
                 margin-top: 1.25rem;
                 font-size: var(--m-small-text);
-                span{font-weight: 800;}
+                span{font-weight: 700;}
             }
         }
     }
@@ -393,7 +391,7 @@
     .info_box{
         width: 100%;
         .product_tit{
-            font-size: var(--semismall-text); font-weight: 800;
+            font-size: var(--semismall-text); font-weight: 700;
         }
         .product_info{
             line-height: 1.45;
@@ -405,7 +403,7 @@
                 color: var(--trip-gray1);
                 text-decoration: line-through;
             }
-            b{font-size: var(--medium-text); font-weight: 800;}
+            b{font-size: var(--medium-text); font-weight: 700;}
         }
     }
 
@@ -420,7 +418,7 @@
             }
             .product_cost{
                 margin-bottom: 2rem;
-                h6{font-size: var(--medium-text); font-weight: 800; color: var(--trip-blue);}
+                h6{font-size: var(--medium-text); font-weight: 700; color: var(--trip-blue);}
             }
 
         }
