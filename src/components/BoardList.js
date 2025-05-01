@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import TableStyle, { GalleryStyle } from "./BoardListStyle"
 
 import { SelectBox } from "./util";
-import { SquareBtn } from '../styleComponents/ui';
+import { StyledBtn } from '../styleComponents/ui';
 
 const BoardList = ({ boolean, postData }) => {
     const [isListView, setIsListView] = useState(boolean);
@@ -70,7 +70,7 @@ const BoardList = ({ boolean, postData }) => {
                 </div>
             </div>
             <div className="board_btn d-flex justify-content-end">
-                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">글쓰기</SquareBtn>
+                <StyledBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">글쓰기</StyledBtn>
             </div>
         </div>
     );

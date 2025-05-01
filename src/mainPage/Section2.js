@@ -17,7 +17,7 @@ export default function Section2({slideData}){
             <Swiper
                 slidesPerView="auto"
                 modules={[Navigation, Pagination, Autoplay]}
-                navigation={{ nextEl: ".swiper-button-prev", prevEl: ".swiper-button-next"}}
+                navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"}}
                 pagination={{ el: ".swiper-pagination", clickable: true }}
                 loop={true}
                 autoplay={{ delay: 3000 }}

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+//레이아웃에 있는 애들은 랜더링을 최대한 안 하는 애들이여야 해서
+// useState ~~최대한 적게~~~ 최적화 처리를 할 수 있으면 할 수 있도록...
+// css와 useEffect를 이용해서... 할 수 있는 건 할 수 있도록
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -104,8 +108,7 @@ const Header = () => {
               </Link>
             </h1>
             <div className="hb-iconbox">
-              <a
-                href="#hb-submenu"
+              <div
                 id="hb-icon"
                 className="p-0 moveleft nextopentrigger"
               >
@@ -113,7 +116,7 @@ const Header = () => {
                   src="https://d-hye.github.io/source/img/icon/menu-all.svg"
                   alt="전체메뉴"
                 />
-              </a>
+              </div>
               {/* 햄버거 소메뉴 */}
               <div id="hb-submenu" className={`d-flex flex-column`}>
                 <div id="dim-background" className={`dim`}></div>

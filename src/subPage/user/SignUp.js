@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
-import { SquareBtn } from "../../styleComponents/ui"
-import { signUpRegister } from '../../api/signUpRegister';
+import { StyledBtn } from "../../styleComponents/ui"
+import { signUpRegister } from '../../api/api';
 import SignUpStep1, { SignUpStep2 }  from './SignUpStep';
 
 
@@ -73,21 +73,21 @@ const SignUp = () => {
                         )}
                         <div className="btn_wrap">
                             {step === 1 ? (
-                                <SquareBtn
+                                <StyledBtn
                                     width = "100%" padding = {"0, 0"}
                                     fontSize = "var(--small-text)"
                                     color = "var(--trip-black)"
                                     background = "var(--trip-gray1)"
                                     onClick={handleNextClick}
-                                >다음 단계</SquareBtn>
+                                >다음 단계</StyledBtn>
                             ) : (
-                                <SquareBtn
+                                <StyledBtn
                                     type="submit"
                                     width = "100%" padding = {"0, 0"}
                                     fontSize = "var(--semismall-text)"
                                     color = "var(--trip-black)"
                                     background = "var(--trip-gray1)"
-                                >가입하기</SquareBtn>
+                                >가입하기</StyledBtn>
                             )}
                         </div>
                     </form>

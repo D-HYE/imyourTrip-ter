@@ -1,7 +1,7 @@
 export default function Event2() {
     return (
         <div>
-            이벤트2     
+            쿠폰/혜택 페이지 입니다.
         </div>
     );
 }

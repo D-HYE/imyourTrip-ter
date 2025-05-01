@@ -76,6 +76,7 @@ export function FillterBox({ children }) {
 }
 
 // 상대시간
+// 더 좋은 플러그인 있을?지도? 
 export function RelativeTime(dateString) {
   const now = new Date();
   const date = new Date(dateString);
@@ -128,5 +129,26 @@ export function Calendar({onDateChange}){
         customInput={<CustomInput />}
       />
     </div>
+  );
+}
+
+
+// 404 페이지
+export function NotFound() {
+  return (
+      <main className="subMain page_error">
+          <div className="container">
+                  <div className="bangMark">!</div>
+                  <p className="errorNum">404 ERROR</p>
+                  <p className="errorDesc">페이지를 찾을 수 없습니다</p>
+                      
+                  <div className="buttonWrap" >
+                      <button onClick={() => window.history.back()} className="button1">이전 페이지</button>
+                      <button onClick={() => (window.location.href = "/") } className="button2">메인으로</button>
+                      
+                  </div>
+                  <img src="https://d-hye.github.io/source/img/illustrator/error_bg.svg" alt="404 Error" />
+          </div>
+      </main>
   );
 }

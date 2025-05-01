@@ -6,8 +6,6 @@ import PlanMaker from "./tripRoute/PlanMaker";
 
 import Event1 from "./event/Event1";
 import Event2 from "./event/Event2";
-import Event3 from "./event/Event3";
-import Event4 from "./event/Event4";
 
 import Guide from "./service/Guide"
 import FAQ from "./service/FAQ"
@@ -16,7 +14,7 @@ import BoardList from "../components/BoardList"
 import ReviewList from "../components/ReviewList"
 import BoardView from "../components/BoardView"
 
-import { fetchPostData } from "../api/board"
+import { fetchPostData } from "../api/api"
 import allData from "../data/alldata.json"
 import testData from "../data/dummydata.json"
 
@@ -79,13 +77,7 @@ export default function SubContent ({ activeTab, alldata }) {
             break;
         case 'event2':
             content = <Event2/>;
-            break;       
-        case 'event3':
-            content = <Event3/>;
-            break;       
-        case 'event4':
-            content = <Event4/>;
-            break;   
+            break;           
 
         //service
         case 'guide':

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import BoardComment from './BoardComment';
 
-import { SquareBtn } from '../styleComponents/ui';
+import { StyledBtn } from '../styleComponents/ui';
 
 const BoardView = ({postData}) => {
     return (
@@ -53,8 +53,8 @@ const BoardView = ({postData}) => {
             </div>
             <BoardComment/>
             <div className="board_btn d-flex justify-content-center gap-2">
-                <SquareBtn background="var(--trip-gray1)">목록으로</SquareBtn>
-                <SquareBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">수정하기</SquareBtn>
+                <StyledBtn background="var(--trip-gray1)">목록으로</StyledBtn>
+                <StyledBtn color="var(--trip-blue)" background="var(--trip-skyblue)" fontWeight="700">수정하기</StyledBtn>
             </div>
         </div>
     );

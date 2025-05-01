@@ -333,51 +333,55 @@ body.scrolled{
 // 404 페이지
 .page_error{
     background-color: var(--trip-blue) ;
-    h1{
-        font-family: var(--theJamsil-extrabold) !important;
-        color: var(--trip-white);
-        font-size: 8rem;
-        font-weight: 900;
-        margin-top: 5rem;
-    }
-    h2{
-        font-family: var(--theJamsil-bold) !important;
-        color: var(--trip-yellow);
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 1.5rem;
-    }
-    p{
-        color: var(--trip-white);
-        font-size: 1.8rem;
-        font-weight: 300;
-        margin-bottom: 3rem;
+    .container{
+        text-align: center;
+        padding: 50px;
+        .bangMark{
+            font-family: var(--theJamsil-extrabold);
+            color: var(--trip-white);
+            font-size: 8rem;
+            font-weight: 900;
+            margin-top: 5rem;
+        }
+        .errorNum{
+            font-family: var(--theJamsil-bold);
+            color: var(--trip-yellow);
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 1.5rem;
+        }
+        .errorDesc{
+            color: var(--trip-white);
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+        }
     }
 
-    .button{
+
+    .buttonWrap{
         font-family: var(--theJamsil-bold);
         font-weight: 500;
         display: flex;
         justify-content: center;
         gap: 2rem;
         margin-bottom: 3rem;
-
-    }
-    .button1{
-        color:var(--trip-blue);
-        background-color:var(--trip-white);
-        border-radius: 0.2rem;
-        font-size: 1.5rem;
-        padding: 0.3rem 2.5rem 0.3rem 2.5rem;
-        
-    }
-
-    .button2{
-        color:var(--trip-blue);
-        background-color:var(--trip-white);
-        border-radius: 0.2rem;
-        font-size: 1.5rem;
-        padding: 0.3rem 3.2rem 0.3rem 3.2rem;
+        .button1{
+            color:var(--trip-blue);
+            background-color:var(--trip-white);
+            border-radius: 0.2rem;
+            font-size: 1.5rem;
+            padding: 0.3rem 2.5rem 0.3rem 2.5rem;
+            
+        }
+    
+        .button2{
+            color:var(--trip-blue);
+            background-color:var(--trip-white);
+            border-radius: 0.2rem;
+            font-size: 1.5rem;
+            padding: 0.3rem 3.2rem 0.3rem 3.2rem;
+        }
     }
 
 

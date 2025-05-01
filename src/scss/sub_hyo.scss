@@ -81,9 +81,9 @@
 .plan_info{
     background-color: var(--trip-blue);
     padding: 0.625rem 1.25rem; 
-    border-radius: 1.875rem;
-    gap: 5rem;
     margin-bottom: 2.5rem;
+    border-radius: 1.875rem;
+    >.d-flex{gap: 5rem;}
     ul{
         li{
             font-size: var(--semismall-text);
@@ -104,10 +104,12 @@
     ul li{
         border: 0.0625rem solid var(--trip-blue);
         border-radius: 1.25rem;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.5rem;
         a{
+            line-height: var(--medium-text);
             font-size: var(--small-text);
             color: var(--trip-blue);
+            transition: .3s;
         }
         &.tripcar_tab{
             border: 0.0625rem solid #FF7F50;
@@ -119,6 +121,7 @@
             background-color: var(--trip-blue);
             a{
                 color: var(--trip-yellow);
+                font-size: var(--medium-text);
             }
         }
 

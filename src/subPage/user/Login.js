@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
-import { loginRegister } from '../../api/loginRegister';
+import { loginRegister } from '../../api/api';
 
 export default function Login() {
     const {

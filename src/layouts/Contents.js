@@ -8,7 +8,7 @@ import TripterEvent from '../subPage/event/TripterEvent';
 import Product from '../subPage/products/Product';
 import Service from "../subPage/service/Service"
 
-import NotFound from '../layouts/NotFound'
+import {NotFound} from '../components/util';
 
 
 import alldata  from '../data/alldata.json'
@@ -18,6 +18,8 @@ import '../scss/yujin.scss';
 import '../scss/sub_hyo.scss';
 import '../scss/sub_ek.scss';
 import '../scss/sub_dahye.scss';
+
+// 언어 바뀔 때 말고는 웬만하면 렌더링 뭐시기 할 일 없음
 
 
 export default function Contents(){

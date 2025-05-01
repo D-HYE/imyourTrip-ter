@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../../scss/sub_hyo.scss';
-import { RoundBtn } from '../../styleComponents/ui';
+import { StyledBtn } from '../../styleComponents/ui';
 import Wishplan from './Wishplan';
 
 
@@ -33,7 +32,7 @@ const WishlistItem = ({ category, items }) => (
   </div>
 );
 
-const Wishlist = () => {
+const Wishlist = ({tripDate, count}) => {
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const sideMenuRef = useRef(null);
 
@@ -68,22 +67,26 @@ const Wishlist = () => {
                 <b>효정곤듀에요</b><span>님의 계획짜기</span>
               </p>
             </div>
-            <Wishplan />
+            <Wishplan 
+              tripDate={tripDate}
+              count={count}
+            />
             <div className="wishlist_items">
               {Object.entries(wishlistData).map(([category, items]) => (
                 <WishlistItem key={category} category={category} items={items} />
               ))}
             </div>
             <div className="wishBtn d-flex flex-column justify-content-center">
-              <RoundBtn
+              <StyledBtn
                 fontWeight="700"
                 fontSize="var(--semismall-text)"
                 color="var(--trip-blue)"
                 background="var(--trip-yellow)"
-                style={{ padding: "1rem 2rem" }}
+                borderRadius = "30px"
+                padding={[1, 2]}
               >
                 나의 찜과 함께 계획짜기
-              </RoundBtn>
+              </StyledBtn>
             </div>
           </div>
         </div>

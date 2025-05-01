@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { SquareBtn } from "../../styleComponents/ui"
+import { StyledBtn } from "../../styleComponents/ui"
 import element from "../../scss/elements.module.scss"
 
 const SignUpStep1 = ({ register, watch, setValue }) => {
@@ -165,13 +165,13 @@ export const SignUpStep2 = ({ register, setValue, watch, errors, touchedFields }
                     <span>-</span>
                     <input type="tel" maxLength="4" placeholder="5678" {...register("phone3", { required: true })} />
                     <input type="hidden" {...register("userPhone")} />
-                    <SquareBtn 
+                    <StyledBtn
                         padding = {["0", "1.25"]}
                         color = "var(--trip-black)"
                         fontSize = "var(--small-text)"
                         background = "var(--trip-gray1)"
                         onClick={() => alert("전화번호 인증 기능은 개발 중입니다.")}
-                    >인증하기</SquareBtn>
+                    >인증하기</StyledBtn>
                 </div>
             </fieldset>
 
@@ -179,13 +179,13 @@ export const SignUpStep2 = ({ register, setValue, watch, errors, touchedFields }
                 <label className="fieldset_tit">이메일</label>
                 <div className="d-flex align-items-center">
                     <input type="email" placeholder="example@email.com" {...register("userEmail", { required: true })} />
-                    <SquareBtn
+                    <StyledBtn
                         padding = {["0", "1.25"]}
                         color = "var(--trip-black)"
                         fontSize = "var(--small-text)"
                         background = "var(--trip-gray1)"
                         onClick={() => alert("이메일 인증 기능은 개발 중입니다.")}
-                    >인증하기</SquareBtn>
+                    >인증하기</StyledBtn>
                 </div>
             </fieldset>
 

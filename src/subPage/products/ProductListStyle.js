@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SquareBtn, ImgBox } from '../../styleComponents/ui';
+import { StyledBtn, ImgBox } from '../../styleComponents/ui';
 
 const DefaultList = () => {
     return (
@@ -22,7 +22,7 @@ const DefaultList = () => {
                         </div>
                     </Link>
                     <div>
-                        <SquareBtn padding={[1, 2.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <StyledBtn padding={[1, 2.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</StyledBtn>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ export const HotelList = () => {
                         </div>
                     </Link>
                     <div>
-                        <SquareBtn width="100%" padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <StyledBtn width="100%" padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</StyledBtn>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@ export const AirplaneList = () => {
                     </div>   
                     <div className="plane_right d-flex flex-column justify-content-end align-items-end gap-3 px-2">
                         <p className="totalPrice"><span>₩10,000</span></p>
-                        <SquareBtn padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <StyledBtn padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</StyledBtn>
                     </div>
                 </div>
 
@@ -163,7 +163,7 @@ export const AirplaneList = () => {
                     </div>   
                     <div className="plane_right d-flex flex-column justify-content-end align-items-end gap-3 px-2">
                         <p className="totalPrice"><span>₩10,000</span></p>
-                        <SquareBtn padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                        <StyledBtn padding={[1, 2.5]} fontSize="var(--medium-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</StyledBtn>
                     </div>
                 </div>
             </div>

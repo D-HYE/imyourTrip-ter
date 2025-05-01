@@ -56,28 +56,16 @@
     },
     "tripterEvent": {
       "event1": {
-        "name": "이벤트1",
+        "name": "이벤트",
         "link": "/tripterEvent/event1",
-        "description": "event1",
+        "description": "트립터의 개쩌는 이벤트",
         "sectionName": "a"
       },
       "event2": {
-        "name": "이벤트2",
+        "name": "쿠폰/혜택",
         "link": "/tripterEvent/event2",
-        "description": "event2",
+        "description": "쉿, 너한테만 주는 거야",
         "sectionName": "b"
-      },
-      "event3": {
-        "name": "이벤트3",
-        "link": "/tripterEvent/event3",
-        "description": "event3",
-        "sectionName": "c"
-      },
-      "event4": {
-        "name": "이벤트4",
-        "link": "/tripterEvent/event4",
-        "description": "event4",
-        "sectionName": "c"
       }
     },
     "products": {
@@ -164,10 +152,10 @@
   "slide": {
     "mainSlides": [
       {
-        "title": "라스베이거스",
-        "english": "Las Vegas",
-        "subtitle": "야경의 끝판왕",
-        "src": "https://d-hye.github.io/source/img/main_img/mainslide1.jpg"
+        "title": "",
+        "english": "",
+        "subtitle": "",
+        "src": "https://d-hye.github.io/source/img/main_img/mainslide1_2.jpg"
       },
       {
         "title": "언제가도 좋은 제주",
