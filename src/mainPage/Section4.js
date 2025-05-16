@@ -20,7 +20,7 @@ function Section4({tabData}) {
                             className={activeIndex === idx ? "active" : ""}
                             onClick={() => setActiveIndex(idx)}
                         >
-                            {item.tabnm}
+                            &#35;{item.tabnm}
                         </li>
                     ))}
                 </ul>
