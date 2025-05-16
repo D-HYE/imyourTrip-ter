@@ -52,11 +52,11 @@ export function FillterBox({ children }) {
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
   };
-
  // const handleOptionClick = (option) => {
     //setSelectedValue(option);
     //setIsOpen(false);
   //};
+  const closeDropdown = () => setIsOpen(false);
 
   return (
     <div className={`select_box ${isOpen ? "active" : ""}`}>
@@ -67,7 +67,7 @@ export function FillterBox({ children }) {
       {isOpen && (
         <div className="option_list">
           <div className="filter_section d-flex flex-column gap-3">
-            {children}
+            {typeof children === "function" ? children({closeDropdown}) : children}
           </div>
         </div>
       )}

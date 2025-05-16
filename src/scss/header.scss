@@ -1,12 +1,12 @@
 #hd {
   .search form {
-    gap: 0.5rem;
+    gap: 0.2rem;
   }
   .search-bar {
     border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
     border: 2px solid var(--trip-blue);
     outline: none;
-    padding-left: 1.25rem;
+    padding: 0.3rem 1rem;
   }
 
   .logo {
@@ -78,6 +78,7 @@
 }
 
 #gnb {
+  cursor: pointer;
   transition: height 0.3s;
   height: 5rem;
   .hb-iconbox {
@@ -342,6 +343,9 @@
     .logo img {
       height: 2.8rem;
     }
+  }
+  .dim{
+    left: 250px;
   }
   #mb-searchbox {
     .mb-search {

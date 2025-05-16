@@ -15,23 +15,23 @@ const Service = ({dataInfo}) => {
                         <p>{dataInfo?.["service"]?.[tab]?.description}</p>
                     </div>
                 </div>
-                <div className="sectionList">
-                    <ul className="d-flex justify-content-center container_m flex-wrap">
-                        
-                            {
-                            Object.entries(dataInfo["service"]).map(([key, list]) => (
-                                <li key={key} className={key === tab ? "active" : ""}>
-                                    <Link to={list.link} className="d-flex align-items-center">
-                                        {list.name}
-                                        <span></span>
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                        
-                    </ul>
-                </div> 
                 <div className="sectionCont">
+                    <div className="sectionList">
+                        <ul className="d-flex justify-content-center container_m flex-wrap">
+                            
+                                {
+                                Object.entries(dataInfo["service"]).map(([key, list]) => (
+                                    <li key={key} className={key === tab ? "active" : ""}>
+                                        <Link to={list.link} className="d-flex align-items-center">
+                                            {list.name}
+                                            <span></span>
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                            
+                        </ul>
+                    </div> 
                     <SubContent activeTab={tab}></SubContent>
                 </div>
             </section>  

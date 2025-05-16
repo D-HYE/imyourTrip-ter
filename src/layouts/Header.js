@@ -104,16 +104,12 @@ const Header = () => {
               </Link>
             </h1>
             <div className="hb-iconbox">
-              <a
-                href="#hb-submenu"
-                id="hb-icon"
-                className="p-0 moveleft nextopentrigger"
-              >
+              <div id="hb-icon" className="p-0 moveleft nextopentrigger">
                 <img
                   src="https://d-hye.github.io/source/img/icon/menu-all.svg"
                   alt="전체메뉴"
                 />
-              </a>
+              </div>
               {/* 햄버거 소메뉴 */}
               <div id="hb-submenu" className={`d-flex flex-column`}>
                 <div id="dim-background" className={`dim`}></div>
