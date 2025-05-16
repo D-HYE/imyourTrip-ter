@@ -37,7 +37,7 @@ export default function MyFeelter() {
     const [key, item] = questions[currQIdx];
 
     return (
-        <div className="form_area container_m">
+        <div className="form_area pageBox">
             <div className="question_info">
                 <div className="d-flex justify-content-between align-items-center">
                     <div
@@ -52,7 +52,7 @@ export default function MyFeelter() {
 
             <form id="myfeelterForm">
                 <fieldset className={`filset${key}`}>
-                    <div className="questionBox">
+                    <div className="questionBox py-4 px-1">
                         <legend><span>Q{currQIdx + 1}.</span> {item.question}</legend>
                     </div>
 

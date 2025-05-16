@@ -108,10 +108,7 @@ const Header = () => {
               </Link>
             </h1>
             <div className="hb-iconbox">
-              <div
-                id="hb-icon"
-                className="p-0 moveleft nextopentrigger"
-              >
+              <div id="hb-icon" className="p-0 moveleft nextopentrigger">
                 <img
                   src="https://d-hye.github.io/source/img/icon/menu-all.svg"
                   alt="전체메뉴"

@@ -18,31 +18,29 @@ const PickAirplane = ({ hyodata }) => {
     };
 
     useEffect(() => {
-        const airlineKeys = Object.keys(airplane["airways"]);
-        const randomAirlines = [];
-        const randomProducts = [];
-
-        const roundTripProducts = airplane["flightproduct"].filter(product => product.back);
-
-        // 랜덤으로 4개의 항공사 선택
-        for (let i = 0; i < 5; i++) {
-            const randomAirlineKey = airlineKeys[Math.floor(Math.random() * airlineKeys.length)];
-            randomAirlines.push(airplane["airways"][randomAirlineKey]);
-
-            const productKeys = Object.keys(airplane["flightproduct"]);
-            const randomProductKey = productKeys[Math.floor(Math.random() *  roundTripProducts.length)];
-            randomProducts.push( roundTripProducts[randomProductKey]);
-        }
-
+        if (!airplane?.airways || !airplane?.flightproduct) return;
+    
+        const airlineKeys = Object.keys(airplane.airways);
+        const roundTripProducts = airplane.flightproduct.filter(product => product.back);
+    
+        const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)];
+    
+        const randomAirlines = Array.from({ length: 4 }, () => getRandomItem(airlineKeys))
+            .map(key => airplane.airways[key]);
+    
+        const randomProducts = Array.from({ length: 4 }, () => getRandomItem(roundTripProducts));
+    
         setSelectedAirlines(randomAirlines);
         setSelectedProducts(randomProducts);
     }, [airplane]);
+
 const [isHeart, setIsHeart] = useState(false);
 const toggleHeart = (index) => {
     setIsHeart((prev) =>({...prev,[index]:!prev[index]}) );}
 
 
     return (
+<<<<<<< HEAD
         <div className="product_list">
             <div className="plane_title d-flex justify-content-between align-items-center">
                 <ul className="d-flex align-items-center gap-3">
@@ -52,6 +50,16 @@ const toggleHeart = (index) => {
                         <div className="d-flex flex-column gap-2">
                             <div className="filter_section_title">
                             <span className="title">유형</span>
+=======
+        <div className="plane_listbox d-flex flex-column" id="airplaneArea">
+            {selectedAirlines.map((selectedAirline, index) => (
+            <div className="plane_list d-flex align-items-end justify-content-between" key={index}>
+                <ul className="plane_left d-flex justify-content-center flex-column gap-2">
+                    <li class="d-flex" style={{ gap : "5rem"}}>
+                        <div className="planeLogo_box d-flex flex-column align-items-center gap-2"> 
+                            <div className="planeLogo">
+                                {selectedAirline && <img src={selectedAirline.logo} alt={selectedAirline.name} />}
+>>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
                             </div>
                             <ul className="d-flex gap-3">
                             {[
@@ -82,9 +90,21 @@ const toggleHeart = (index) => {
                             ))}
                             </ul>
                         </div>
+<<<<<<< HEAD
                         <div className="d-flex flex-column gap-2">
                             <div className="filter_section_title">
                             <span className="title">경유</span>
+=======
+                        <div className="plane_section_time d-flex justify-content-between align-items-center">
+                            <div className="plane_time d-flex flex-column align-items-center gap-1">
+                                <p className="airport">{selectedProducts[index]?.go?.depLoc}</p>
+                                <p>{selectedProducts[index]?.go?.depTime}</p>
+                            </div>
+                            <i class="arrow-right"></i>
+                            <div className="plane_time d-flex flex-column align-items-center gap-1">
+                                <p className="airport">{selectedProducts[index]?.go?.arrLoc}</p>
+                                <p>{selectedProducts[index]?.go?.arrTime}</p>
+>>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
                             </div>
                             <ul className="d-flex gap-3">
                             {["직항", "1회이상 경유"].map((label) => (
@@ -118,12 +138,64 @@ const toggleHeart = (index) => {
                         </div>
                         </FillterBox>
                     </li>
+<<<<<<< HEAD
                     </ul>
                 <ul className="d-flex gap-2">
                     <li className="front_btn">
                         <a href="#none">계획짜기</a>
+=======
+                {!isOneWay && selectedProducts[index]?.back && (
+                    <li class="d-flex" style={{ gap : "5rem"}}>
+                        <div className="planeLogo_box d-flex flex-column align-items-center gap-2">
+                            <div className="planeLogo">
+                                {selectedAirline && <img src={selectedAirline.logo} alt={selectedAirline.name} />}
+                            </div>
+                            <span>{selectedAirline?.name}</span>
+                        </div>
+                        <div className="plane_section_time d-flex justify-content-between align-items-center rel">
+                            <div className="plane_time d-flex flex-column align-items-center gap-1">
+                                <p className="airport">{selectedProducts[index]?.back?.depLoc}</p>
+                                <p>{selectedProducts[index]?.back?.depTime}</p>
+                            </div>
+                            <i class="arrow-right"></i>
+                            <div className="plane_time d-flex flex-column align-items-center gap-1">
+                                <p className="airport">{selectedProducts[index]?.back?.arrLoc}</p>
+                                <p>{selectedProducts[index]?.back?.arrTime}</p>
+                            </div>
+                        </div>
+>>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
                     </li>
                 </ul>
+<<<<<<< HEAD
+=======
+            
+         
+                
+                 {/* 가격표시 */}
+                <div className="plane_right d-flex flex-column justify-content-end align-items-end gap-2">
+                    <div className="totalPrice">
+                    {isOneWay ? (      
+                        <span>₩{parseInt(selectedProducts[index]?.go?.price.replace(',', ''))
+                            .toLocaleString()}</span>
+                    ) : (
+                        <span>
+                            ₩{(parseInt(selectedProducts[index]?.go?.price.replace(',', '')) +
+                            parseInt(selectedProducts[index]?.back?.price.replace(',', '')))
+                            .toLocaleString()}
+                        </span>
+                    )}
+                    </div>
+                    <SquareBtn padding={[0.625, 1.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</SquareBtn>
+                    <div className="share_heart_group d-flex align-items-end justify-content-end gap-1">
+                    <button className="share-btn" alt="공유">
+                        <span className="share_icon"></span>
+                    </button> 
+                    <button className="heart-btn" alt="찜" onClick={()=>toggleHeart(index)}>
+                        <span className={isHeart[index] ? "heart_icon Heart" : "heart_icon"}></span>
+                    </button>
+                </div> 
+                </div>
+>>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
             </div>
             <div className="plane_list d-flex flex-column" id="airplaneArea">
                 {selectedAirlines.map((selectedAirline, index) => (

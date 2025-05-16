@@ -59,12 +59,12 @@ export default function Section1({slideData}){
                     </div>
                 </div>
             </div>
-            <div className="promo_banner">
+            {/* <div className="promo_banner">
                 <a href="#none" className="d-flex justify-content-center align-items-center">
                     <img src="https://d-hye.github.io/source/img/banner/event.jpg" alt="여름 성수기 이벤트" className="pc"/>
                     <img src="https://d-hye.github.io/source/img/banner/event_mb.jpg" alt="여름 성수기 이벤트" className="mb"/>
                 </a>
-            </div>
+            </div> */}
             <div className="mb icon_menu">
                 <div className="container">
                     <ul className="d-flex justify-content-center">
