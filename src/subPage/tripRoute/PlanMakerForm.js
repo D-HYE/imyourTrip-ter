@@ -76,26 +76,18 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount}) => {
 
 export const PlanMakerInfo = ({tripDate, count}) => {
     return (
-        <div className="plan_info">
-                
-            <div className="d-flex align-items-center">
-                <ul className="d-flex order-1">
-                <li>
-                    <span>김효정곤듀예요</span>님의 일정
-                </li>
-                </ul>
-                <ul className="d-flex gap-2 order-2">
-                <li>인천 - 가오슝</li>
-                <li>{tripDate.start} - {tripDate.end}</li>
-                <li>인원 {count}명</li>
-                </ul>
-                <ul className="plan_edit d-flex justify-content-end order-3">
-                <li>
-                    <Link to="/">수정하기</Link>
-                </li>
-                </ul>
-            </div>
-        </div>
+        <div className="plan_info d-flex align-items-center">
+                  <ul className="plan_info_detail d-flex gap-2 order-2">
+                    <li>인천 - 가오슝</li>
+                    <li>2025.02.18 - 2025.03.18</li>
+                    <li>인원 2명</li>
+                  </ul>
+                  <ul className="plan_info_edit d-flex justify-content-end order-3">
+                    <li>
+                      <Link to="/">수정하기</Link>
+                    </li>
+                  </ul>
+              </div>
     );
 };
 

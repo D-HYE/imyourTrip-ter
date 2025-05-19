@@ -3,27 +3,22 @@ import { Link } from "react-router-dom";
 
 import PickAirplane from "./PickAirplane";
 import Wishlist from "../user/Wishlist";
-<<<<<<< HEAD
 import PlanMakerForm, {PlanMakerInfo} from "./PlanMakerForm";
-
-import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
-
-=======
-import PlanMakerForm from "./PlanMakerForm";
 import Barslider from "../../components/Barslider";
 
 import { FillterBox } from "../../components/util";
-import { SquareBtn } from "../../styleComponents/ui";
+import {StyledBtn} from "../../styleComponents/ui";
 import element from "../../scss/elements.module.scss";
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
 
 export default function PlanMaker() {
   const [saveFilter, setSaveFilter] = useState(null);
   const [isOneWay, setIsOneWay] = useState(false);
->>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
+  
+  const toggleOneWay = () => {
+    setIsOneWay((prev) => !prev);
+  };
 
-
-export default function PlanMaker() {
 
   //폼 정보
   const [tripDate, setTripDate] = useState({ start: null, end: null });
@@ -36,12 +31,10 @@ export default function PlanMaker() {
 
   return (
     <>
-<<<<<<< HEAD
       <Wishlist
         tripDate={tripDate}
         count={count}
       />
-      <div className="container">
         <PlanMakerForm 
           tripDate={tripDate}
           setTripDate={setTripDate}
@@ -52,27 +45,9 @@ export default function PlanMaker() {
           tripDate={tripDate}
           count={count}
         />
+      <div className="container pageBox">
         {/* 탭 클릭 > info로 변경, 수정하기 누르면 > form */}
         <div className="tab_content">
-=======
-      {/* <Wishlist></Wishlist> */}
-      <div className="plan_info d-flex align-items-center">
-          <ul className="plan_info_detail d-flex gap-2 order-2">
-            <li>인천 - 가오슝</li>
-            <li>2025.02.18 - 2025.03.18</li>
-            <li>인원 2명</li>
-          </ul>
-          <ul className="plan_info_edit d-flex justify-content-end order-3">
-            <li>
-              <Link to="/">수정하기</Link>
-            </li>
-          </ul>
-      </div>
-      <div className="pageBox">
-        {/* <PlanMakerForm /> */}
-        {/* 여기 탭메뉴 */}
-        <div className="tab_content d-none"> 
->>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
           <ul className="d-flex gap-3">
             {[
               "#항공권",
@@ -85,11 +60,7 @@ export default function PlanMaker() {
             ].map((tab) => (
               <li
                 key={tab}
-<<<<<<< HEAD
                 className={` ${tab === "#트립카" ? "tripcar_tab" : ""} ${
-=======
-                className={`${tab === "#트립카" ? "tripcar_tab" : ""} ${
->>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
                   activeTab === tab ? "tabClick" : ""
                 }`}
                 onClick={() => handleTabClick(tab)}
@@ -98,13 +69,6 @@ export default function PlanMaker() {
               </li>
             ))}
           </ul>
-<<<<<<< HEAD
-        </div>
-        {/* 탭 클릭에 따른 해당 영역 켜짐 */}
-
-        {/* 그 해당 영역 */}
-        <PickAirplane hyodata={hyodata}/>
-=======
         </div>
         <div className="filter_title d-flex justify-content-between align-items-center">
           <ul className="d-flex align-items-center gap-3">
@@ -197,7 +161,7 @@ export default function PlanMaker() {
                       </label>
                     </li>
                     <div className="d-flex justify-content-center">
-                      <SquareBtn
+                      <StyledBtn
                         padding={[0.5, 1]}
                         fontSize="var(--semismall-text)"
                         fontWeight="700"
@@ -205,7 +169,7 @@ export default function PlanMaker() {
                         onClick={closeDropdown}
                       >
                         저장
-                      </SquareBtn>
+                      </StyledBtn>
                     </div>
                   </>
                 )}
@@ -219,7 +183,6 @@ export default function PlanMaker() {
           </div>
         </div>
         <PickAirplane hyodata={hyodata} isOneWay={isOneWay} />
->>>>>>> ced69f3466cd8952930b7ea5cc5db7262fa6164b
       </div>
     </>
   );
