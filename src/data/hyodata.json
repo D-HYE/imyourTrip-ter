@@ -35,17 +35,17 @@
         "productId": "1234",
         "go": {
           "airline": "AS",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 06:25",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오전 10:25",
           "price": "230,000"
         },
         "back": {
           "airline": "AS",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 12:00",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 16:00",
           "price": "250,000"
         },
@@ -56,17 +56,17 @@
         "productId": "5678",
         "go": {
           "airline": "OZ",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 10:10",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오후 14:10",
           "price": "270,000"
         },
         "back": {
           "airline": "OZ",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 15:30",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 19:30",
           "price": "230,000"
         },
@@ -77,17 +77,17 @@
         "productId": "91011",
         "go": {
           "airline": "JN",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 09:00",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오후 13:00",
           "price": "240,000"
         },
         "back": {
           "airline": "JN",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 14:00",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 18:00",
           "price": "230,000"
         },
@@ -98,17 +98,17 @@
         "productId": "1213",
         "go": {
           "airline": "ZE",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오후 15:30",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오후 19:30",
           "price": "300,000"
         },
         "back": {
           "airline": "ZE",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오전 08:00",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오전 10:30",
           "price": "280,000"
         },
@@ -119,17 +119,17 @@
         "productId": "1415",
         "go": {
           "airline": "KE",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 06:25",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오전 10:25",
           "price": "230,000"
         },
         "back": {
           "airline": "KE",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 12:00",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 16:00",
           "price": "212,000"
         },
@@ -140,17 +140,17 @@
         "productId": "1617",
         "go": {
           "airline": "7C",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 07:00",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오전 11:00",
           "price": "220,000"
         },
         "back": {
           "airline": "7C",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 13:00",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 15:00",
           "price": "260,000"
         },
@@ -161,17 +161,17 @@
         "productId": "1819",
         "go": {
           "airline": "TW",
-          "depLoc": "인천 (ICN)",
+          "depLoc": "ICN",
           "depTime": "오전 08:30",
-          "arrLoc": "가오슝 (KHH)",
+          "arrLoc": "KHH",
           "arrTime": "오후 12:30",
           "price": "230,000"
         },
         "back": {
           "airline": "TW",
-          "depLoc": "가오슝 (KHH)",
+          "depLoc": "KHH",
           "depTime": "오후 14:30",
-          "arrLoc": "인천 (ICN)",
+          "arrLoc": "ICN",
           "arrTime": "오후 16:30",
           "price": "300,000"
         },

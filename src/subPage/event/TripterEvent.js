@@ -10,7 +10,7 @@ function TripterEvent({dataInfo}) {
 
     return (
         <main className="subMain page_event">  
-            <section className={`${activeTab}Section`}>
+            <section className={`${activeTab}Section`} >
                 <div class="sectionBanner pc">
                     <div>
                         <h3>{dataInfo?.["tripterEvent"]?.[activeTab]?.name}</h3>

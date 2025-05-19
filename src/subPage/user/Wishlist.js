@@ -56,7 +56,7 @@ const Wishlist = ({tripDate, count}) => {
    };
 
   return (
-    <div className="wishlist_container d-flex justify-content-end align-items-end gap-1">
+    <div className="wishlist_container">
       <div className="wishlist_quick d-flex justify-content-center align-items-center" onClick={toggleMenu}>
         <button className="wishlist_quickicon" aria-label="장바구니 아이콘"></button>
       </div>

@@ -11,10 +11,12 @@
     --trip-gray2: rgba(217, 217, 217, 1);
     --trip-gray3: #777;
     --trip-black: rgba(17, 17, 17, 1);
-    --trip-skyblue: rgba(171, 198, 240, 1);
+    --trip-skyblue: #D2E4FF;
     --trip-red: #FF6A6A;
     --trip-sun: #FF7F50;
     --trip-green: #3EB489;
+    --bg-gray:#f3f3f3;
+
 
     /* Text-size styles */
     --main-slide: 4rem;
@@ -35,6 +37,9 @@
     --theJamsil-medium: 'TheJamsil500';
     --theJamsil-bold: 'TheJamsil700';
     --theJamsil-extrabold: 'TheJamsil800';
+
+    /* Drop shadow */
+    --dropShadow: 1px 1px 5px rgba(0,0,0,0.25)
 }
 
 body{
@@ -310,6 +315,9 @@ flex-direction: column;
     position: fixed;
 }
 
+
+
+
 .trip-bl{
     background-color:var(--trip-blue);
 }
@@ -329,5 +337,10 @@ flex-direction: column;
 }
 .order-3{
     order: 3;
+}
+.pageBox{
+    background-color: var(--trip-white);
+    box-shadow:var(--dropShadow);
+    border-radius: 5px;
 }
 

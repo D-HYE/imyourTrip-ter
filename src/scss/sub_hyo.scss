@@ -1,7 +1,8 @@
 //myfeelter
 .myFeelterSection {
     .question_info{
-        padding: 1.25rem 0 2.5rem 0;
+        padding: 1rem;
+        border-bottom: 1px solid var(--trip-gray1);
         .back_btn{
             width: 2rem;
             height: 2rem;
@@ -13,6 +14,9 @@
             }
         }
     }
+    form{
+        padding-bottom: 7.5rem;
+    }
     fieldset .d-flex{
         flex-wrap: wrap; gap: 1.25rem;
     }
@@ -20,7 +24,6 @@
     legend{
         font-size: var(--medium-text);
         font-weight: 600;
-        margin-bottom: 2.5rem;
         span{
             color: var(--trip-blue);
             font-size: var(--big-text);
@@ -79,6 +82,7 @@
 
 //계획짜기_ 저장된 계획
 .plan_info{
+    height: 48px;
     background-color: var(--trip-blue);
     padding: 0.625rem 1.25rem; 
     margin-bottom: 2.5rem;
@@ -88,14 +92,14 @@
         li{
             font-size: var(--semismall-text);
             color: var(--trip-white);
-            padding: 0.5rem;
+            font-weight: 500;
             a{
-                font-size: var(--semismall-text);
-                color: var(--trip-white); 
+                font-size: var(--small-text);
+                font-weight: 400;
             }
         }
     }
-    .plan_edit{
+    .plan_info_edit{
         flex-grow: 1;
     }
 }
@@ -134,11 +138,12 @@
         }
     }
 }
-.plane_title {
-    margin: 2.5rem 0 1.25rem 0;
+.filter_title {
+    background-color: var(--trip-skyblue);
+    padding:  1.25rem 0.625rem;
     .plane_title_all {
+        font-family: var(--theJamsil-bold);
         font-size: var(--mediumbig-text);
-        font-weight: 700;
     }
     .option_list{
         .title{
@@ -146,31 +151,15 @@
         }
     }
 
-    .before_btn,
     .front_btn {
-        padding: 0.625rem 0.75rem;
-        border-radius: 1.25rem 0.3125rem 0.3125rem 1.25rem;
+        padding: 0.625rem 1.5rem 0.625rem 0.75rem;
+        background-color: var(--trip-yellow);
+        border-radius: 0.3125rem 1.25rem 1.25rem 0.3125rem;
 
         a {
             font-size: var(--semismall-text);
             font-weight: 700;
-        }
-    }
-    .before_btn {
-        background-color: var(--trip-gray1);
-        padding-right: 1.5rem;
-
-        a {
-            color: var(--trip-gary3);
-        }
-    }
-    .front_btn {
-        background-color: var(--trip-blue);
-        border-radius: 0.3125rem 1.25rem 1.25rem 0.3125rem;
-        padding-left: 1.5rem;
-
-        a {
-            color: var(--trip-yellow);
+            color: var(--trip-blue);
         }
     }
 }
@@ -190,6 +179,7 @@
                 height: 25px;
             }
             p {
+                font-family: var(--theJamsil-medium);
                 font-size: var(--semismall-text);
             }
             span {
@@ -221,59 +211,53 @@
     }
 }
 //항공권 정보
-.plane_list{
-    gap:3rem;
-    .plane_left{
-        padding: 20px 20px 40px 20px;
-        border-bottom:2px solid var(--trip-gray1) ;
+.plane_listbox{
+    margin: 0.625rem;
+    .plane_list{
+        padding: 1.25rem;
+        border-bottom:1px solid var(--trip-gray1) ;
         align-items: stretch;
-        ul{
-            gap: 3.75rem;
-            li{
-                gap: 3.75rem;
-                .planeLogo_box{
-                    min-width: 136px;
-                }
-                .planeLogo img{
-                    background-size: cover;
-                    background-position: center;
-                    width: 40px;
-                    height: 40px;
-                }
-                span{
-                    font-family: var(--theJamsil-bold);
-                }
+        .planeLogo_box{
+            min-width: 90px;
         }
-            .plane_time p{
-                font-size: var(--medium-text);
-                &.airport{
-                    font-size: var(--semismall-text);
-                }
+        .planeLogo img{
+            background-size: cover;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+        }
+        span{
+            font-family: var(--theJamsil-bold);
+        }
+        .plane_section_time{
+            gap: 1.25rem;
+            .airport{
+                font-size:var(--medium-text);
+                font-weight: 500;
             }
-            .flight-time p{
-                font-family: var(--small-text);
+            p{
+                white-space: nowrap;
             }
-            .arrow-right{
-                display: inline-block;
-                position: relative;
-                width: 120px;
-                height: 2px;
-                background-color: black;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    width: 5px;
-                    height: 5px;
-                    border-right: 2px solid black;
-                    border-bottom: 2px solid black;
-                    transform: translateY(-50%) rotate(-45deg);
+        }
+        .arrow-right{
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 2px;
+            background-color: black;
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 5px;
+                height: 5px;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                transform: translateY(-50%) rotate(-45deg);
 
-                }
             }
         }
-        
     }
 }
 .share_heart_group{
@@ -295,14 +279,13 @@
 
 }    
 .plane_right{
-    border-left: 2px solid var(--trip-gray1);
     .totalPrice span{
-        font-size: var(--mediumbig-text);
-        font-weight: 700;
+        font-family:var(--theJamsil-medium);
+        font-size: var(--semismall-text);
     }
 }
 #airplaneArea{
-    height: 800px;
+    height: 600px;
     overflow-y: scroll;
 }
 //장바구니퀵메뉴
@@ -324,6 +307,7 @@
 .wishlist_list{
     position: fixed;
     bottom: 7rem;
+    right: 0;
     background: #fff;
     border: 3px solid var(--trip-yellow);
     border-radius: 24px;
@@ -333,6 +317,7 @@
     &.open{
         transform: translateX(0);
         right: 2rem;
+
     }    
     .wishlist_title{
         background-color: var(--trip-yellow);
@@ -423,11 +408,26 @@ display:none;
         }
     }
     //계획짜기_ 저장된 계획
-    //.plan_info{
+    .plan_info{
+        display: block;
+        padding: 0;
+        ul{
+            padding: 1.25rem;
+        }
+        .plan_info_detail{
+            background-color: var(--trip-white);
+            flex-direction: column;
+            padding: 1.25rem;
+            li{
+                color: var(--trip-black);
+            }
+        }
+        
+        
 
-    //}
-    //계획짜기_항공
-    //#airplaneArea{
+    }
+    //계획짜기_항공 
+    #airplaneArea{
          
-   // }
+   }
 }
