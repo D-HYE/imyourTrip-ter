@@ -20,8 +20,8 @@ export default function Login() {
     };
 
     return (
-        <section className="userLogin">
-            <div className="form_area container_m">
+        <section className="userLogin ">
+            <div className="form_area container_m ">
                 <h3>안녕하세요 여행자님, <span>트립터와 함께 떠나볼까요?</span></h3>
                 <form onSubmit={handleSubmit(onValid)} noValidate>
                     <fieldset className="fieldset1">

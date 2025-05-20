@@ -20,13 +20,14 @@
 }
 @font-face {
     font-family: 'TheJamsil500';
-    src: url('../font/The_Jamsil/TheJamsil4Medium.ttf');
+    src: url('../font/The_Jamsil/TheJamsil5Bold.ttf');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'TheJamsil700';
-    src: url('../font/The_Jamsil/TheJamsil5Bold.ttf');
+    src: url('../font/The_Jamsil/TheJamsil4Medium.ttf');
+
     font-weight: 700;
     font-style: normal;
 }

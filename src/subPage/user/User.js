@@ -10,7 +10,10 @@ export default function User() {
         <main className='subMain page_login'>
             <section>
                 <div className="sectionBanner pc"></div>
-                {defaultpage === "login" ? <Login /> : <SignUp />}
+                <div className="subContWrap">
+
+                    {defaultpage === "login" ? <Login /> : <SignUp />}
+                </div>
             </section>
         </main>
     );

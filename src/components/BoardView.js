@@ -7,7 +7,7 @@ import { StyledBtn } from '../styleComponents/ui';
 
 const BoardView = ({postData}) => {
     return (
-        <div className="post_area img100 container_m">
+        <div className="post_area img100 pageBox">
             <div className="post_info">
                 <h5 className="post_tit">{postData.postTit}</h5>
                 <ul className="d-flex justify-content-between py-1">

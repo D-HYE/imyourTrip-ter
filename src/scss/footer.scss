@@ -1,10 +1,9 @@
-#ft{
+.mainFooter{
     background-color: var(--trip-gray2);
     width:100%; 
     height:380px;
     display:flex;
     justify-content:center;
-    border-top: 1px solid red;
 
     .ftcontainer{
             display: flex;
@@ -121,7 +120,82 @@
     }
 }
     
+.subFooter{
+    padding: 2.5rem 0 3.75rem;
+    background-color: var(--trip-blue);
+    color: var(--trip-white);
+    .imgbox{
+        height: 60px;
+        img{height: 100%;}
+    }
+    .footer_menu{
+        ul{
+            gap: 2.5rem;
+            padding: 0.625rem 0;
+            a{
+                font-size: var(--small-text); font-weight: 500;
+            }
+        }
+        .company_info,
+        .company_id{
+            column-gap: 1.25rem; row-gap: 0.625rem;
+            padding-top: 0.75rem;
+            font-size: var(--desc-text);
+            span{
+                font-weight: 500;
+            }
+            i{
+                font-style: normal;
+            } 
+        }
+    }
+    .download_btn a{
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: var(--desc-text);
+        border: 1px solid var(--trip-white);
+        border-radius: 5px;
+    }
+    @media only screen and (max-width: 1280px){
+        .container{
+            flex-wrap: wrap;
+            .footer_menu{
+                order: 1;
+                width: 100%;
+                ul{
+                    padding: 1.625rem 0;
+                }
+                .company_info,
+                .company_id{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        padding: 2rem 0;
+        .imgbox{height: 3.6rem;}
+        .footer_menu{
+            ul{
+                gap: 1.2rem;
+                a{font-size: var(--m-small-text);}
+            }
+            .company_info,
+            .company_id{
+                padding-top: 0;
+                padding-bottom: 2rem;
+                flex-direction: column;
+                font-size: var(--m-small-text);
+            }
+        }
 
+        .download_btn a{
+            padding: 1.2rem 2.4rem;
+            font-size: var(--m-small-text);
+        }
+    }
+
+}
 
 // @media only screen and (max-width: 575px){
 // //리얼모바일

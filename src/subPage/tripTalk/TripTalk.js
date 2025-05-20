@@ -16,22 +16,24 @@ function TripTalk({dataInfo}) {
                         <p>{dataInfo?.["tripTalk"]?.[tab]?.description}</p>
                     </div>
                 </div>
-                <div className="sectionList">
-                    <ul className="d-flex justify-content-center container_m flex-wrap">
-                        {
-                            Object.entries(dataInfo["tripTalk"]).map(([key, list]) => (
-                                <li key={key} className={key === tab ? "active" : ""}>
-                                    <Link to={list.link} className="d-flex align-items-center">
-                                        {list.name}
-                                        <span></span>
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-                <div className="sectionCont">
-                    <SubContent key={tab} activeTab={tab}></SubContent>
+                <div className="subContWrap d-flex justify-content-center">
+                    <div className="sectionList pageBox">
+                        <ul className="d-flex flex-column gap-2">
+                            {
+                                Object.entries(dataInfo["tripTalk"]).map(([key, list]) => (
+                                    <li key={key} className={key === tab ? "active" : ""}>
+                                        <Link to={list.link} className="d-flex align-items-center">
+                                            {list.name}
+                                            <span></span>
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className="sectionCont">
+                        <SubContent key={tab} activeTab={tab}></SubContent>
+                    </div>
                 </div>
                 
             </section>  

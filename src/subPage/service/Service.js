@@ -15,10 +15,10 @@ const Service = ({dataInfo}) => {
                         <p>{dataInfo?.["service"]?.[tab]?.description}</p>
                     </div>
                 </div>
-                <div className="sectionCont">
-                    <div className="sectionList">
-                        <ul className="d-flex justify-content-center container_m flex-wrap">
-                            
+                <div className="subContWrap d-flex justify-content-center">
+                    <div className="sectionList pageBox">
+                        <ul className="d-flex flex-column gap-2">
+                    
                                 {
                                 Object.entries(dataInfo["service"]).map(([key, list]) => (
                                     <li key={key} className={key === tab ? "active" : ""}>
@@ -29,10 +29,12 @@ const Service = ({dataInfo}) => {
                                     </li>
                                 ))
                             }
-                            
+                    
                         </ul>
-                    </div> 
-                    <SubContent activeTab={tab}></SubContent>
+                    </div>
+                    <div className="sectionCont">
+                        <SubContent activeTab={tab}></SubContent>
+                    </div>
                 </div>
             </section>  
         </main>

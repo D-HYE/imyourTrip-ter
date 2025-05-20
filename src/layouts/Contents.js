@@ -18,7 +18,6 @@ import '../scss/yujin.scss';
 import '../scss/sub_hyo.scss';
 import '../scss/sub_ek.scss';
 import '../scss/sub_dahye.scss';
-
 // 언어 바뀔 때 말고는 웬만하면 렌더링 뭐시기 할 일 없음
 
 
