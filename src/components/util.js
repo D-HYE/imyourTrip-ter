@@ -2,6 +2,8 @@ import React, { useState, useRef, forwardRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import { Link,useLocation } from "react-router-dom";
+
 //게시판 필터
 export function SelectBox({ children }) {
   const [isOpen, setIsOpen] = useState(false); 
@@ -132,6 +134,37 @@ export function Calendar({onDateChange}){
   );
 }
 
+//계획짜기 탭메뉴
+export function TabMenu({activeTab, setActiveTab}){
+  const location = useLocation();
+  const Showonly = location.pathname === "/user/mypage";
+  const tabs = [
+    ...(Showonly ?["전체보기"] : []),
+    "항공권",
+    "숙박",
+    "투어",
+    "티켓",
+    "트립카"
+  ];
+
+  return (
+    <div className="tab_content">
+      <ul className="d-flex align-items-end m-0 p-0">
+        {tabs.map((tab) => (
+          <li
+            key={tab}
+            className={`${tab === "트립카" ? "tripcar_tab" : ""} ${
+              activeTab === tab ? "tabClick" : ""} d-flex align-items-center justify-content-center`}
+            onClick={() => setActiveTab(tab)}
+          >
+            <span>{tab}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 
 // 404 페이지
 export function NotFound() {
@@ -152,3 +185,4 @@ export function NotFound() {
       </main>
   );
 }
+

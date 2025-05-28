@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMbSearchOpen, setIsMbSearchOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -23,9 +24,9 @@ const Header = () => {
 
     const allMenuclose = document.getElementById("allMenuclose");
     const dim = document.getElementById("dim-background");
-
     const hb_icon = document.getElementById("hb-icon");
 
+    //고객지원
     if (supports) {
       supports.forEach((support) => {
         support.addEventListener("click", () => {
@@ -33,6 +34,7 @@ const Header = () => {
         });
       });
     }
+    //전체메뉴
     const closeMenu = () => {
       if (hb_icon) {
         hb_icon.classList.remove("nextopen");
@@ -41,7 +43,6 @@ const Header = () => {
     if (allMenuclose) {
       allMenuclose.addEventListener("click", closeMenu);
     }
-
     if (dim) {
       dim.addEventListener("click", closeMenu);
     }
@@ -49,7 +50,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+   }, []);
   useEffect(() => {
     const allElements = document.querySelectorAll(".nextopen");
 
@@ -57,6 +58,29 @@ const Header = () => {
       element.classList.remove("nextopen");
     });
   }, [location]);
+  
+  //검색창
+  const handleMbSearchIconClick = (e) => {
+    if (window.innerWidth < 768) {
+      e.preventDefault();
+      setIsMbSearchOpen(prev => !prev);
+    }
+  };
+  useEffect(() => {
+    if (!isMbSearchOpen) return;
+    const handleClickOutside = (event) => {
+      const target = event.target;
+      if (
+        !target.closest("#mb-searchbox") &&
+        !target.classList.contains("search-icon")
+      ) {
+        setIsMbSearchOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isMbSearchOpen]);
+
 
   return (
     <header id="hd" className={isScrolled ? "scrolled" : ""}>
@@ -179,13 +203,13 @@ const Header = () => {
                           트립터<span className="username">###</span>님
                         </div>
                       </div>
-                      <a className="settings" href="/">
+                      <Link to="/user/mypage" className="settings">
                         <img
                           className="d-block"
                           src="https://d-hye.github.io/source/img/icon/settings.svg"
-                          alt="설정"
+                          alt="마이페이지"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <ul className="menu-icon d-flex justify-content-between">
                       <li>
@@ -425,7 +449,13 @@ const Header = () => {
                     type="image"
                     className="search-icon py-0"
                     src="https://d-hye.github.io/source/img/icon/search-02.svg"
-                    alt="검색"
+                    alt="검색" onClick={(e)=>{
+                      const windowWidth = window.innerWidth;
+                      if (windowWidth < 768) {
+                        e.preventDefault(); // 폼 제출 막기
+                        setIsMbSearchOpen((prev) => !prev);
+                      }
+                    }}
                   />
                 </form>
               </li>
@@ -441,7 +471,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div id="mb-searchbox" className="d-none mb">
+          <div id="mb-searchbox" className={`${isMbSearchOpen ? "" :"d-none"}`}>
             <form
               action="/"
               className="mb-search d-flex align-items-center justify-content-end"

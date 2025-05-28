@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ProductList from './ProductList';
+import ProductDetail from './ProductDetail';
 
 
 import SubContent from '../SubContent';
 
-const Prodcut = ({dataInfo}) => {
-    const { category, tab} = useParams()
-    const dataCategory = dataInfo?.["products"]?.[category]
+const Prodcut = ({dataInfo, testData}) => {
+    const { category, tab, productID} = useParams();
+    const dataCategory = dataInfo?.["products"]?.[category];
 
     return (
         <main className='subMain page_product'>
@@ -33,7 +34,12 @@ const Prodcut = ({dataInfo}) => {
                     </ul>
                 </div>
                 <div className="sectionCont container">
-                    <ProductList category={category} tab={tab} />
+                    {
+                        !productID ? <ProductList category={category} tab={tab} testData={testData}/> : <ProductDetail
+                        testData={testData}
+                        />
+                    }
+                    
                 </div>
                 
             </section>  

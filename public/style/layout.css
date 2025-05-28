@@ -20,6 +20,11 @@ main {
   padding: 0 1.25rem;
   margin: auto;
 }
+.container_x {
+  max-width: 64.25rem;
+  padding: 0 1rem;
+  margin: auto;
+}
 .container_m {
   max-width: 48rem;
   padding: 0 0.5rem;

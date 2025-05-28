@@ -464,3 +464,23 @@
         }
     }
 }
+//상세페이지
+.prodctDetail{
+    padding: 40px 16px;
+    .detail_infoBox{
+        max-width: 497px;
+        .detail_tit{
+            font-size: var(--semibig-text);
+        }
+        .detail_info{
+            font-size: var(--small-text);
+        }
+        .detail_info2{
+            font-size:var(--desc-text)
+        }
+        b{
+            font-size: var(--mediumbig-text);
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,1713 @@
+{
+  "서울": [
+    {
+      "id": 1,
+      "title": "서울 국내호텔",
+      "description": "서울의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1.jpg",
+      "detailImages": [
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_1.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_2.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_3.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_4.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_5.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1_6.jpg"
+      ],
+      "detailDescription": "서울 숙소는 서울에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 서울의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "onSale"
+    },
+    {
+      "id": 2,
+      "title": "서울 국내게스트하우스",
+      "description": "서울의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_서울_2.jpg",
+      "detailImages": [
+        "/images/details/domestic_서울_2_img1.jpg",
+        "/images/details/domestic_서울_2_img2.jpg",
+        "/images/details/domestic_서울_2_img3.jpg",
+        "/images/details/domestic_서울_2_img4.jpg",
+        "/images/details/domestic_서울_2_img5.jpg",
+        "/images/details/domestic_서울_2_img6.jpg"
+      ],
+      "detailDescription": "서울 숙소는 서울에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 서울의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 3,
+      "title": "서울 국내펜션",
+      "description": "서울의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_서울_3.jpg",
+      "detailImages": [
+        "/images/details/domestic_서울_3_img1.jpg",
+        "/images/details/domestic_서울_3_img2.jpg",
+        "/images/details/domestic_서울_3_img3.jpg",
+        "/images/details/domestic_서울_3_img4.jpg",
+        "/images/details/domestic_서울_3_img5.jpg",
+        "/images/details/domestic_서울_3_img6.jpg"
+      ],
+      "detailDescription": "서울 숙소는 서울에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 서울의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "인천": [
+    {
+      "id": 4,
+      "title": "인천 국내호텔",
+      "description": "인천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2.jpg",
+      "detailImages": [
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2_1.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2_2.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2_3.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2_4.jpg",
+        "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel2_5.jpg",
+        "/images/details/domestic_인천_4_img6.jpg"
+      ],
+      "detailDescription": "인천 숙소는 인천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 인천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 5,
+      "title": "인천 국내게스트하우스",
+      "description": "인천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_인천_5.jpg",
+      "detailImages": [
+        "/images/details/domestic_인천_5_img1.jpg",
+        "/images/details/domestic_인천_5_img2.jpg",
+        "/images/details/domestic_인천_5_img3.jpg",
+        "/images/details/domestic_인천_5_img4.jpg",
+        "/images/details/domestic_인천_5_img5.jpg",
+        "/images/details/domestic_인천_5_img6.jpg"
+      ],
+      "detailDescription": "인천 숙소는 인천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 인천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "onSale"
+    },
+    {
+      "id": 6,
+      "title": "인천 국내펜션",
+      "description": "인천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_인천_6.jpg",
+      "detailImages": [
+        "/images/details/domestic_인천_6_img1.jpg",
+        "/images/details/domestic_인천_6_img2.jpg",
+        "/images/details/domestic_인천_6_img3.jpg",
+        "/images/details/domestic_인천_6_img4.jpg",
+        "/images/details/domestic_인천_6_img5.jpg",
+        "/images/details/domestic_인천_6_img6.jpg"
+      ],
+      "detailDescription": "인천 숙소는 인천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 인천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "김포": [
+    {
+      "id": 7,
+      "title": "김포 국내호텔",
+      "description": "김포의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1.jpg",
+      "detailImages": [
+        "/images/details/domestic_김포_7_img1.jpg",
+        "/images/details/domestic_김포_7_img2.jpg",
+        "/images/details/domestic_김포_7_img3.jpg",
+        "/images/details/domestic_김포_7_img4.jpg",
+        "/images/details/domestic_김포_7_img5.jpg",
+        "/images/details/domestic_김포_7_img6.jpg"
+      ],
+      "detailDescription": "김포 숙소는 김포에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 김포의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 8,
+      "title": "김포 국내게스트하우스",
+      "description": "김포의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_김포_8.jpg",
+      "detailImages": [
+        "/images/details/domestic_김포_8_img1.jpg",
+        "/images/details/domestic_김포_8_img2.jpg",
+        "/images/details/domestic_김포_8_img3.jpg",
+        "/images/details/domestic_김포_8_img4.jpg",
+        "/images/details/domestic_김포_8_img5.jpg",
+        "/images/details/domestic_김포_8_img6.jpg"
+      ],
+      "detailDescription": "김포 숙소는 김포에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 김포의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 9,
+      "title": "김포 국내펜션",
+      "description": "김포의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_김포_9.jpg",
+      "detailImages": [
+        "/images/details/domestic_김포_9_img1.jpg",
+        "/images/details/domestic_김포_9_img2.jpg",
+        "/images/details/domestic_김포_9_img3.jpg",
+        "/images/details/domestic_김포_9_img4.jpg",
+        "/images/details/domestic_김포_9_img5.jpg",
+        "/images/details/domestic_김포_9_img6.jpg"
+      ],
+      "detailDescription": "김포 숙소는 김포에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 김포의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "부산": [
+    {
+      "id": 10,
+      "title": "부산 국내호텔",
+      "description": "부산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1.jpg",
+      "detailImages": [
+        "/images/details/domestic_부산_10_img1.jpg",
+        "/images/details/domestic_부산_10_img2.jpg",
+        "/images/details/domestic_부산_10_img3.jpg",
+        "/images/details/domestic_부산_10_img4.jpg",
+        "/images/details/domestic_부산_10_img5.jpg",
+        "/images/details/domestic_부산_10_img6.jpg"
+      ],
+      "detailDescription": "부산 숙소는 부산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 부산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 11,
+      "title": "부산 국내게스트하우스",
+      "description": "부산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_부산_11.jpg",
+      "detailImages": [
+        "/images/details/domestic_부산_11_img1.jpg",
+        "/images/details/domestic_부산_11_img2.jpg",
+        "/images/details/domestic_부산_11_img3.jpg",
+        "/images/details/domestic_부산_11_img4.jpg",
+        "/images/details/domestic_부산_11_img5.jpg",
+        "/images/details/domestic_부산_11_img6.jpg"
+      ],
+      "detailDescription": "부산 숙소는 부산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 부산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 12,
+      "title": "부산 국내펜션",
+      "description": "부산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_부산_12.jpg",
+      "detailImages": [
+        "/images/details/domestic_부산_12_img1.jpg",
+        "/images/details/domestic_부산_12_img2.jpg",
+        "/images/details/domestic_부산_12_img3.jpg",
+        "/images/details/domestic_부산_12_img4.jpg",
+        "/images/details/domestic_부산_12_img5.jpg",
+        "/images/details/domestic_부산_12_img6.jpg"
+      ],
+      "detailDescription": "부산 숙소는 부산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 부산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "제주": [
+    {
+      "id": 13,
+      "title": "제주 국내호텔",
+      "description": "제주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1.jpg",
+      "detailImages": [
+        "/images/details/domestic_제주_13_img1.jpg",
+        "/images/details/domestic_제주_13_img2.jpg",
+        "/images/details/domestic_제주_13_img3.jpg",
+        "/images/details/domestic_제주_13_img4.jpg",
+        "/images/details/domestic_제주_13_img5.jpg",
+        "/images/details/domestic_제주_13_img6.jpg"
+      ],
+      "detailDescription": "제주 숙소는 제주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 제주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 14,
+      "title": "제주 국내게스트하우스",
+      "description": "제주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_제주_14.jpg",
+      "detailImages": [
+        "/images/details/domestic_제주_14_img1.jpg",
+        "/images/details/domestic_제주_14_img2.jpg",
+        "/images/details/domestic_제주_14_img3.jpg",
+        "/images/details/domestic_제주_14_img4.jpg",
+        "/images/details/domestic_제주_14_img5.jpg",
+        "/images/details/domestic_제주_14_img6.jpg"
+      ],
+      "detailDescription": "제주 숙소는 제주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 제주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 15,
+      "title": "제주 국내펜션",
+      "description": "제주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_제주_15.jpg",
+      "detailImages": [
+        "/images/details/domestic_제주_15_img1.jpg",
+        "/images/details/domestic_제주_15_img2.jpg",
+        "/images/details/domestic_제주_15_img3.jpg",
+        "/images/details/domestic_제주_15_img4.jpg",
+        "/images/details/domestic_제주_15_img5.jpg",
+        "/images/details/domestic_제주_15_img6.jpg"
+      ],
+      "detailDescription": "제주 숙소는 제주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 제주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "onSale"
+    }
+  ],
+  "청주": [
+    {
+      "id": 16,
+      "title": "청주 국내호텔",
+      "description": "청주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "https://raw.githubusercontent.com/D-HYE/trip-ter/9c63b230dfe096432d404584454497916212db1b/img/sub_img/hotelimg/seoulhotel1.jpg",
+      "detailImages": [
+        "/images/details/domestic_청주_16_img1.jpg",
+        "/images/details/domestic_청주_16_img2.jpg",
+        "/images/details/domestic_청주_16_img3.jpg",
+        "/images/details/domestic_청주_16_img4.jpg",
+        "/images/details/domestic_청주_16_img5.jpg",
+        "/images/details/domestic_청주_16_img6.jpg"
+      ],
+      "detailDescription": "청주 숙소는 청주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 청주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 17,
+      "title": "청주 국내게스트하우스",
+      "description": "청주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_청주_17.jpg",
+      "detailImages": [
+        "/images/details/domestic_청주_17_img1.jpg",
+        "/images/details/domestic_청주_17_img2.jpg",
+        "/images/details/domestic_청주_17_img3.jpg",
+        "/images/details/domestic_청주_17_img4.jpg",
+        "/images/details/domestic_청주_17_img5.jpg",
+        "/images/details/domestic_청주_17_img6.jpg"
+      ],
+      "detailDescription": "청주 숙소는 청주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 청주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 18,
+      "title": "청주 국내펜션",
+      "description": "청주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_청주_18.jpg",
+      "detailImages": [
+        "/images/details/domestic_청주_18_img1.jpg",
+        "/images/details/domestic_청주_18_img2.jpg",
+        "/images/details/domestic_청주_18_img3.jpg",
+        "/images/details/domestic_청주_18_img4.jpg",
+        "/images/details/domestic_청주_18_img5.jpg",
+        "/images/details/domestic_청주_18_img6.jpg"
+      ],
+      "detailDescription": "청주 숙소는 청주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 청주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "대구": [
+    {
+      "id": 19,
+      "title": "대구 국내호텔",
+      "description": "대구의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_대구_19.jpg",
+      "detailImages": [
+        "/images/details/domestic_대구_19_img1.jpg",
+        "/images/details/domestic_대구_19_img2.jpg",
+        "/images/details/domestic_대구_19_img3.jpg",
+        "/images/details/domestic_대구_19_img4.jpg",
+        "/images/details/domestic_대구_19_img5.jpg",
+        "/images/details/domestic_대구_19_img6.jpg"
+      ],
+      "detailDescription": "대구 숙소는 대구에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 대구의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 20,
+      "title": "대구 국내게스트하우스",
+      "description": "대구의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_대구_20.jpg",
+      "detailImages": [
+        "/images/details/domestic_대구_20_img1.jpg",
+        "/images/details/domestic_대구_20_img2.jpg",
+        "/images/details/domestic_대구_20_img3.jpg",
+        "/images/details/domestic_대구_20_img4.jpg",
+        "/images/details/domestic_대구_20_img5.jpg",
+        "/images/details/domestic_대구_20_img6.jpg"
+      ],
+      "detailDescription": "대구 숙소는 대구에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 대구의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 21,
+      "title": "대구 국내펜션",
+      "description": "대구의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_대구_21.jpg",
+      "detailImages": [
+        "/images/details/domestic_대구_21_img1.jpg",
+        "/images/details/domestic_대구_21_img2.jpg",
+        "/images/details/domestic_대구_21_img3.jpg",
+        "/images/details/domestic_대구_21_img4.jpg",
+        "/images/details/domestic_대구_21_img5.jpg",
+        "/images/details/domestic_대구_21_img6.jpg"
+      ],
+      "detailDescription": "대구 숙소는 대구에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 대구의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "무안": [
+    {
+      "id": 22,
+      "title": "무안 국내호텔",
+      "description": "무안의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_무안_22.jpg",
+      "detailImages": [
+        "/images/details/domestic_무안_22_img1.jpg",
+        "/images/details/domestic_무안_22_img2.jpg",
+        "/images/details/domestic_무안_22_img3.jpg",
+        "/images/details/domestic_무안_22_img4.jpg",
+        "/images/details/domestic_무안_22_img5.jpg",
+        "/images/details/domestic_무안_22_img6.jpg"
+      ],
+      "detailDescription": "무안 숙소는 무안에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 무안의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 23,
+      "title": "무안 국내게스트하우스",
+      "description": "무안의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_무안_23.jpg",
+      "detailImages": [
+        "/images/details/domestic_무안_23_img1.jpg",
+        "/images/details/domestic_무안_23_img2.jpg",
+        "/images/details/domestic_무안_23_img3.jpg",
+        "/images/details/domestic_무안_23_img4.jpg",
+        "/images/details/domestic_무안_23_img5.jpg",
+        "/images/details/domestic_무안_23_img6.jpg"
+      ],
+      "detailDescription": "무안 숙소는 무안에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 무안의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 24,
+      "title": "무안 국내펜션",
+      "description": "무안의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_무안_24.jpg",
+      "detailImages": [
+        "/images/details/domestic_무안_24_img1.jpg",
+        "/images/details/domestic_무안_24_img2.jpg",
+        "/images/details/domestic_무안_24_img3.jpg",
+        "/images/details/domestic_무안_24_img4.jpg",
+        "/images/details/domestic_무안_24_img5.jpg",
+        "/images/details/domestic_무안_24_img6.jpg"
+      ],
+      "detailDescription": "무안 숙소는 무안에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 무안의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "광주": [
+    {
+      "id": 25,
+      "title": "광주 국내호텔",
+      "description": "광주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_광주_25.jpg",
+      "detailImages": [
+        "/images/details/domestic_광주_25_img1.jpg",
+        "/images/details/domestic_광주_25_img2.jpg",
+        "/images/details/domestic_광주_25_img3.jpg",
+        "/images/details/domestic_광주_25_img4.jpg",
+        "/images/details/domestic_광주_25_img5.jpg",
+        "/images/details/domestic_광주_25_img6.jpg"
+      ],
+      "detailDescription": "광주 숙소는 광주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 광주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 26,
+      "title": "광주 국내게스트하우스",
+      "description": "광주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_광주_26.jpg",
+      "detailImages": [
+        "/images/details/domestic_광주_26_img1.jpg",
+        "/images/details/domestic_광주_26_img2.jpg",
+        "/images/details/domestic_광주_26_img3.jpg",
+        "/images/details/domestic_광주_26_img4.jpg",
+        "/images/details/domestic_광주_26_img5.jpg",
+        "/images/details/domestic_광주_26_img6.jpg"
+      ],
+      "detailDescription": "광주 숙소는 광주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 광주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "onSale"
+    },
+    {
+      "id": 27,
+      "title": "광주 국내펜션",
+      "description": "광주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_광주_27.jpg",
+      "detailImages": [
+        "/images/details/domestic_광주_27_img1.jpg",
+        "/images/details/domestic_광주_27_img2.jpg",
+        "/images/details/domestic_광주_27_img3.jpg",
+        "/images/details/domestic_광주_27_img4.jpg",
+        "/images/details/domestic_광주_27_img5.jpg",
+        "/images/details/domestic_광주_27_img6.jpg"
+      ],
+      "detailDescription": "광주 숙소는 광주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 광주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "여수": [
+    {
+      "id": 28,
+      "title": "여수 국내호텔",
+      "description": "여수의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_여수_28.jpg",
+      "detailImages": [
+        "/images/details/domestic_여수_28_img1.jpg",
+        "/images/details/domestic_여수_28_img2.jpg",
+        "/images/details/domestic_여수_28_img3.jpg",
+        "/images/details/domestic_여수_28_img4.jpg",
+        "/images/details/domestic_여수_28_img5.jpg",
+        "/images/details/domestic_여수_28_img6.jpg"
+      ],
+      "detailDescription": "여수 숙소는 여수에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 여수의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 29,
+      "title": "여수 국내게스트하우스",
+      "description": "여수의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_여수_29.jpg",
+      "detailImages": [
+        "/images/details/domestic_여수_29_img1.jpg",
+        "/images/details/domestic_여수_29_img2.jpg",
+        "/images/details/domestic_여수_29_img3.jpg",
+        "/images/details/domestic_여수_29_img4.jpg",
+        "/images/details/domestic_여수_29_img5.jpg",
+        "/images/details/domestic_여수_29_img6.jpg"
+      ],
+      "detailDescription": "여수 숙소는 여수에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 여수의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 30,
+      "title": "여수 국내펜션",
+      "description": "여수의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_여수_30.jpg",
+      "detailImages": [
+        "/images/details/domestic_여수_30_img1.jpg",
+        "/images/details/domestic_여수_30_img2.jpg",
+        "/images/details/domestic_여수_30_img3.jpg",
+        "/images/details/domestic_여수_30_img4.jpg",
+        "/images/details/domestic_여수_30_img5.jpg",
+        "/images/details/domestic_여수_30_img6.jpg"
+      ],
+      "detailDescription": "여수 숙소는 여수에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 여수의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "군산": [
+    {
+      "id": 31,
+      "title": "군산 국내호텔",
+      "description": "군산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_군산_31.jpg",
+      "detailImages": [
+        "/images/details/domestic_군산_31_img1.jpg",
+        "/images/details/domestic_군산_31_img2.jpg",
+        "/images/details/domestic_군산_31_img3.jpg",
+        "/images/details/domestic_군산_31_img4.jpg",
+        "/images/details/domestic_군산_31_img5.jpg",
+        "/images/details/domestic_군산_31_img6.jpg"
+      ],
+      "detailDescription": "군산 숙소는 군산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 군산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 32,
+      "title": "군산 국내게스트하우스",
+      "description": "군산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_군산_32.jpg",
+      "detailImages": [
+        "/images/details/domestic_군산_32_img1.jpg",
+        "/images/details/domestic_군산_32_img2.jpg",
+        "/images/details/domestic_군산_32_img3.jpg",
+        "/images/details/domestic_군산_32_img4.jpg",
+        "/images/details/domestic_군산_32_img5.jpg",
+        "/images/details/domestic_군산_32_img6.jpg"
+      ],
+      "detailDescription": "군산 숙소는 군산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 군산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 33,
+      "title": "군산 국내펜션",
+      "description": "군산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_군산_33.jpg",
+      "detailImages": [
+        "/images/details/domestic_군산_33_img1.jpg",
+        "/images/details/domestic_군산_33_img2.jpg",
+        "/images/details/domestic_군산_33_img3.jpg",
+        "/images/details/domestic_군산_33_img4.jpg",
+        "/images/details/domestic_군산_33_img5.jpg",
+        "/images/details/domestic_군산_33_img6.jpg"
+      ],
+      "detailDescription": "군산 숙소는 군산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 군산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "울산": [
+    {
+      "id": 34,
+      "title": "울산 국내호텔",
+      "description": "울산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_울산_34.jpg",
+      "detailImages": [
+        "/images/details/domestic_울산_34_img1.jpg",
+        "/images/details/domestic_울산_34_img2.jpg",
+        "/images/details/domestic_울산_34_img3.jpg",
+        "/images/details/domestic_울산_34_img4.jpg",
+        "/images/details/domestic_울산_34_img5.jpg",
+        "/images/details/domestic_울산_34_img6.jpg"
+      ],
+      "detailDescription": "울산 숙소는 울산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 울산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 35,
+      "title": "울산 국내게스트하우스",
+      "description": "울산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_울산_35.jpg",
+      "detailImages": [
+        "/images/details/domestic_울산_35_img1.jpg",
+        "/images/details/domestic_울산_35_img2.jpg",
+        "/images/details/domestic_울산_35_img3.jpg",
+        "/images/details/domestic_울산_35_img4.jpg",
+        "/images/details/domestic_울산_35_img5.jpg",
+        "/images/details/domestic_울산_35_img6.jpg"
+      ],
+      "detailDescription": "울산 숙소는 울산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 울산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 36,
+      "title": "울산 국내펜션",
+      "description": "울산의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_울산_36.jpg",
+      "detailImages": [
+        "/images/details/domestic_울산_36_img1.jpg",
+        "/images/details/domestic_울산_36_img2.jpg",
+        "/images/details/domestic_울산_36_img3.jpg",
+        "/images/details/domestic_울산_36_img4.jpg",
+        "/images/details/domestic_울산_36_img5.jpg",
+        "/images/details/domestic_울산_36_img6.jpg"
+      ],
+      "detailDescription": "울산 숙소는 울산에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 울산의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "포항": [
+    {
+      "id": 37,
+      "title": "포항 국내호텔",
+      "description": "포항의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_포항_37.jpg",
+      "detailImages": [
+        "/images/details/domestic_포항_37_img1.jpg",
+        "/images/details/domestic_포항_37_img2.jpg",
+        "/images/details/domestic_포항_37_img3.jpg",
+        "/images/details/domestic_포항_37_img4.jpg",
+        "/images/details/domestic_포항_37_img5.jpg",
+        "/images/details/domestic_포항_37_img6.jpg"
+      ],
+      "detailDescription": "포항 숙소는 포항에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 포항의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 38,
+      "title": "포항 국내게스트하우스",
+      "description": "포항의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_포항_38.jpg",
+      "detailImages": [
+        "/images/details/domestic_포항_38_img1.jpg",
+        "/images/details/domestic_포항_38_img2.jpg",
+        "/images/details/domestic_포항_38_img3.jpg",
+        "/images/details/domestic_포항_38_img4.jpg",
+        "/images/details/domestic_포항_38_img5.jpg",
+        "/images/details/domestic_포항_38_img6.jpg"
+      ],
+      "detailDescription": "포항 숙소는 포항에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 포항의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 39,
+      "title": "포항 국내펜션",
+      "description": "포항의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_포항_39.jpg",
+      "detailImages": [
+        "/images/details/domestic_포항_39_img1.jpg",
+        "/images/details/domestic_포항_39_img2.jpg",
+        "/images/details/domestic_포항_39_img3.jpg",
+        "/images/details/domestic_포항_39_img4.jpg",
+        "/images/details/domestic_포항_39_img5.jpg",
+        "/images/details/domestic_포항_39_img6.jpg"
+      ],
+      "detailDescription": "포항 숙소는 포항에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 포항의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "원주": [
+    {
+      "id": 40,
+      "title": "원주 국내호텔",
+      "description": "원주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_원주_40.jpg",
+      "detailImages": [
+        "/images/details/domestic_원주_40_img1.jpg",
+        "/images/details/domestic_원주_40_img2.jpg",
+        "/images/details/domestic_원주_40_img3.jpg",
+        "/images/details/domestic_원주_40_img4.jpg",
+        "/images/details/domestic_원주_40_img5.jpg",
+        "/images/details/domestic_원주_40_img6.jpg"
+      ],
+      "detailDescription": "원주 숙소는 원주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 원주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 41,
+      "title": "원주 국내게스트하우스",
+      "description": "원주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_원주_41.jpg",
+      "detailImages": [
+        "/images/details/domestic_원주_41_img1.jpg",
+        "/images/details/domestic_원주_41_img2.jpg",
+        "/images/details/domestic_원주_41_img3.jpg",
+        "/images/details/domestic_원주_41_img4.jpg",
+        "/images/details/domestic_원주_41_img5.jpg",
+        "/images/details/domestic_원주_41_img6.jpg"
+      ],
+      "detailDescription": "원주 숙소는 원주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 원주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 42,
+      "title": "원주 국내펜션",
+      "description": "원주의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_원주_42.jpg",
+      "detailImages": [
+        "/images/details/domestic_원주_42_img1.jpg",
+        "/images/details/domestic_원주_42_img2.jpg",
+        "/images/details/domestic_원주_42_img3.jpg",
+        "/images/details/domestic_원주_42_img4.jpg",
+        "/images/details/domestic_원주_42_img5.jpg",
+        "/images/details/domestic_원주_42_img6.jpg"
+      ],
+      "detailDescription": "원주 숙소는 원주에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 원주의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "사천": [
+    {
+      "id": 43,
+      "title": "사천 국내호텔",
+      "description": "사천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_사천_43.jpg",
+      "detailImages": [
+        "/images/details/domestic_사천_43_img1.jpg",
+        "/images/details/domestic_사천_43_img2.jpg",
+        "/images/details/domestic_사천_43_img3.jpg",
+        "/images/details/domestic_사천_43_img4.jpg",
+        "/images/details/domestic_사천_43_img5.jpg",
+        "/images/details/domestic_사천_43_img6.jpg"
+      ],
+      "detailDescription": "사천 숙소는 사천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 사천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 44,
+      "title": "사천 국내게스트하우스",
+      "description": "사천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_사천_44.jpg",
+      "detailImages": [
+        "/images/details/domestic_사천_44_img1.jpg",
+        "/images/details/domestic_사천_44_img2.jpg",
+        "/images/details/domestic_사천_44_img3.jpg",
+        "/images/details/domestic_사천_44_img4.jpg",
+        "/images/details/domestic_사천_44_img5.jpg",
+        "/images/details/domestic_사천_44_img6.jpg"
+      ],
+      "detailDescription": "사천 숙소는 사천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 사천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 45,
+      "title": "사천 국내펜션",
+      "description": "사천의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_사천_45.jpg",
+      "detailImages": [
+        "/images/details/domestic_사천_45_img1.jpg",
+        "/images/details/domestic_사천_45_img2.jpg",
+        "/images/details/domestic_사천_45_img3.jpg",
+        "/images/details/domestic_사천_45_img4.jpg",
+        "/images/details/domestic_사천_45_img5.jpg",
+        "/images/details/domestic_사천_45_img6.jpg"
+      ],
+      "detailDescription": "사천 숙소는 사천에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 사천의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "양양": [
+    {
+      "id": 46,
+      "title": "양양 국내호텔",
+      "description": "양양의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/domestic_양양_46.jpg",
+      "detailImages": [
+        "/images/details/domestic_양양_46_img1.jpg",
+        "/images/details/domestic_양양_46_img2.jpg",
+        "/images/details/domestic_양양_46_img3.jpg",
+        "/images/details/domestic_양양_46_img4.jpg",
+        "/images/details/domestic_양양_46_img5.jpg",
+        "/images/details/domestic_양양_46_img6.jpg"
+      ],
+      "detailDescription": "양양 숙소는 양양에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 양양의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "hotel"
+    },
+    {
+      "id": 47,
+      "title": "양양 국내게스트하우스",
+      "description": "양양의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/domestic_양양_47.jpg",
+      "detailImages": [
+        "/images/details/domestic_양양_47_img1.jpg",
+        "/images/details/domestic_양양_47_img2.jpg",
+        "/images/details/domestic_양양_47_img3.jpg",
+        "/images/details/domestic_양양_47_img4.jpg",
+        "/images/details/domestic_양양_47_img5.jpg",
+        "/images/details/domestic_양양_47_img6.jpg"
+      ],
+      "detailDescription": "양양 숙소는 양양에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 양양의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 48,
+      "title": "양양 국내펜션",
+      "description": "양양의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/domestic_양양_48.jpg",
+      "detailImages": [
+        "/images/details/domestic_양양_48_img1.jpg",
+        "/images/details/domestic_양양_48_img2.jpg",
+        "/images/details/domestic_양양_48_img3.jpg",
+        "/images/details/domestic_양양_48_img4.jpg",
+        "/images/details/domestic_양양_48_img5.jpg",
+        "/images/details/domestic_양양_48_img6.jpg"
+      ],
+      "detailDescription": "양양 숙소는 양양에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 양양의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "domestic",
+      "tab": "countryside"
+    }
+  ],
+  "도쿄": [
+    {
+      "id": 49,
+      "title": "도쿄 해외호텔",
+      "description": "도쿄의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_도쿄_49.jpg",
+      "detailImages": [
+        "/images/details/overseas_도쿄_49_img1.jpg",
+        "/images/details/overseas_도쿄_49_img2.jpg",
+        "/images/details/overseas_도쿄_49_img3.jpg",
+        "/images/details/overseas_도쿄_49_img4.jpg",
+        "/images/details/overseas_도쿄_49_img5.jpg",
+        "/images/details/overseas_도쿄_49_img6.jpg"
+      ],
+      "detailDescription": "도쿄 숙소는 도쿄에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 도쿄의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 50,
+      "title": "도쿄 해외게스트하우스",
+      "description": "도쿄의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_도쿄_50.jpg",
+      "detailImages": [
+        "/images/details/overseas_도쿄_50_img1.jpg",
+        "/images/details/overseas_도쿄_50_img2.jpg",
+        "/images/details/overseas_도쿄_50_img3.jpg",
+        "/images/details/overseas_도쿄_50_img4.jpg",
+        "/images/details/overseas_도쿄_50_img5.jpg",
+        "/images/details/overseas_도쿄_50_img6.jpg"
+      ],
+      "detailDescription": "도쿄 숙소는 도쿄에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 도쿄의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 51,
+      "title": "도쿄 해외펜션",
+      "description": "도쿄의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_도쿄_51.jpg",
+      "detailImages": [
+        "/images/details/overseas_도쿄_51_img1.jpg",
+        "/images/details/overseas_도쿄_51_img2.jpg",
+        "/images/details/overseas_도쿄_51_img3.jpg",
+        "/images/details/overseas_도쿄_51_img4.jpg",
+        "/images/details/overseas_도쿄_51_img5.jpg",
+        "/images/details/overseas_도쿄_51_img6.jpg"
+      ],
+      "detailDescription": "도쿄 숙소는 도쿄에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 도쿄의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "오사카": [
+    {
+      "id": 52,
+      "title": "오사카 해외호텔",
+      "description": "오사카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_오사카_52.jpg",
+      "detailImages": [
+        "/images/details/overseas_오사카_52_img1.jpg",
+        "/images/details/overseas_오사카_52_img2.jpg",
+        "/images/details/overseas_오사카_52_img3.jpg",
+        "/images/details/overseas_오사카_52_img4.jpg",
+        "/images/details/overseas_오사카_52_img5.jpg",
+        "/images/details/overseas_오사카_52_img6.jpg"
+      ],
+      "detailDescription": "오사카 숙소는 오사카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 오사카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 53,
+      "title": "오사카 해외게스트하우스",
+      "description": "오사카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_오사카_53.jpg",
+      "detailImages": [
+        "/images/details/overseas_오사카_53_img1.jpg",
+        "/images/details/overseas_오사카_53_img2.jpg",
+        "/images/details/overseas_오사카_53_img3.jpg",
+        "/images/details/overseas_오사카_53_img4.jpg",
+        "/images/details/overseas_오사카_53_img5.jpg",
+        "/images/details/overseas_오사카_53_img6.jpg"
+      ],
+      "detailDescription": "오사카 숙소는 오사카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 오사카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 54,
+      "title": "오사카 해외펜션",
+      "description": "오사카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_오사카_54.jpg",
+      "detailImages": [
+        "/images/details/overseas_오사카_54_img1.jpg",
+        "/images/details/overseas_오사카_54_img2.jpg",
+        "/images/details/overseas_오사카_54_img3.jpg",
+        "/images/details/overseas_오사카_54_img4.jpg",
+        "/images/details/overseas_오사카_54_img5.jpg",
+        "/images/details/overseas_오사카_54_img6.jpg"
+      ],
+      "detailDescription": "오사카 숙소는 오사카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 오사카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "onSale"
+    }
+  ],
+  "방콕": [
+    {
+      "id": 55,
+      "title": "방콕 해외호텔",
+      "description": "방콕의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_방콕_55.jpg",
+      "detailImages": [
+        "/images/details/overseas_방콕_55_img1.jpg",
+        "/images/details/overseas_방콕_55_img2.jpg",
+        "/images/details/overseas_방콕_55_img3.jpg",
+        "/images/details/overseas_방콕_55_img4.jpg",
+        "/images/details/overseas_방콕_55_img5.jpg",
+        "/images/details/overseas_방콕_55_img6.jpg"
+      ],
+      "detailDescription": "방콕 숙소는 방콕에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 방콕의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "onSale"
+    },
+    {
+      "id": 56,
+      "title": "방콕 해외게스트하우스",
+      "description": "방콕의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_방콕_56.jpg",
+      "detailImages": [
+        "/images/details/overseas_방콕_56_img1.jpg",
+        "/images/details/overseas_방콕_56_img2.jpg",
+        "/images/details/overseas_방콕_56_img3.jpg",
+        "/images/details/overseas_방콕_56_img4.jpg",
+        "/images/details/overseas_방콕_56_img5.jpg",
+        "/images/details/overseas_방콕_56_img6.jpg"
+      ],
+      "detailDescription": "방콕 숙소는 방콕에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 방콕의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 57,
+      "title": "방콕 해외펜션",
+      "description": "방콕의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_방콕_57.jpg",
+      "detailImages": [
+        "/images/details/overseas_방콕_57_img1.jpg",
+        "/images/details/overseas_방콕_57_img2.jpg",
+        "/images/details/overseas_방콕_57_img3.jpg",
+        "/images/details/overseas_방콕_57_img4.jpg",
+        "/images/details/overseas_방콕_57_img5.jpg",
+        "/images/details/overseas_방콕_57_img6.jpg"
+      ],
+      "detailDescription": "방콕 숙소는 방콕에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 방콕의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "후쿠오카": [
+    {
+      "id": 58,
+      "title": "후쿠오카 해외호텔",
+      "description": "후쿠오카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_후쿠오카_58.jpg",
+      "detailImages": [
+        "/images/details/overseas_후쿠오카_58_img1.jpg",
+        "/images/details/overseas_후쿠오카_58_img2.jpg",
+        "/images/details/overseas_후쿠오카_58_img3.jpg",
+        "/images/details/overseas_후쿠오카_58_img4.jpg",
+        "/images/details/overseas_후쿠오카_58_img5.jpg",
+        "/images/details/overseas_후쿠오카_58_img6.jpg"
+      ],
+      "detailDescription": "후쿠오카 숙소는 후쿠오카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 후쿠오카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 59,
+      "title": "후쿠오카 해외게스트하우스",
+      "description": "후쿠오카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_후쿠오카_59.jpg",
+      "detailImages": [
+        "/images/details/overseas_후쿠오카_59_img1.jpg",
+        "/images/details/overseas_후쿠오카_59_img2.jpg",
+        "/images/details/overseas_후쿠오카_59_img3.jpg",
+        "/images/details/overseas_후쿠오카_59_img4.jpg",
+        "/images/details/overseas_후쿠오카_59_img5.jpg",
+        "/images/details/overseas_후쿠오카_59_img6.jpg"
+      ],
+      "detailDescription": "후쿠오카 숙소는 후쿠오카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 후쿠오카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "onSale"
+    },
+    {
+      "id": 60,
+      "title": "후쿠오카 해외펜션",
+      "description": "후쿠오카의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_후쿠오카_60.jpg",
+      "detailImages": [
+        "/images/details/overseas_후쿠오카_60_img1.jpg",
+        "/images/details/overseas_후쿠오카_60_img2.jpg",
+        "/images/details/overseas_후쿠오카_60_img3.jpg",
+        "/images/details/overseas_후쿠오카_60_img4.jpg",
+        "/images/details/overseas_후쿠오카_60_img5.jpg",
+        "/images/details/overseas_후쿠오카_60_img6.jpg"
+      ],
+      "detailDescription": "후쿠오카 숙소는 후쿠오카에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 후쿠오카의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "다낭": [
+    {
+      "id": 61,
+      "title": "다낭 해외호텔",
+      "description": "다낭의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_다낭_61.jpg",
+      "detailImages": [
+        "/images/details/overseas_다낭_61_img1.jpg",
+        "/images/details/overseas_다낭_61_img2.jpg",
+        "/images/details/overseas_다낭_61_img3.jpg",
+        "/images/details/overseas_다낭_61_img4.jpg",
+        "/images/details/overseas_다낭_61_img5.jpg",
+        "/images/details/overseas_다낭_61_img6.jpg"
+      ],
+      "detailDescription": "다낭 숙소는 다낭에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 다낭의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 62,
+      "title": "다낭 해외게스트하우스",
+      "description": "다낭의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_다낭_62.jpg",
+      "detailImages": [
+        "/images/details/overseas_다낭_62_img1.jpg",
+        "/images/details/overseas_다낭_62_img2.jpg",
+        "/images/details/overseas_다낭_62_img3.jpg",
+        "/images/details/overseas_다낭_62_img4.jpg",
+        "/images/details/overseas_다낭_62_img5.jpg",
+        "/images/details/overseas_다낭_62_img6.jpg"
+      ],
+      "detailDescription": "다낭 숙소는 다낭에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 다낭의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 63,
+      "title": "다낭 해외펜션",
+      "description": "다낭의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_다낭_63.jpg",
+      "detailImages": [
+        "/images/details/overseas_다낭_63_img1.jpg",
+        "/images/details/overseas_다낭_63_img2.jpg",
+        "/images/details/overseas_다낭_63_img3.jpg",
+        "/images/details/overseas_다낭_63_img4.jpg",
+        "/images/details/overseas_다낭_63_img5.jpg",
+        "/images/details/overseas_다낭_63_img6.jpg"
+      ],
+      "detailDescription": "다낭 숙소는 다낭에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 다낭의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "파리": [
+    {
+      "id": 64,
+      "title": "파리 해외호텔",
+      "description": "파리의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_파리_64.jpg",
+      "detailImages": [
+        "/images/details/overseas_파리_64_img1.jpg",
+        "/images/details/overseas_파리_64_img2.jpg",
+        "/images/details/overseas_파리_64_img3.jpg",
+        "/images/details/overseas_파리_64_img4.jpg",
+        "/images/details/overseas_파리_64_img5.jpg",
+        "/images/details/overseas_파리_64_img6.jpg"
+      ],
+      "detailDescription": "파리 숙소는 파리에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 파리의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 65,
+      "title": "파리 해외게스트하우스",
+      "description": "파리의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_파리_65.jpg",
+      "detailImages": [
+        "/images/details/overseas_파리_65_img1.jpg",
+        "/images/details/overseas_파리_65_img2.jpg",
+        "/images/details/overseas_파리_65_img3.jpg",
+        "/images/details/overseas_파리_65_img4.jpg",
+        "/images/details/overseas_파리_65_img5.jpg",
+        "/images/details/overseas_파리_65_img6.jpg"
+      ],
+      "detailDescription": "파리 숙소는 파리에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 파리의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 66,
+      "title": "파리 해외펜션",
+      "description": "파리의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_파리_66.jpg",
+      "detailImages": [
+        "/images/details/overseas_파리_66_img1.jpg",
+        "/images/details/overseas_파리_66_img2.jpg",
+        "/images/details/overseas_파리_66_img3.jpg",
+        "/images/details/overseas_파리_66_img4.jpg",
+        "/images/details/overseas_파리_66_img5.jpg",
+        "/images/details/overseas_파리_66_img6.jpg"
+      ],
+      "detailDescription": "파리 숙소는 파리에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 파리의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "호치민": [
+    {
+      "id": 67,
+      "title": "호치민 해외호텔",
+      "description": "호치민의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_호치민_67.jpg",
+      "detailImages": [
+        "/images/details/overseas_호치민_67_img1.jpg",
+        "/images/details/overseas_호치민_67_img2.jpg",
+        "/images/details/overseas_호치민_67_img3.jpg",
+        "/images/details/overseas_호치민_67_img4.jpg",
+        "/images/details/overseas_호치민_67_img5.jpg",
+        "/images/details/overseas_호치민_67_img6.jpg"
+      ],
+      "detailDescription": "호치민 숙소는 호치민에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 호치민의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 68,
+      "title": "호치민 해외게스트하우스",
+      "description": "호치민의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_호치민_68.jpg",
+      "detailImages": [
+        "/images/details/overseas_호치민_68_img1.jpg",
+        "/images/details/overseas_호치민_68_img2.jpg",
+        "/images/details/overseas_호치민_68_img3.jpg",
+        "/images/details/overseas_호치민_68_img4.jpg",
+        "/images/details/overseas_호치민_68_img5.jpg",
+        "/images/details/overseas_호치민_68_img6.jpg"
+      ],
+      "detailDescription": "호치민 숙소는 호치민에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 호치민의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 69,
+      "title": "호치민 해외펜션",
+      "description": "호치민의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_호치민_69.jpg",
+      "detailImages": [
+        "/images/details/overseas_호치민_69_img1.jpg",
+        "/images/details/overseas_호치민_69_img2.jpg",
+        "/images/details/overseas_호치민_69_img3.jpg",
+        "/images/details/overseas_호치민_69_img4.jpg",
+        "/images/details/overseas_호치민_69_img5.jpg",
+        "/images/details/overseas_호치민_69_img6.jpg"
+      ],
+      "detailDescription": "호치민 숙소는 호치민에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 호치민의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "튀르키예": [
+    {
+      "id": 70,
+      "title": "튀르키예 해외호텔",
+      "description": "튀르키예의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_튀르키예_70.jpg",
+      "detailImages": [
+        "/images/details/overseas_튀르키예_70_img1.jpg",
+        "/images/details/overseas_튀르키예_70_img2.jpg",
+        "/images/details/overseas_튀르키예_70_img3.jpg",
+        "/images/details/overseas_튀르키예_70_img4.jpg",
+        "/images/details/overseas_튀르키예_70_img5.jpg",
+        "/images/details/overseas_튀르키예_70_img6.jpg"
+      ],
+      "detailDescription": "튀르키예 숙소는 튀르키예에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 튀르키예의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 71,
+      "title": "튀르키예 해외게스트하우스",
+      "description": "튀르키예의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_튀르키예_71.jpg",
+      "detailImages": [
+        "/images/details/overseas_튀르키예_71_img1.jpg",
+        "/images/details/overseas_튀르키예_71_img2.jpg",
+        "/images/details/overseas_튀르키예_71_img3.jpg",
+        "/images/details/overseas_튀르키예_71_img4.jpg",
+        "/images/details/overseas_튀르키예_71_img5.jpg",
+        "/images/details/overseas_튀르키예_71_img6.jpg"
+      ],
+      "detailDescription": "튀르키예 숙소는 튀르키예에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 튀르키예의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 72,
+      "title": "튀르키예 해외펜션",
+      "description": "튀르키예의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_튀르키예_72.jpg",
+      "detailImages": [
+        "/images/details/overseas_튀르키예_72_img1.jpg",
+        "/images/details/overseas_튀르키예_72_img2.jpg",
+        "/images/details/overseas_튀르키예_72_img3.jpg",
+        "/images/details/overseas_튀르키예_72_img4.jpg",
+        "/images/details/overseas_튀르키예_72_img5.jpg",
+        "/images/details/overseas_튀르키예_72_img6.jpg"
+      ],
+      "detailDescription": "튀르키예 숙소는 튀르키예에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 튀르키예의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "뮌헨": [
+    {
+      "id": 73,
+      "title": "뮌헨 해외호텔",
+      "description": "뮌헨의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_뮌헨_73.jpg",
+      "detailImages": [
+        "/images/details/overseas_뮌헨_73_img1.jpg",
+        "/images/details/overseas_뮌헨_73_img2.jpg",
+        "/images/details/overseas_뮌헨_73_img3.jpg",
+        "/images/details/overseas_뮌헨_73_img4.jpg",
+        "/images/details/overseas_뮌헨_73_img5.jpg",
+        "/images/details/overseas_뮌헨_73_img6.jpg"
+      ],
+      "detailDescription": "뮌헨 숙소는 뮌헨에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 뮌헨의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 74,
+      "title": "뮌헨 해외게스트하우스",
+      "description": "뮌헨의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_뮌헨_74.jpg",
+      "detailImages": [
+        "/images/details/overseas_뮌헨_74_img1.jpg",
+        "/images/details/overseas_뮌헨_74_img2.jpg",
+        "/images/details/overseas_뮌헨_74_img3.jpg",
+        "/images/details/overseas_뮌헨_74_img4.jpg",
+        "/images/details/overseas_뮌헨_74_img5.jpg",
+        "/images/details/overseas_뮌헨_74_img6.jpg"
+      ],
+      "detailDescription": "뮌헨 숙소는 뮌헨에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 뮌헨의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 75,
+      "title": "뮌헨 해외펜션",
+      "description": "뮌헨의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_뮌헨_75.jpg",
+      "detailImages": [
+        "/images/details/overseas_뮌헨_75_img1.jpg",
+        "/images/details/overseas_뮌헨_75_img2.jpg",
+        "/images/details/overseas_뮌헨_75_img3.jpg",
+        "/images/details/overseas_뮌헨_75_img4.jpg",
+        "/images/details/overseas_뮌헨_75_img5.jpg",
+        "/images/details/overseas_뮌헨_75_img6.jpg"
+      ],
+      "detailDescription": "뮌헨 숙소는 뮌헨에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 뮌헨의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "상하이": [
+    {
+      "id": 76,
+      "title": "상하이 해외호텔",
+      "description": "상하이의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_상하이_76.jpg",
+      "detailImages": [
+        "/images/details/overseas_상하이_76_img1.jpg",
+        "/images/details/overseas_상하이_76_img2.jpg",
+        "/images/details/overseas_상하이_76_img3.jpg",
+        "/images/details/overseas_상하이_76_img4.jpg",
+        "/images/details/overseas_상하이_76_img5.jpg",
+        "/images/details/overseas_상하이_76_img6.jpg"
+      ],
+      "detailDescription": "상하이 숙소는 상하이에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 상하이의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 77,
+      "title": "상하이 해외게스트하우스",
+      "description": "상하이의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_상하이_77.jpg",
+      "detailImages": [
+        "/images/details/overseas_상하이_77_img1.jpg",
+        "/images/details/overseas_상하이_77_img2.jpg",
+        "/images/details/overseas_상하이_77_img3.jpg",
+        "/images/details/overseas_상하이_77_img4.jpg",
+        "/images/details/overseas_상하이_77_img5.jpg",
+        "/images/details/overseas_상하이_77_img6.jpg"
+      ],
+      "detailDescription": "상하이 숙소는 상하이에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 상하이의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 78,
+      "title": "상하이 해외펜션",
+      "description": "상하이의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_상하이_78.jpg",
+      "detailImages": [
+        "/images/details/overseas_상하이_78_img1.jpg",
+        "/images/details/overseas_상하이_78_img2.jpg",
+        "/images/details/overseas_상하이_78_img3.jpg",
+        "/images/details/overseas_상하이_78_img4.jpg",
+        "/images/details/overseas_상하이_78_img5.jpg",
+        "/images/details/overseas_상하이_78_img6.jpg"
+      ],
+      "detailDescription": "상하이 숙소는 상하이에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 상하이의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "LA": [
+    {
+      "id": 79,
+      "title": "LA 해외호텔",
+      "description": "LA의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_LA_79.jpg",
+      "detailImages": [
+        "/images/details/overseas_LA_79_img1.jpg",
+        "/images/details/overseas_LA_79_img2.jpg",
+        "/images/details/overseas_LA_79_img3.jpg",
+        "/images/details/overseas_LA_79_img4.jpg",
+        "/images/details/overseas_LA_79_img5.jpg",
+        "/images/details/overseas_LA_79_img6.jpg"
+      ],
+      "detailDescription": "LA 숙소는 LA에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. LA의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 80,
+      "title": "LA 해외게스트하우스",
+      "description": "LA의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_LA_80.jpg",
+      "detailImages": [
+        "/images/details/overseas_LA_80_img1.jpg",
+        "/images/details/overseas_LA_80_img2.jpg",
+        "/images/details/overseas_LA_80_img3.jpg",
+        "/images/details/overseas_LA_80_img4.jpg",
+        "/images/details/overseas_LA_80_img5.jpg",
+        "/images/details/overseas_LA_80_img6.jpg"
+      ],
+      "detailDescription": "LA 숙소는 LA에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. LA의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 81,
+      "title": "LA 해외펜션",
+      "description": "LA의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_LA_81.jpg",
+      "detailImages": [
+        "/images/details/overseas_LA_81_img1.jpg",
+        "/images/details/overseas_LA_81_img2.jpg",
+        "/images/details/overseas_LA_81_img3.jpg",
+        "/images/details/overseas_LA_81_img4.jpg",
+        "/images/details/overseas_LA_81_img5.jpg",
+        "/images/details/overseas_LA_81_img6.jpg"
+      ],
+      "detailDescription": "LA 숙소는 LA에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. LA의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "베이징": [
+    {
+      "id": 82,
+      "title": "베이징 해외호텔",
+      "description": "베이징의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_베이징_82.jpg",
+      "detailImages": [
+        "/images/details/overseas_베이징_82_img1.jpg",
+        "/images/details/overseas_베이징_82_img2.jpg",
+        "/images/details/overseas_베이징_82_img3.jpg",
+        "/images/details/overseas_베이징_82_img4.jpg",
+        "/images/details/overseas_베이징_82_img5.jpg",
+        "/images/details/overseas_베이징_82_img6.jpg"
+      ],
+      "detailDescription": "베이징 숙소는 베이징에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 베이징의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 83,
+      "title": "베이징 해외게스트하우스",
+      "description": "베이징의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_베이징_83.jpg",
+      "detailImages": [
+        "/images/details/overseas_베이징_83_img1.jpg",
+        "/images/details/overseas_베이징_83_img2.jpg",
+        "/images/details/overseas_베이징_83_img3.jpg",
+        "/images/details/overseas_베이징_83_img4.jpg",
+        "/images/details/overseas_베이징_83_img5.jpg",
+        "/images/details/overseas_베이징_83_img6.jpg"
+      ],
+      "detailDescription": "베이징 숙소는 베이징에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 베이징의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 84,
+      "title": "베이징 해외펜션",
+      "description": "베이징의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_베이징_84.jpg",
+      "detailImages": [
+        "/images/details/overseas_베이징_84_img1.jpg",
+        "/images/details/overseas_베이징_84_img2.jpg",
+        "/images/details/overseas_베이징_84_img3.jpg",
+        "/images/details/overseas_베이징_84_img4.jpg",
+        "/images/details/overseas_베이징_84_img5.jpg",
+        "/images/details/overseas_베이징_84_img6.jpg"
+      ],
+      "detailDescription": "베이징 숙소는 베이징에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 베이징의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ],
+  "취리히": [
+    {
+      "id": 85,
+      "title": "취리히 해외호텔",
+      "description": "취리히의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 110000,
+      "discountRate": 0.15,
+      "image": "/images/overseas_취리히_85.jpg",
+      "detailImages": [
+        "/images/details/overseas_취리히_85_img1.jpg",
+        "/images/details/overseas_취리히_85_img2.jpg",
+        "/images/details/overseas_취리히_85_img3.jpg",
+        "/images/details/overseas_취리히_85_img4.jpg",
+        "/images/details/overseas_취리히_85_img5.jpg",
+        "/images/details/overseas_취리히_85_img6.jpg"
+      ],
+      "detailDescription": "취리히 숙소는 취리히에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 취리히의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "hotel"
+    },
+    {
+      "id": 86,
+      "title": "취리히 해외게스트하우스",
+      "description": "취리히의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 120000,
+      "discountRate": 0.2,
+      "image": "/images/overseas_취리히_86.jpg",
+      "detailImages": [
+        "/images/details/overseas_취리히_86_img1.jpg",
+        "/images/details/overseas_취리히_86_img2.jpg",
+        "/images/details/overseas_취리히_86_img3.jpg",
+        "/images/details/overseas_취리히_86_img4.jpg",
+        "/images/details/overseas_취리히_86_img5.jpg",
+        "/images/details/overseas_취리히_86_img6.jpg"
+      ],
+      "detailDescription": "취리히 숙소는 취리히에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 취리히의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "guestHouse"
+    },
+    {
+      "id": 87,
+      "title": "취리히 해외펜션",
+      "description": "취리히의 멋진 경관을 감상할 수 있는 숙소입니다.",
+      "originalPrice": 100000,
+      "discountRate": 0.1,
+      "image": "/images/overseas_취리히_87.jpg",
+      "detailImages": [
+        "/images/details/overseas_취리히_87_img1.jpg",
+        "/images/details/overseas_취리히_87_img2.jpg",
+        "/images/details/overseas_취리히_87_img3.jpg",
+        "/images/details/overseas_취리히_87_img4.jpg",
+        "/images/details/overseas_취리히_87_img5.jpg",
+        "/images/details/overseas_취리히_87_img6.jpg"
+      ],
+      "detailDescription": "취리히 숙소는 취리히에 위치한 고급 숙소로, 최상의 편안함과 서비스를 제공합니다. 취리히의 중심에서 주요 관광지와 인접해 있으며, 아름다운 전경과 세련된 인테리어가 특징입니다. 무료 Wi-Fi, 조식 서비스, 피트니스 센터, 수영장 등 다양한 부대시설을 갖추고 있습니다.",
+      "regionType": "overseas",
+      "tab": "countryside"
+    }
+  ]
+}
