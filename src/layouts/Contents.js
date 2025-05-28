@@ -12,12 +12,15 @@ import {NotFound} from '../components/util';
 
 
 import alldata  from '../data/alldata.json'
+import hotelData from '../data/hotelData.json'
 
 import '../scss/globalSub.scss';
 import '../scss/yujin.scss';
 import '../scss/sub_hyo.scss';
 import '../scss/sub_ek.scss';
 import '../scss/sub_dahye.scss';
+import ProductDetail from '../subPage/products/ProductDetail';
+
 // 언어 바뀔 때 말고는 웬만하면 렌더링 뭐시기 할 일 없음
 
 
@@ -35,7 +38,8 @@ export default function Contents(){
                 <Route path="/tripTalk/:tab" element={<TripTalk dataInfo={tabData}/>} />
                 <Route path="/tripTalk/:tab/:postID" element={<TripTalk dataInfo={tabData}/>} />
                 <Route path="/tripterEvent/:tab?" element={<TripterEvent dataInfo={tabData}/>} />
-                <Route path="/products/:category/:tab?" element={<Product dataInfo={tabData}/>} />
+                <Route path="/products/:category/:tab?" element={<Product dataInfo={tabData} testData={hotelData} />} />
+                <Route path="/products/:category/:tab/:productID" element={<ProductDetail testData={hotelData}/>} />
                 <Route path='*' element={<NotFound/>}></Route>
             </Routes>
         </div>

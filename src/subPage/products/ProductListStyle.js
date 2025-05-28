@@ -1,8 +1,62 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { StyledBtn, ImgBox } from '../../styleComponents/ui';
 
-const DefaultList = () => {
+const DefaultList = ({tab, testData}) => {
+    const path = useLocation();
+    const list = Object.values(testData).flat().filter(item => item.tab === tab);
+
+
+    return (
+        <>
+        {list.map(hotel => (
+            <div key={hotel.id} className="product_item img100 productDefault">
+            <div className="info_wrap d-flex align-items-center">
+                <ImgBox width="17.5rem" height="300px" borderRadius="20px">
+                {/* 이미지에 호텔 대표 이미지 넣기 */}
+                <Link to={`${path.pathname}/${hotel.id}`}>
+                    <img
+                    src={hotel.image}
+                    alt={hotel.title}
+                    style={{ width: "100%", height: "100%", borderRadius: "20px", objectFit: "cover" }}
+                    />
+                </Link>
+                </ImgBox>
+                <div className="info_box d-flex flex-column justify-content-between align-items-end">
+                <Link to={`${path.pathname}/${hotel.id}`} className="">
+                    <h5 className="product_tit">{hotel.title}</h5>
+                    <p className="product_info">{hotel.description}</p>
+                    <div className="product_cost d-flex justify-content-between align-items-end">
+                    <h6>트립터 특가</h6>
+                    <div className="d-flex flex-column align-items-end gap-1">
+                        {/* 할인 적용된 가격 계산 */}
+                        <span style={{ textDecoration: "line-through" }}>
+                        {hotel.originalPrice.toLocaleString()}원
+                        </span>
+                        <b>
+                        {(hotel.originalPrice * (1 - hotel.discountRate)).toLocaleString()}원
+                        </b>
+                    </div>
+                    </div>
+                </Link>
+                <div>
+                    <StyledBtn
+                    padding={[1, 2.5]}
+                    fontSize="var(--semismall-text)"
+                    fontWeight="700"
+                    color="var(--trip-yellow)"
+                    >
+                    계획에 담기
+                    </StyledBtn>
+                </div>
+                </div>
+            </div>
+            </div>
+        ))}
+        </>
+    );
+};
+export const DefaultList2 = () => {
     return (
         <div className="product_item img100 productDefault">
             <div className="info_wrap d-flex align-items-center">
@@ -60,7 +114,7 @@ export const HotelList = () => {
     );
 };
 
-export const AirplaneList = () => {
+export const AirplaneList = ({tab}) => {
     return (
         <div className="product_item img100 productAirplane">
             <div className="plane_list d-flex flex-column">

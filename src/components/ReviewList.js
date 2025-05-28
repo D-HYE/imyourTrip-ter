@@ -33,7 +33,7 @@ const ReviewList = ({ review }) => {
     };
 
     return (
-        <div className="board_area pageBox">
+        <div className="board_area container_m pageBox">
             <div className="board_filter d-flex justify-content-end align-items-center">
                 <SelectBox>
                     <li onClick={() => handleSort("latest")}>최신순</li>

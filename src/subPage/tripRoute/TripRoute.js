@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 
-import SubContent from '../SubContent';
+ import SubContent from '../SubContent';
 //Link를 useState 초기화 하는 방향으로 사유: a href=가 안 먹힘
 
 function TripRoute({dataInfo}) {

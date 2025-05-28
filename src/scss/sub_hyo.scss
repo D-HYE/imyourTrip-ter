@@ -105,36 +105,42 @@
 }
 //상풍 페이지 탭
 .tab_content{
-    ul li{
-        border: 0.0625rem solid var(--trip-blue);
-        border-radius: 1.25rem;
-        padding: 0.5rem 1.5rem;
-        a{
-            line-height: var(--medium-text);
-            font-size: var(--small-text);
+    ul {
+        height: 50px;
+        li{
+            height: 40px;
+            border: 0.0625rem solid var(--trip-blue);
+            border-radius: 1.25rem 1.25rem 0 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        
+        span{
+            font-size: var(--semismall-text);
             color: var(--trip-blue);
-            transition: .3s;
+            padding: 1rem;
         }
         &.tripcar_tab{
             border: 0.0625rem solid #FF7F50;
-            a{
+            span{
                 color: #FF7F50;
             }
         }
         &.tabClick{
+            height: 50px;
             background-color: var(--trip-blue);
-            a{
+
+            span{
                 color: var(--trip-yellow);
-                font-size: var(--medium-text);
             }
         }
 
         &.tripcar_tab.tabClick{
             background-color:#3EB489;
             border: 0.0625rem solid #3EB489;
-            a{
+            span{
                 color: var(--trip-white);
             }
+        }
         }
     }
 }
@@ -353,7 +359,6 @@
             color: var(--trip-gray3);
             a{
                 font-size: var(--semismall-text);
-                color: var(--trip-black);
                 
             }
         }
@@ -367,6 +372,35 @@
 #quick{ 
 display:none;
 }
+
+//계획짜기_폼
+.plan_form{
+    .formArea{
+        background-color: var(--trip-white);
+        border-radius: 1.875rem;
+        box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            height: 1.875rem;
+            background-color: var(--trip-blue);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        .inputTit{
+            font-weight: 600;
+            font-size: var(--small-text);
+        }
+    }
+    .confirmArea{
+        background: pink;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     #myfeelter {
@@ -426,8 +460,4 @@ display:none;
         
 
     }
-    //계획짜기_항공 
-    #airplaneArea{
-         
-   }
 }

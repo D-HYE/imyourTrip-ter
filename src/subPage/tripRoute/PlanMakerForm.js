@@ -1,39 +1,49 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Calendar } from "../../components/util";
 
-const PlanMakerForm = ({tripDate, setTripDate, count, setCount}) => {
+const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arrivalCity}) => {
+  //여행지
+  const [depInput, setDepInput] = useState('');
+  const [arrInput, setArrInput] = useState('');
+
+  const handleClick = () => {
+    onSearch(depInput, arrInput); // 부모로 값 전달
+  };
   //여행일
-  
   const handleDateChange = ({ start, end }) => {
     setTripDate({ start, end });
   };
   //인원수
-  
   const increase = () => setCount((prev) => prev + 1);
   const decrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
 
   return (
-      <div className="plan_form">
-        <div className="d-flex justify-content-center gap-4">
-          <ul className="formArea d-flex gap-4">
+      <div className="plan_form d-flex">
+          <div className="formArea">
+          <ul className="d-flex gap-4" style={{height:"254px", alignItems:"center"}} >
             <li>
-              <div className="inputTripSpot">
+              <div className="inputTripSpot d-flex flex-column gap-4">
                 <h6 className="inputTit">지역을 선택해주세요</h6>
                 <div className="formWrap">
-                  <ul>
-                    <li>
-                      <b>출발</b>
+                  <ul className="d-flex flex-column gap-2">
+                    <li className="d-flex flex-column gap-1">
+                      <b className="text-blue">출발</b>
                       <div className="search d-flex">
-                        <input type="text" placeholder="도시를 입력하세요" />
-                        <button className="icon_box"></button>
+                        <input type="text" placeholder="도시를 입력하세요"
+                        value={depInput}
+                        onChange={(e) => setDepInput(e.target.value)}
+                        />
+                        <button className="icon_box" onClick={handleClick}></button>
                       </div>
                     </li>
-                    <li>
-                      <b>도착</b>
+                    <li className="d-flex flex-column gap-1">
+                      <b className="text-blue">도착</b>
                       <div className="search d-flex">
-                        <input type="text" placeholder="도시를 입력하세요" />
-                        <button className="icon_box"></button>
+                        <input type="text" placeholder="도시를 입력하세요"
+                        value={arrInput}
+                        onChange={(e) => setArrInput(e.target.value)}/>
+                        <button className="icon_box" onClick={handleClick}></button>
                       </div>
                     </li>
                   </ul>
@@ -59,8 +69,9 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount}) => {
               </div>
             </li>
           </ul>
+          </div>
           <div className="confirmArea">
-            <div className="tripSpot">도시명</div>
+            <div className="tripSpot">{arrivalCity}</div>
             <div className="tripDate">
               {tripDate.start} - {tripDate.end}
             </div>
@@ -69,18 +80,17 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount}) => {
             </div>
             <button>계획 짜기 시작</button>
           </div>
-        </div>
       </div>
   );
 };
 
-export const PlanMakerInfo = ({tripDate, count}) => {
+export const PlanMakerInfo = ({tripDate, count, departureCity, arrivalCity}) => {
     return (
         <div className="plan_info d-flex align-items-center">
                   <ul className="plan_info_detail d-flex gap-2 order-2">
-                    <li>인천 - 가오슝</li>
-                    <li>2025.02.18 - 2025.03.18</li>
-                    <li>인원 2명</li>
+                    <li>{departureCity} - {arrivalCity}</li>
+                    <li>{tripDate.start} - {tripDate.end}</li>
+                    <li>인원 {count}명</li>
                   </ul>
                   <ul className="plan_info_edit d-flex justify-content-end order-3">
                     <li>
