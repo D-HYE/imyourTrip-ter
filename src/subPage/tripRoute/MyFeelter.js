@@ -37,7 +37,7 @@ export default function MyFeelter() {
     const [key, item] = questions[currQIdx];
 
     return (
-        <div className="form_area pageBox">
+        <div className="myFeelterSection form_area pageBox">
             <div className="question_info">
                 <div className="d-flex justify-content-between align-items-center">
                     <div

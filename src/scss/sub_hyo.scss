@@ -375,11 +375,81 @@ display:none;
 
 //계획짜기_폼
 .plan_form{
+    height: 254px;
     .formArea{
         background-color: var(--trip-white);
         border-radius: 1.875rem;
         box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.25);
-        overflow: hidden;
+        position: relative;
+        flex-grow: 1;
+        &::before {
+            content: "";
+            display: block;
+            height: 1.875rem;
+            background-color: var(--trip-blue);
+            width: 100%;
+            border-top-left-radius: 1.875rem;
+            border-top-right-radius: 1.875rem;
+            top: 0;
+            left: 0;
+          }
+        .inputTit{
+            font-weight: 600;
+            font-size: var(--small-text);           
+        }
+        .search{
+            border-bottom: 1px solid var(--trip-blue);
+            .icon_search{
+                background-image: url(https://d-hye.github.io/source/img/icon/search-02.svg);
+            }
+        }
+        .inputTripDate{
+            .calendar{
+                background-color: var(--trip-blue);
+                border-radius: 5px 30px 30px 5px;
+                
+                button{
+                    color: var(--trip-white);
+                    padding: 8px 20px 8px 10px;
+                    &::before{
+                        content: "";
+                        width: 24px;
+                        height: 24px;
+                        background: url("https://raw.githubusercontent.com/D-HYE/trip-ter/b0e3cbc04e805917e3f201d0b1a1c9283b87d8d4/img/icon/calendar.svg") no-repeat center/contain;
+                        text-indent: -10000px;
+                        margin-right: 8px;
+    
+                    }
+                }
+            }
+        }
+        .inputHeadCount{
+            .minus{
+                border-radius: 5px;
+                background-color: var(--trip-blue);
+                background-size: 16px 16px;
+                background-image: url(https://raw.githubusercontent.com/D-HYE/trip-ter/c5c3f96782670bff5d39dfee1dda837c4e85b78c/img/icon/Minus.svg);
+                padding: 1.25rem;
+            }
+            .plus{
+                border-radius: 5px;
+                background-color: var(--trip-blue);
+                background-size: 16px 16px;
+                background-image: url(https://raw.githubusercontent.com/D-HYE/trip-ter/c5c3f96782670bff5d39dfee1dda837c4e85b78c/img/icon/Plus.svg);
+                padding: 1.25rem;
+            }
+            .count{
+                font-size: var(--small-text);
+                font-family: var(--theJamsil-regular);
+            }
+        }
+
+    }
+    .confirmArea{
+        width: 219px;
+        background-color: var(--trip-yellow);
+        border-radius: 1.875rem;
+        box-shadow:1px 1px 5px 0px rgba(0, 0, 0, 0.25);
         position: relative;
         &::before {
             content: "";
@@ -387,20 +457,53 @@ display:none;
             height: 1.875rem;
             background-color: var(--trip-blue);
             width: 100%;
-            position: absolute;
+            border-top-left-radius: 1.875rem;
+            border-top-right-radius: 1.875rem;
             top: 0;
             left: 0;
           }
-        .inputTit{
-            font-weight: 600;
-            font-size: var(--small-text);
+        .tripSpot{
+            font-weight: 700;
+            font-size: var(--semismall-text);
         }
     }
-    .confirmArea{
-        background: pink;
+}
+//날짜폼
+.calendar{
+    .react-datepicker__month-container{
+        font-family: var(--theJamsil-medium);
+    }
+    .react-datepicker__header{
+        background-color: transparent;
+        box-shadow: var(--dropShadow);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .react-datepicker__input-container >button{
+        min-width:  258px; 
+    }
+    .react-datepicker__day--selected,
+    .react-datepicker__day--in-range{
+        background-color: var(--trip-blue);
+        color: var(--trip-yellow);
+        border-radius: 50%;
+    }
+    .react-datepicker__day--outside-month {
+        color: var(--trip-gray2);
+    }
+    .react-datepicker__day:hover,
+    .react-datepicker__day--in-selecting-range {
+        background-color: var(--trip-skyblue);
+        color: var(--trip-black);
+        border-radius: 50%;
+    }  
+}
+@media only screen and (max-width: 1028px) {
+    .plan_info{
+
     }
 }
-
 
 @media only screen and (max-width: 768px) {
     #myfeelter {
@@ -410,6 +513,7 @@ display:none;
             margin: 20px 0 20px 0;
         }
         .answerBox {
+            flex-direction: column;
         label{
                 background-image: none !important;
                 border: 2px solid var(--trip-blue);
@@ -426,14 +530,27 @@ display:none;
                         span{
                             opacity: 1;
                         }
-                } 
+                }
+            }
+        } 
+        .table2{
+            div{
+                width: 100%;
+                height: 5rem;
+            }
+        }
+        .table3{
+            div{
+                width: 100%;
+                height: auto;
             }
         }  
+
     }
 
 }
 @media only screen and (max-width: 575px){
-    #myfeelter {
+    #myfeelterForm {
         legend{
             font-size: var(--small-text);
             span{

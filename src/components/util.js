@@ -1,6 +1,7 @@
 import React, { useState, useRef, forwardRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { ko } from "date-fns/locale";
 
 import { Link,useLocation } from "react-router-dom";
 
@@ -129,6 +130,8 @@ export function Calendar({onDateChange}){
         endDate={endDate}
         selectsRange
         customInput={<CustomInput />}
+        locale={ko}
+        dateFormat="yyyy. MM. dd" 
       />
     </div>
   );
