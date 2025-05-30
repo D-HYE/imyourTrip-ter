@@ -93,7 +93,7 @@
             font-size: var(--semismall-text);
             color: var(--trip-white);
             font-weight: 500;
-            a{
+            span{
                 font-size: var(--small-text);
                 font-weight: 400;
             }
@@ -467,6 +467,11 @@ display:none;
             font-size: var(--semismall-text);
         }
     }
+    .Btn_disabled{
+        background-color: var(--trip-skyblue);
+        color: var(--trip-gray3);
+        cursor: default;
+    }
 }
 //날짜폼
 .calendar{
@@ -500,9 +505,7 @@ display:none;
     }  
 }
 @media only screen and (max-width: 1028px) {
-    .plan_info{
 
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -547,6 +550,7 @@ display:none;
         }  
 
     }
+    
 
 }
 @media only screen and (max-width: 575px){

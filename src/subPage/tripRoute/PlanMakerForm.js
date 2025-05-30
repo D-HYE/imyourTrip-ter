@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Calendar} from "../../components/util";
 import { StyledBtn } from "../../styleComponents/ui";
 
-const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arrivalCity}) => {
+
+const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arrivalCity , onSubmit}) => {
   //여행지
   const [depInput, setDepInput] = useState('');
   const [arrInput, setArrInput] = useState('');
@@ -18,6 +19,10 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arriva
   //인원수
   const increase = () => setCount((prev) => prev + 1);
   const decrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
+
+  //폼 완료 여부
+  const isFormComplete = depInput && arrInput && tripDate.start && tripDate.end;
+  
 
   return (
       <div className="plan_form d-flex">
@@ -84,14 +89,15 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arriva
             </li>
             </ul>
             <div className="d-flex justify-content-center">
-             <StyledBtn  padding={[0.625, 1.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)">계획에 담기</StyledBtn>
+             <StyledBtn  padding={[0.625, 1.5]} fontSize="var(--semismall-text)" fontWeight="700" color="var(--trip-yellow)" 
+             disabled={!isFormComplete} className={!isFormComplete ? "Btn_disabled":""} onClick={() => {onSearch(depInput, arrInput);  onSubmit();}}>계획에 담기</StyledBtn>
             </div>
           </div>
       </div>
   );
 };
 
-export const PlanMakerInfo = ({tripDate, count, departureCity, arrivalCity}) => {
+export const PlanMakerInfo = ({tripDate, count, departureCity, arrivalCity, onEdit}) => {
     return (
         <div className="plan_info d-flex align-items-center">
                   <ul className="plan_info_detail d-flex gap-2 order-2">
@@ -101,7 +107,7 @@ export const PlanMakerInfo = ({tripDate, count, departureCity, arrivalCity}) => 
                   </ul>
                   <ul className="plan_info_edit d-flex justify-content-end order-3">
                     <li>
-                      <Link style={{color:"var(--trip-whithe)"}} to="/">수정하기</Link>
+                      <span style={{color:"var(--trip-whithe)"}} onClick={onEdit}>수정하기</span>
                     </li>
                   </ul>
               </div>
@@ -110,4 +116,3 @@ export const PlanMakerInfo = ({tripDate, count, departureCity, arrivalCity}) => 
 
 
 export default PlanMakerForm;
-
