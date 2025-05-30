@@ -20,8 +20,8 @@ const FAQ = () => {
 
     return (      
         <div className={`${ekmodule.faq}`}>
-            <h2 className="">고객센터</h2>
-            <li>
+            <h2>고객센터</h2>
+            <li className={`${ekmodule.title}`}>
                 <h4>자주 묻는 질문 FAQ </h4>
                 <a href="/Service/ask" className={`${ekmodule.qnabtn}`}>1:1문의</a>
             </li>
@@ -31,16 +31,23 @@ const FAQ = () => {
                 <dl>
                 {filteredFaq.map((item, index) => (
                     <div key={index}> 
-                        <dt className="d-flex align-items-center justify-content-between"
+                        <dt className="d-flex "
                         onClick={()=> toggleFAQ(index)}>
-                        <span className={`${ekmodule.qamark}`}>Q.</span>{item.question}
+                        <span className={`${ekmodule.qamark}`}  >Q.</span>
+                        <span className={`${ekmodule.question}`}>{item.question}</span>
                             <img src="https://d-hye.github.io/source/img/icon/polygon-bottom.svg"
                             alt="faq버튼" 
-                            style={{ width: '15px', height: '15px', marginLeft: 'auto', marginRight:'10px'}}/>
-                            </dt>
+                            className={`${ekmodule.icon} ${openIndex === index ? ekmodule.rotateIcon : ""}`}
+                            style={{width: '15px', 
+                                    height: '15px', 
+                                    marginLeft: 'auto', 
+                                    marginRight:'10px'                        
+                                    }}/>
+                        </dt>
                             {openIndex === index && (
-                            <dd>
-                            <span className={`${ekmodule.qamark}`}>A.</span>{item.answer}
+                            <dd className={openIndex === index ? ekmodule.active : ""}>
+                            <span className={`${ekmodule.qamark}`}>A.</span>
+                            <span>{item.answer}</span>
                             </dd>
                             )}
                         </div>

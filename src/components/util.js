@@ -183,8 +183,10 @@ export function FaqTabMenu({activeTab, setActiveTab}){
         {tabs.map((tab) => (
           <li
             key={tab}
-            className={`${tab === "트립카" ? ekmodule.faqtripcar : ""} ${
-              activeTab === tab ? ekmodule.faqtabClick : ""} d-flex align-items-center justify-content-center`}
+            className={`
+            ${tab === "트립카" ? ekmodule.faqtripcar : ""}
+            ${activeTab === tab ? ekmodule.faqtabClick : ""} 
+            d-flex align-items-center justify-content-center`}
             onClick={() => setActiveTab(tab)}
           >
             <span>{tab}</span>
