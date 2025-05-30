@@ -6,37 +6,83 @@
     font-size: 0.875rem;
     padding: 10px 0 40px 10px;
     line-height: auto;
-}
-h2{
-    font-size: 1.5rem;
-    width: 748px;
-    padding: 20px 10px;
-    border-bottom: 2px solid #0051D3;
-}
 
-h4{
-    font-size: 1.25rem;
-}
-li{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 10px 20px 10px 10px;
+    h2{
+        font-size: 1.5rem;
+        width: 748px;
+        padding: 20px 10px;
+        border-bottom: 2px solid var(--trip-blue);
+    }
 
-    .qnabtn{
-    background-color: #0051D3;
-    padding: 10px ;
-    color: #FFDA00;
-    border-radius: 5px;
-    font-size: 1rem;
-    
+    h4{
+        font-size: 1.25rem;
+    }
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 10px 20px 10px 10px;
+
+        .qnabtn{
+        background-color: var(--trip-blue);
+        padding: 10px ;
+        color: var(--trip-yellow);
+        border-radius: 5px;
+        font-size: 1rem;
+        }
     }
 }
 
-.faqtab{
-    width: 748px;
-    border-bottom: 1px solid #0051D3;
+.faq_tab{
+    ul {
+        height: 50px;
+        padding: 0;
+
+        li{
+            height: 40px;
+            border: 0.0625rem solid var(--trip-blue);
+            border-radius: 1.25rem 1.25rem 0 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        
+            span{
+                font-size: var(--small-text);
+                color: var(--trip-blue);
+                padding: 1rem;
+            }
+        }
+     }
+        //탭메뉴클릭
+        &.faqtabClick {
+            background-color: var(--trip-blue);
+        
+            span {
+              color: var(--trip-yellow);
+            }
+          }
+        
+          // "트립카" 탭일 때 적용되는 스타일
+          &.faqtripcar.faqtabClick {
+            background-color: #3EB489;
+            border: 0.0625rem solid #3EB489;
+        
+            span {
+              color: var(--trip-white);
+            }
+          }
+        }
+        
+        .faqtabmenu {
+          li {
+            font-size: 1rem;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
 }
+
 
 
 .qamark{
@@ -51,9 +97,9 @@ dl {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
+        padding: 20px 10px 20px 10px;
         border-bottom: 1px solid rgba(181, 181, 181, 1);
+        cursor: pointer;
     }
     dd{
                 

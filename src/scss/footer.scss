@@ -124,15 +124,19 @@
 .subFooter{
     padding: 2.5rem 0 3.75rem;
     background-color: var(--trip-blue);
-    color: var(--trip-white);
+    color: var(--trip-white) ;
     .imgbox{
         height: 60px;
         img{height: 100%;}
     }
     .footer_menu{
+        color: var(--trip-white);
         ul{
             gap: 2.5rem;
             padding: 0.625rem 0;
+            li{
+                color: var(--trip-white);
+            }
             a{
                 font-size: var(--small-text); font-weight: 500;
             }

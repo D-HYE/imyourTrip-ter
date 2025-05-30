@@ -1,6 +1,7 @@
 import React, { useState, useRef, forwardRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ekmodule from "../../src/scss/faq.ek.module.scss";
 
 import { Link,useLocation } from "react-router-dom";
 
@@ -144,17 +145,46 @@ export function TabMenu({activeTab, setActiveTab}){
     "숙박",
     "투어",
     "티켓",
-    "트립카"
+    "트립카",
   ];
 
   return (
     <div className="tab_content">
-      <ul className="d-flex align-items-end m-0 p-0">
+      <ul className="d-flex align-items-end m-0 p-0 ">
         {tabs.map((tab) => (
           <li
             key={tab}
             className={`${tab === "트립카" ? "tripcar_tab" : ""} ${
               activeTab === tab ? "tabClick" : ""} d-flex align-items-center justify-content-center`}
+            onClick={() => setActiveTab(tab)}
+          >
+            <span>{tab}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+//FAQ 탭메뉴
+export function FaqTabMenu({activeTab, setActiveTab}){
+  const tabs = [
+    "전체보기",
+    "항공권",
+    "숙박",
+    "티켓",
+    "트립카",
+    "회원/기타"
+  ];
+
+  return (
+    <div className={`${ekmodule.faq_tab}`}>
+      <ul className={`${ekmodule.faqtabmenu} d-flex align-items-end m-0 p-0 `}>
+        {tabs.map((tab) => (
+          <li
+            key={tab}
+            className={`${tab === "트립카" ? ekmodule.faqtripcar : ""} ${
+              activeTab === tab ? ekmodule.faqtabClick : ""} d-flex align-items-center justify-content-center`}
             onClick={() => setActiveTab(tab)}
           >
             <span>{tab}</span>
