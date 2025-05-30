@@ -1,0 +1,64 @@
+.faq{
+    width: 768px;
+    gap: 10px;
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.875rem;
+    padding: 10px 0 40px 10px;
+    line-height: auto;
+}
+h2{
+    font-size: 1.5rem;
+    width: 748px;
+    padding: 20px 10px;
+    border-bottom: 2px solid #0051D3;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 20px 10px 10px;
+
+    .qnabtn{
+    background-color: #0051D3;
+    padding: 10px ;
+    color: #FFDA00;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+    }
+}
+
+.faqtab{
+    width: 748px;
+    border-bottom: 1px solid #0051D3;
+}
+
+
+.qamark{
+    font-family: 'TheJamsil700';
+}
+dl {
+    width: 748px;
+    font-size: 0.875rem;
+    
+
+    dt{ 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(181, 181, 181, 1);
+    }
+    dd{
+                
+        margin-top: 20px;
+        padding: 0 10px 20px;
+        border-bottom: 1px solid rgba(217, 217, 217, 1);
+    }
+}
