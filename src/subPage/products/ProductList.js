@@ -1,6 +1,6 @@
 import DefaultList, { AirplaneList } from './ProductListStyle';
 
-const ProductList = ({ category, tab, testData }) => {
+const ProductList = ({ category, tab }) => {
     const componentMap = {
         airplane: AirplaneList,
         accommodation: DefaultList,
@@ -13,7 +13,9 @@ const ProductList = ({ category, tab, testData }) => {
         <div className="d-flex flex-wrap">
             {Component ? (
                 <>
-                    <Component tab={tab} testData={testData} />
+                    <Component tab={tab} />
+                    <Component tab={tab} />
+                    <Component tab={tab} />
                 </>
             ) : (
                 <p>해당 상품이 없습니다.</p>

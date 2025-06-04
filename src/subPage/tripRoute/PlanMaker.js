@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import PickAirplane from "./PickAirplane";
-import PickHotel from "./PickHotel";
 import Wishlist from "../user/Wishlist";
 import PlanMakerForm, {PlanMakerInfo} from "./PlanMakerForm";
 import Barslider from "../../components/Barslider";
 
-import { FillterBox, TabMenu } from "../../components/util";
+import { FillterBox } from "../../components/util";
 import {StyledBtn} from "../../styleComponents/ui";
 import element from "../../scss/elements.module.scss";
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
 
-
 export default function PlanMaker() {
+  // const [saveFilter, setSaveFilter] = useState(null);
   const [isOneWay, setIsOneWay] = useState(false);
   
   const toggleOneWay = () => {
@@ -24,15 +23,12 @@ export default function PlanMaker() {
   //폼 정보
   const [tripDate, setTripDate] = useState({ start: null, end: null });
   const [count, setCount] = useState(1);
-  const [activeTab, setActiveTab] = useState("항공권");
 
-  //아마 항공권
-  const [departureCity, setDepartureCity] = useState('');
-  const [arrivalCity, setArrivalCity] = useState('');
-  const handleSearch = (dep, arr) => {
-    setDepartureCity(dep);
-    setArrivalCity(arr);
+  const [activeTab, setActiveTab] = useState("");
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
   };
+
   return (
     <>
       <Wishlist
@@ -44,18 +40,36 @@ export default function PlanMaker() {
           setTripDate={setTripDate}
           count={count}
           setCount={setCount}
-          onSearch={handleSearch}
-          arrivalCity={arrivalCity}
         />
         <PlanMakerInfo
-          departureCity={departureCity}
-          arrivalCity={arrivalCity}
           tripDate={tripDate}
           count={count}
         />
-      <TabMenu activeTab={activeTab} setActiveTab={setActiveTab}></TabMenu>
-      <div className="pageBox">
+      <div className="container pageBox">
         {/* 탭 클릭 > info로 변경, 수정하기 누르면 > form */}
+        <div className="tab_content">
+          <ul className="d-flex gap-3">
+            {[
+              "#항공권",
+              "#숙소",
+              "#투어",
+              "#티켓",
+              "#랜드마크",
+              "#교통패스",
+              "#트립카",
+            ].map((tab) => (
+              <li
+                key={tab}
+                className={` ${tab === "#트립카" ? "tripcar_tab" : ""} ${
+                  activeTab === tab ? "tabClick" : ""
+                }`}
+                onClick={() => handleTabClick(tab)}
+              >
+                <Link to="#none">{tab}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="filter_title d-flex justify-content-between align-items-center">
           <ul className="d-flex align-items-center gap-3">
             <li className="plane_title_all">전체보기</li>
@@ -168,12 +182,7 @@ export default function PlanMaker() {
             </div>
           </div>
         </div>
-        {activeTab === "항공권"
-        && <PickAirplane hyodata={hyodata} isOneWay={isOneWay}
-        departureCity={departureCity}
-        arrivalCity={arrivalCity}
-        />}
-        {activeTab === "숙박" && <PickHotel />}
+        <PickAirplane hyodata={hyodata} isOneWay={isOneWay} />
       </div>
     </>
   );

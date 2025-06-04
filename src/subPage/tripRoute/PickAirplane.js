@@ -2,13 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { StyledBtn } from '../../styleComponents/ui';
 
 
-const PickAirplane = ({ hyodata, isOneWay, departureCity, arrivalCity }) => {
+const PickAirplane = ({ hyodata, isOneWay }) => {
     const airplane = hyodata["airplane"];
-    const airport = airplane["airports"];
-
-    //
     const [selectedAirlines, setSelectedAirlines] = useState([]);
-    const [selectedProducts, setSelectedProducts] = useState([]);  
+    const [selectedProducts, setSelectedProducts] = useState([]);
 
     useEffect(() => {
         if (!airplane?.airways || !airplane?.flightproduct) return;
@@ -26,23 +23,10 @@ const PickAirplane = ({ hyodata, isOneWay, departureCity, arrivalCity }) => {
         setSelectedAirlines(randomAirlines);
         setSelectedProducts(randomProducts);
     }, [airplane]);
-    //찜기능
-    const [isHeart, setIsHeart] = useState(false);
-    const toggleHeart = (index) => {
+
+const [isHeart, setIsHeart] = useState(false);
+const toggleHeart = (index) => {
     setIsHeart((prev) =>({...prev,[index]:!prev[index]}) );}
-
-    //city to IATA
-    function getIataCode(city) {
-        if (!city) return null;  // 입력 전엔 null (아무것도 안 보여줌)
-        return airport[city]?.iata || null; // 없으면 null 반환
-    }
-    const depIATA = getIataCode(departureCity);
-    const arrIATA = getIataCode(arrivalCity);
-
-    // IATA 코드가 없으면 빈 화면 표시
-    if (depIATA === null || arrIATA === null) {
-        return <div className="empty-message">텅~ 해당 항공권 정보가 없습니다.</div>;
-    }
 
 
     return (
@@ -59,12 +43,12 @@ const PickAirplane = ({ hyodata, isOneWay, departureCity, arrivalCity }) => {
                         </div>
                         <div className="plane_section_time d-flex justify-content-between align-items-center">
                             <div className="plane_time d-flex flex-column align-items-center gap-1">
-                                <p className="airport">{depIATA}</p>
+                                <p className="airport">{selectedProducts[index]?.go?.depLoc}</p>
                                 <p>{selectedProducts[index]?.go?.depTime}</p>
                             </div>
                             <i class="arrow-right"></i>
                             <div className="plane_time d-flex flex-column align-items-center gap-1">
-                                <p className="airport">{arrIATA}</p>
+                                <p className="airport">{selectedProducts[index]?.go?.arrLoc}</p>
                                 <p>{selectedProducts[index]?.go?.arrTime}</p>
                             </div>
                         </div>
@@ -79,12 +63,12 @@ const PickAirplane = ({ hyodata, isOneWay, departureCity, arrivalCity }) => {
                         </div>
                         <div className="plane_section_time d-flex justify-content-between align-items-center rel">
                             <div className="plane_time d-flex flex-column align-items-center gap-1">
-                                <p className="airport">{arrIATA}</p>
+                                <p className="airport">{selectedProducts[index]?.back?.depLoc}</p>
                                 <p>{selectedProducts[index]?.back?.depTime}</p>
                             </div>
                             <i class="arrow-right"></i>
                             <div className="plane_time d-flex flex-column align-items-center gap-1">
-                                <p className="airport">{depIATA}</p>
+                                <p className="airport">{selectedProducts[index]?.back?.arrLoc}</p>
                                 <p>{selectedProducts[index]?.back?.arrTime}</p>
                             </div>
                         </div>

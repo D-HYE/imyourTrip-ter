@@ -22,7 +22,7 @@ export default function Section1({slideData}){
     };
 
     return(
-        <div className="section section1">
+        <section className="section section1">
             <div id="main_slide" className="rel">
                 <Swiper modules={[Pagination, Autoplay]}
                     pagination={{ el: ".swiper-pagination", clickable: true }}
@@ -95,6 +95,6 @@ export default function Section1({slideData}){
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

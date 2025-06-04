@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ProductList from './ProductList';
-import ProductDetail from './ProductDetail';
 
 
 import SubContent from '../SubContent';
 
-const Prodcut = ({dataInfo, testData}) => {
-    const { category, tab, productID} = useParams();
-    const dataCategory = dataInfo?.["products"]?.[category];
+const Prodcut = ({dataInfo}) => {
+    const { category, tab} = useParams()
+    const dataCategory = dataInfo?.["products"]?.[category]
 
     return (
         <main className='subMain page_product'>
@@ -19,27 +18,24 @@ const Prodcut = ({dataInfo, testData}) => {
                         <p>{dataCategory?.[tab]?.description}</p> 
                     </div>
                 </div>
-                <div className="sectionList">
-                    <ul className="d-flex justify-content-center container_m flex-wrap">
-                        {
-                            Object.entries(dataCategory).map(([key, list]) => (
-                                <li key={key} className={key === tab ? "active" : ""}>
-                                    <Link to={list.link} className="d-flex align-items-center">
-                                        {list.name}
-                                        <span></span>
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-                <div className="sectionCont container">
-                    {
-                        !productID ? <ProductList category={category} tab={tab} testData={testData}/> : <ProductDetail
-                        testData={testData}
-                        />
-                    }
-                    
+                <div className="subContWrap d-flex justify-content-center">
+                    <div className="sectionList pageBox">
+                        <ul className="d-flex flex-column gap-2">
+                            {
+                                Object.entries(dataCategory).map(([key, list]) => (
+                                    <li key={key} className={key === tab ? "active" : ""}>
+                                        <Link to={list.link} className="d-flex align-items-center">
+                                            {list.name}
+                                            <span></span>
+                                        </Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className="sectionCont pageBox">
+                        <ProductList category={category} tab={tab} />
+                    </div>
                 </div>
                 
             </section>  

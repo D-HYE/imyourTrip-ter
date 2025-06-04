@@ -1,6 +1,6 @@
 .page_login{
     .sectionBanner{
-        background-image: url("https://d-hye.github.io/source/img/banner/banner_img1.jpg");
+        background-image: url("https://d-hye.github.io/source/img/banner/user.jpg");
     }
     .signup_area{
         max-width: 500px;
@@ -147,10 +147,10 @@
     .sectionList ul{
         li:last-child{
             a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/makeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/planMaker.svg");
             }
             &.active a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_makeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_planMaker.svg");
             }
         }
     }
@@ -166,26 +166,26 @@ section:not(.findReviewSection) .board_area.container_m,
     .sectionList ul{
         li:nth-child(1){
             a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/seeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/findPlan.svg");
             }
             &.active a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_seeplan.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_findPlan.svg");
             }
         }
         li:nth-child(2){
             a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/community.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/findReview.svg");
             }
             &.active a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_community.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_findReview.svg");
             }
         }
         li:nth-child(3){
             a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/accompany.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/findFriend.svg");
             }
             &.active a span{
-                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_accompany.svg");
+                background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_findFriend.svg");
             }
         }
     }
