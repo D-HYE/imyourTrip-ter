@@ -45,10 +45,6 @@
 
 .qamark{
     font-family: 'TheJamsil700';
-
-    @media (min-width:575px) {
-        margin-top: 5px;        
-    }
 }
 
 dl{
@@ -59,6 +55,7 @@ dl{
         padding: 20px 10px 20px 10px;
         border-bottom: 1px solid rgba(181, 181, 181, 1);
         cursor: pointer;
+        gap: 4px;
     }
     dd{     
         margin: 10px 0;
@@ -296,9 +293,7 @@ dl{
                 padding: 1rem;
                 font-size: var(--m-small-text);
             }
-
     }
-}
 
     dt{
         gap: 4px;
@@ -307,7 +302,12 @@ dl{
         span{
             line-height: 1.4;
         }
+        .qamark {
+        margin-top: 1px;        
+        }
     }
-    
-      
+    dd{
+        line-height: 1.4;
+    }
+    }
 }

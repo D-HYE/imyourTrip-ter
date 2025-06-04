@@ -35,12 +35,6 @@
       }
     },
     "service": {
-      "guide": {
-        "name": "이용 가이드",
-        "link": "/service/guide",
-        "description": "guide",
-        "sectionName": "a"
-      },
       "faq": {
         "name": "FAQ",
         "link": "/service/faq",
