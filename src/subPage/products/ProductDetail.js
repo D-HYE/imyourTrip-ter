@@ -33,7 +33,7 @@ const ProductDetail = ({testData}) => {
                 </ImgBox>
                 <div className="d-flex flex-column detail_infoBox justify-content-between">
                         <div className='d-flex flex-column gap-2'>
-                            <h5 className="detail_tit">{test.title}타이틀</h5>
+                            <h5 className="detail_tit">{test.title}타이틀 확인용</h5>
                             <p className="detail_info">{test.description}제품에 대한 소개 제품에 대한 소개 제품에 대한 소개 </p>
                         </div>
                         <p className="detail_info2">{test.detailDescription}
