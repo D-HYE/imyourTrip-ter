@@ -1,35 +1,20 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import Login from './Login';
-import SignUp from './SignUp';
-import MyPage from './MyPage';
+import Login from "./Login";
+import SignUp from "./SignUp";
 
 export default function User() {
-  const { page } = useParams();
-  const currentPage = page || 'login'; // 기본값: 로그인
+    const { page } = useParams();
+    const defaultpage = page || "login"; // 로그인 유무가 쓰일지
 
-  let content;
+    return (
+        <main className='subMain page_login'>
+            <section>
+                <div className="sectionBanner pc"></div>
+                <div className="subContWrap">
 
-  switch (currentPage) {
-    case 'login':
-      content = <Login />;
-      break;
-    case 'signup':
-      content = <SignUp />;
-      break;
-    case 'mypage':
-      content = <MyPage />;
-      break;
-    default:
-      content = <Login />;
-  }
-
-  return (
-    <main className="subMain page_login">
-      <section>
-        <div className="sectionBanner pc"></div>
-        {content}
-      </section>
-    </main>
-  );
+                    {defaultpage === "login" ? <Login /> : <SignUp />}
+                </div>
+            </section>
+        </main>
+    );
 }

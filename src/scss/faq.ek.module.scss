@@ -1,0 +1,313 @@
+.faq{
+    width: 768px;
+    gap: 10px;
+    background-color: var(--trip-white);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.875rem;
+    padding: 10px 0 40px 10px;
+    line-height: auto;
+
+    h2{
+        font-size: 1.5rem;
+        width: 748px;
+        padding: 20px 10px;
+        border-bottom: 2px solid var(--trip-blue);
+    }
+
+    .title{
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+        margin: 10px 0;
+
+        .qnabtn{
+        background-color: var(--trip-blue);
+        padding: 10px ;
+        color: var(--trip-yellow);
+        border-radius: 5px;
+        font-size: 1rem;
+        }
+    }
+    
+    .icon {
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
+        transform-origin: center center;
+      }
+    .rotateIcon {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+  
+}
+
+.qamark{
+    font-family: 'TheJamsil700';
+}
+
+dl{
+    max-width: 748px;        
+    dt{ 
+        font-size: var(--desc-text);
+        font-weight: 600;
+        padding: 20px 10px 20px 10px;
+        border-bottom: 1px solid rgba(181, 181, 181, 1);
+        cursor: pointer;
+        gap: 4px;
+    }
+    dd{     
+        margin: 10px 0;
+        padding: 10px 10px 30px;
+        border-bottom: solid rgba(217, 217, 217, 1);
+        border-bottom-width: 1px;
+        box-sizing: border-box;
+    }
+    
+}
+
+//탭메뉴
+.faq_tab{
+    ul {
+        height: 50px;
+        padding: 0;
+        border-bottom: 1px solid var(--trip-blue);
+        margin-right: 10px;
+
+        li{
+            width: fit-content;
+            height: 40px;
+            border: 0.0625rem solid var(--trip-blue);
+            border-bottom: 0;
+            border-radius: 1.25rem 1.25rem 0 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 1.25rem 1rem;
+
+            span{
+                font-size: var(--small-text);
+                color: var(--trip-blue);
+                
+            }
+
+            &.faqtripcar{
+                        border: 1px solid var(--trip-sun);
+
+                        span{
+                            color: var(--trip-sun);
+                            }
+                        }
+
+        //탭메뉴클릭
+        &.faqtabClick {
+            height: 50px;
+            padding-top: 1.425rem;
+            background-color: var(--trip-blue);
+            span {
+                color: var(--trip-yellow);
+                }
+          }
+                  
+          // "트립카" 탭 클릭
+          &.faqtripcar.faqtabClick {
+            background-color: var(--trip-green);
+            border: 0.0625rem solid var(--trip-green);
+        
+            span {
+              color: var(--trip-white);
+            }
+          }
+        }
+        
+        .faqtabmenu {
+          li {
+            font-size: 1rem;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+    }
+}
+
+/////////////////////////////////////
+@media only screen and (max-width: 768px) {
+   .faq{
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: var(--trip-white);
+
+        h2{
+            width: 100%;
+            font-size: var(--semismall-text);
+            border-bottom: 2px solid var(--trip-blue) ;
+        }
+
+        .title {
+            font-size: var(--small-text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 0;        
+                
+            .qnabtn {
+                background-color: var(--trip-blue);
+                padding: 10px;
+                color: var(--trip-yellow);
+                border-radius: 5px;
+                font-size: var(--m-small-text);
+                white-space: nowrap;
+            }
+        }
+
+        .icon {
+            max-width: 1.2rem;
+            transition: transform 0.3s ease;
+            transform: rotate(0deg);
+            transform-origin: center center;
+        }
+        
+        .rotateIcon {
+            transform: rotate(180deg);
+        }
+    }
+
+        dl{
+            
+            dt{
+            font-size: var(--m-small-text);
+            font-weight: 600;
+            padding: 20px 10px;
+            border-bottom: solid rgba(181, 181, 181, 1);
+            border-bottom-width: 0.5px;
+            cursor: pointer;
+            }
+
+            dd {
+                font-size: var(--m-small-text);
+                margin: 10px 0;
+                padding: 10px 10px 20px;
+                border-bottom: 1px solid rgba(217, 217, 217, 1);
+            }
+
+           
+        }
+        
+    
+    //768사이즈 탭메뉴
+    .faq_tab{
+        width: 100%;
+        
+        ul {
+            flex-wrap: wrap;
+            height: 4rem;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid var(--trip-blue);
+           
+            li{
+                width: fit-content;
+                min-width: 7rem;
+                height: 3rem;
+                border: 0.0625rem solid var(--trip-blue);
+                border-bottom: 0;
+                border-radius: 1.25rem 1.25rem 0 0;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 0.8rem 1.25rem;
+                
+                
+            
+            span{
+                font-size: var(--m-small-text);
+                color: var(--trip-blue);
+                }
+
+            &.faqtripcar{
+                border: 1px solid var(--trip-sun);
+                span{
+                color: var(--trip-sun);
+                }
+            }
+        
+    
+        //탭메뉴클릭
+            &.faqtabClick {
+                height: 3.6rem;
+                padding-top: 1rem;
+                background-color: var(--trip-blue);
+                span {
+                    color: var(--trip-yellow);
+                    }
+            }
+                      
+              // "트립카" 탭 클릭
+              &.faqtripcar.faqtabClick {
+                height: 3.6rem;
+                background-color: var(--trip-green);
+                border: 0.0625rem solid var(--trip-green);
+            
+                span {
+                  color: var(--trip-white);
+                }
+              }
+            }
+
+            .faqtabmenu {
+              li {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              }
+            }
+        }
+    }
+} 
+
+@media only screen and (max-width: 575px){
+    .faq{
+        width: 100%;
+        min-width: 350px;
+    }
+
+    .faq_tab{
+        width: 100%;
+
+        ul{
+            min-width: 35rem;
+            min-height: 3.5rem;
+            li{
+                min-width: fit-content;
+                padding: 1rem;
+                font-size: var(--m-small-text);
+            }
+    }
+
+    dt{
+        gap: 4px;
+        padding: 20px 10px;
+        word-break: keep-all;
+        span{
+            line-height: 1.4;
+        }
+        .qamark {
+        margin-top: 1px;        
+        }
+    }
+    dd{
+        line-height: 1.4;
+    }
+    }
+}

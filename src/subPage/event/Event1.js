@@ -1,7 +1,8 @@
 export default function Event1() {
     return (
         <div className="pageBox">
-            이곳은 이벤트 페이지 입니다.
+            <img src="https://d-hye.github.io/source/img/special/harry1.jpg" alt="해리포터 기획전" />
+            <img src="https://d-hye.github.io/source/img/special/harry2.jpg" alt="해리포터 기획전" />
         </div>
     );
 }

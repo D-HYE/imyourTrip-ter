@@ -11,7 +11,7 @@ const BoardList = ({ boolean, postData }) => {
     const [sortedData, setSortedData] = useState([]);
     useEffect(() => {
         if (postData && postData.length > 0) {
-            const sorted = [...postData].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+            const sorted = [...postData].sort((a, b) => new Date(b.posted_at) - new Date(a.posted_at));
             setSortedData(sorted);
         }
     }, [postData]);
@@ -20,7 +20,7 @@ const BoardList = ({ boolean, postData }) => {
         let sorted = [];
         switch (sortType) {
             case "latest":
-              sorted = [...postData].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+              sorted = [...postData].sort((a, b) => new Date(b.posted_at) - new Date(a.posted_at));
               break;
             case "views":
               sorted = [...postData].sort((a, b) => b.views - a.views);
@@ -32,7 +32,7 @@ const BoardList = ({ boolean, postData }) => {
     };
 
     return (
-        <div className="board_area img100 container_m pageBox">
+        <div className="board_area img100 pageBox">
             <div className="board_filter d-flex justify-content-between align-items-center">
                 <SelectBox>
                     <li onClick={() => handleSort("latest")}>최신순</li>

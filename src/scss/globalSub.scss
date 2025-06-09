@@ -30,13 +30,13 @@
                     span{ 
                         display: block;
                         width: 24px; height: 24px; margin-left: 0.5rem;
-                        background: url("https://d-hye.github.io/source/img/icon/tab_icon/feelter.svg") no-repeat center/contain;
+                        background: url("https://d-hye.github.io/source/img/icon/tab_icon/myFeelter.svg") no-repeat center/contain;
                     }
                 }
                 .active a{ 
                     color: var(--trip-blue);
                     span{
-                        background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_feelter.svg");
+                        background-image: url("https://d-hye.github.io/source/img/icon/tab_icon/c_myFeelter.svg");
                     }
                 }
             }

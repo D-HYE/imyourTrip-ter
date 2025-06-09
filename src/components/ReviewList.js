@@ -9,7 +9,7 @@ const ReviewList = ({ review }) => {
     const [sortedData, setSortedData] = useState([]);
     useEffect(() => {
         if (review && review.length > 0) {
-            const sorted = [...review].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+            const sorted = [...review].sort((a, b) => new Date(b.posted_at) - new Date(a.posted_at));
             setSortedData(sorted);
         }
     }, [review]);
@@ -18,7 +18,7 @@ const ReviewList = ({ review }) => {
         let sorted = [];
         switch (sortType) {
             case "latest":
-              sorted = [...review].sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+              sorted = [...review].sort((a, b) => new Date(b.posted_at) - new Date(a.posted_at));
               break;
             case "views":
               sorted = [...review].sort((a, b) => b.views - a.views);
@@ -33,7 +33,7 @@ const ReviewList = ({ review }) => {
     };
 
     return (
-        <div className="board_area container_m pageBox">
+        <div className="board_area pageBox">
             <div className="board_filter d-flex justify-content-end align-items-center">
                 <SelectBox>
                     <li onClick={() => handleSort("latest")}>최신순</li>
@@ -59,7 +59,7 @@ const ReviewList = ({ review }) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="post_time"><span>{RelativeTime(data.postedAt)}</span></div>
+                                        <div className="post_time"><span>{RelativeTime(data.posted_at)}</span></div>
                                     </div>
                                     <div className="desc">
                                         <h5>{data.title}</h5>

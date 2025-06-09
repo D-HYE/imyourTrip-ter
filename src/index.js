@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import RangeSlider from './components/Barslider';
+import reportWebVitals from './reportWebVitals'
+
 
 import Tripter from './Tripter';
 
@@ -19,4 +20,7 @@ root.render(
     <Tripter />
   </BrowserRouter>
 );
+
+reportWebVitals(console.log);
+
 

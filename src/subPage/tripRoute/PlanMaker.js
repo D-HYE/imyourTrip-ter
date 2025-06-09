@@ -5,6 +5,7 @@ import PickAirplane from "./PickAirplane";
 import PickHotel from "./PickHotel";
 import Wishlist from "../user/Wishlist";
 import PlanMakerForm, {PlanMakerInfo} from "./PlanMakerForm";
+import { CommingSoon } from "../../components/util";
 
 import { TabMenu } from "../../components/util";
 import hyodata from "../../data/hyodata.json"; // JSON 파일을 import로 가져오기
@@ -91,14 +92,19 @@ export default function PlanMaker() {
         </div>
       </div>
       <div className="pageBox" style={{borderBottom:"3px solid var(--trip-blue)"}}>
-        {formState.activeTab === "항공권" && formState.planConfirmed && (
-          <PickAirplane
-            hyodata={hyodata}
-            departureCity={formState.departureCity}
-            arrivalCity={formState.arrivalCity}
-          />
-        )}
-        {formState.activeTab === "숙박" &&formState.planConfirmed && ( <PickHotel />)}
+        {formState.planConfirmed ? (
+          formState.activeTab === "항공권" ? (
+            <PickAirplane
+              hyodata={hyodata}
+              departureCity={formState.departureCity}
+              arrivalCity={formState.arrivalCity}
+            />
+          ) : formState.activeTab === "숙박" ? (
+            <PickHotel />
+          ) : (
+            <CommingSoon />
+          )
+        ) : null}
       </div>
     </>
   );

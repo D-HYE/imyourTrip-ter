@@ -35,12 +35,6 @@
       }
     },
     "service": {
-      "guide": {
-        "name": "이용 가이드",
-        "link": "/service/guide",
-        "description": "guide",
-        "sectionName": "a"
-      },
       "faq": {
         "name": "FAQ",
         "link": "/service/faq",
@@ -55,25 +49,25 @@
       }
     },
     "tripterEvent": {
-      "event1": {
-        "name": "이벤트",
-        "link": "/tripterEvent/event1",
-        "description": "트립터의 개쩌는 이벤트",
+      "tripterSpecial": {
+        "name": "이달의 기획전",
+        "link": "/tripterEvent/tripterSpecial",
+        "description": "트립터만의 아주 멋진 이벤트",
         "sectionName": "a"
       },
-      "event2": {
+      "coupon": {
         "name": "쿠폰/혜택",
-        "link": "/tripterEvent/event2",
+        "link": "/tripterEvent/coupon",
         "description": "쉿, 너한테만 주는 거야",
         "sectionName": "b"
       }
     },
     "products": {
       "airplane": {
-        "onSale": {
+        "onSaleA": {
           "name": "특가항공",
-          "link": "/products/airplane/onSale",
-          "description": "onSale",
+          "link": "/products/airplane/onSaleA",
+          "description": "onSaleA",
           "sectionName": "a"
         },
         "domestic": {
@@ -90,10 +84,10 @@
         }
       },
       "accommodation": {
-        "onSale": {
+        "onSaleB": {
           "name": "특가숙소",
-          "link": "/products/accommodation/onSale",
-          "description": "onSale",
+          "link": "/products/accommodation/onSaleB",
+          "description": "onSaleB",
           "sectionName": "a"
         },
         "hotel": {
@@ -155,25 +149,29 @@
         "title": "",
         "english": "",
         "subtitle": "",
-        "src": "https://d-hye.github.io/source/img/main_img/mainslide1_2.jpg"
+        "src": "https://d-hye.github.io/source/img/main_img/mainslide1_2.jpg",
+        "href": "https://i-web.kr/green18/"
       },
       {
         "title": "언제가도 좋은 제주",
         "english": "",
         "subtitle": "제주도 구석구석",
-        "src": "https://d-hye.github.io/source/img/main_img/mainslide2.jpg"
+        "src": "https://d-hye.github.io/source/img/main_img/mainslide2.jpg",
+        "href": "#none"
       },
       {
         "title": "아이슬란드",
         "english": "",
         "subtitle": "버킷리스트 1순위 여행지 대자연의 웅장함",
-        "src": "https://d-hye.github.io/source/img/main_img/mainslide3.jpg"
+        "src": "https://d-hye.github.io/source/img/main_img/mainslide3.jpg",
+        "href": "#none"
       },
       {
         "title": "특별기획 테마여행",
         "english": "",
         "subtitle": "트립터와 함께 떠나보세요",
-        "src": "https://d-hye.github.io/source/img/main_img/mainslide4.jpg"
+        "src": "https://d-hye.github.io/source/img/main_img/mainslide4.jpg",
+        "href": "#none"
       }
     ],
     "mdSlides": [
@@ -189,10 +187,10 @@
       {
         "title": "머글들의 마법 세상 체험기",
         "titleSpan": "",
-        "subtitle": "도쿄 워너 브라더스 2인 25만원부터",
-        "href": "#none",
+        "subtitle": "마법사가 되어 영국 뿌수기",
+        "href": "/tripterEvent/tripterSpecial",
         "img": "https://d-hye.github.io/source/img/main_img/md_slide2.jpg",
-        "alt": "도쿄",
+        "alt": "영국 런던",
         "description": "머글들의 마법 세상 체험기"
       },
       {
@@ -975,7 +973,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "효정효정",
       "rating": "4",
-      "postedAt": "2025-04-15T07:45:00Z",
+      "posted_at": "2025-04-15T07:45:00Z",
       "title": "사진이 정말 예쁘게 나오는 시라카와고!",
       "content": "당일치기로 다녀오기 좋고 사진이 정말 잘 나와요. 한겨울 눈 덮인 풍경이 최고예요.",
       "likes": 12,
@@ -989,7 +987,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유진유진",
       "rating": 4,
-      "postedAt": "2025-04-13T06:10:00Z",
+      "posted_at": "2025-04-13T06:10:00Z",
       "title": "주말 농장을 다녀왔습니다...",
       "content": "고된 노동이었지만 뜨끈한 딸기쨈을 맛 볼 수 있어 좋았습니다.",
       "likes": 65,
@@ -1003,7 +1001,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 3,
-      "postedAt": "2025-03-29T04:29:00Z",
+      "posted_at": "2025-03-29T04:29:00Z",
       "title": "상하이 예원을 다녀왔어용",
       "content": "예쁘지만 사람이 많아서 사진을 위만 찍을 수 있다는 단점이 있네요ㅋㅋ",
       "likes": 78,
@@ -1017,7 +1015,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은경은경",
       "rating": 5,
-      "postedAt": "2025-04-06T17:26:00Z",
+      "posted_at": "2025-04-06T17:26:00Z",
       "title": "끄라비 바다 정말 예쁘더라구요?",
       "content": "에메랄드 빛 바다를 보며 섬 투어 가능!",
       "likes": 28,
@@ -1031,7 +1029,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "효정효정",
       "rating": 3,
-      "postedAt": "2025-02-12T18:12:00Z",
+      "posted_at": "2025-02-12T18:12:00Z",
       "title": "홍콩 여름 여행, 습기와의 싸움!",
       "content": "습한 날씨로 기분을 망칩니다. 여름은 피하세요!",
       "likes": 76,
@@ -1045,7 +1043,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "효정효정",
       "rating": 5,
-      "postedAt": "2025-03-30T08:11:00Z",
+      "posted_at": "2025-03-30T08:11:00Z",
       "title": "디즈니의 마법 속으로, 동심으로 돌아간 하루",
       "content": "아! 이게 동심이구나!",
       "likes": 89,
@@ -1059,7 +1057,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 4,
-      "postedAt": "2025-03-17T23:36:00Z",
+      "posted_at": "2025-03-17T23:36:00Z",
       "title": "상하이 디즈니, 기다림 없는 완벽 루트 성공!",
       "content": "눈치 게임 성공! 전부 다 탔어요!",
       "likes": 26,
@@ -1073,7 +1071,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은경은경",
       "rating": 5,
-      "postedAt": "2025-03-08T14:23:00Z",
+      "posted_at": "2025-03-08T14:23:00Z",
       "title": "자연 속에서의 힐링, 후아인 숙소 추천!",
       "content": "정원만 거닐어도 힐링이 되는 숙소.",
       "likes": 67,
@@ -1087,7 +1085,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유진유진",
       "rating": 3,
-      "postedAt": "2025-02-27T09:15:00Z",
+      "posted_at": "2025-02-27T09:15:00Z",
       "title": "사람에 지친 오사카 여행기...",
       "content": "바가지도 씌이고 사람에 치이고... 슬펐어요.",
       "likes": 34,
@@ -1101,7 +1099,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유진유진",
       "rating": 3,
-      "postedAt": "2025-04-01T17:42:00Z",
+      "posted_at": "2025-04-01T17:42:00Z",
       "title": "일본 교토, 아름다웠지만 아쉬움이 남는 하루",
       "content": "날짜 이슈로 죄책감 미쳤음.",
       "likes": 45,
@@ -1115,7 +1113,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 2,
-      "postedAt": "2025-03-30T11:08:00Z",
+      "posted_at": "2025-03-30T11:08:00Z",
       "title": "동강 여행, 오토바이가 절실했던 그 길",
       "content": "오토바이가 없으면 서러워지는 길...",
       "likes": 21,
@@ -1129,7 +1127,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은경은경",
       "rating": 5,
-      "postedAt": "2025-03-19T08:50:00Z",
+      "posted_at": "2025-03-19T08:50:00Z",
       "title": "조식 먹다 새랑 눈 마주침... 끄라비 숙소 추천",
       "content": "조식을 먹을 때마다 새가 찾아와서 음식을 나누어주는 경험!",
       "likes": 89,
@@ -1143,7 +1141,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은아은아",
       "rating": 4,
-      "postedAt": "2025-02-25T16:17:00Z",
+      "posted_at": "2025-02-25T16:17:00Z",
       "title": "가이드가 사진작가급! 나트랑 사막 투어",
       "content": "가이드분이 사진을 너무 열심히 찍어주셔서 감동을 받았습니다.",
       "likes": 73,
@@ -1157,7 +1155,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 5,
-      "postedAt": "2025-04-10T12:20:00Z",
+      "posted_at": "2025-04-10T12:20:00Z",
       "title": "제주도 우도, 날씨 완벽한 바다 여행!",
       "content": "날씨도 완벽하고 아름다운 제주도 바다!",
       "likes": 102,
@@ -1171,7 +1169,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "효정효정",
       "rating": 5,
-      "postedAt": "2025-03-05T09:45:00Z",
+      "posted_at": "2025-03-05T09:45:00Z",
       "title": "다카마쓰, 이게 바로 여행의 진수",
       "content": "남는 건 사진 뿐이다. 음식도 맛있음.",
       "likes": 88,
@@ -1185,7 +1183,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 3,
-      "postedAt": "2025-02-17T13:55:00Z",
+      "posted_at": "2025-02-17T13:55:00Z",
       "title": "용눈이 오름, 힘든 여정이지만 그만한 가치가!",
       "content": "덥고 힘들고 말똥 냄새가 나지만 올라 갔을 때의 뷰가 최고!",
       "likes": 56,
@@ -1199,7 +1197,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 1,
-      "postedAt": "2025-01-10T18:32:00Z",
+      "posted_at": "2025-01-10T18:32:00Z",
       "title": "부산 청사포, 이딴 거 너나 타",
       "content": "이딴 거 너나 타",
       "likes": 5,
@@ -1213,7 +1211,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": 4,
-      "postedAt": "2025-04-02T17:28:00Z",
+      "posted_at": "2025-04-02T17:28:00Z",
       "title": "대만 소류구, 멋진 사장님과 함께한 스노쿨링",
       "content": "날씨가 안 좋아도 스노쿨링을 강행하는 멋진 사장님!",
       "likes": 64,
@@ -1227,7 +1225,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유경유경",
       "rating": 5,
-      "postedAt": "2025-03-25T15:20:00Z",
+      "posted_at": "2025-03-25T15:20:00Z",
       "title": "그랜드캐니언, 자연의 웅장함을 느끼다",
       "content": "대자연의 웅장함과 신비함을 느낄 수 있다.",
       "likes": 120,
@@ -1241,7 +1239,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유진유진",
       "rating": 4,
-      "postedAt": "2025-04-01T10:12:00Z",
+      "posted_at": "2025-04-01T10:12:00Z",
       "title": "강릉 여행, 맛있는 옥수수와 함께",
       "content": "옥수수가 정말 맛있었어요.",
       "likes": 34,
@@ -1255,7 +1253,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "효정효정",
       "rating": "5",
-      "postedAt": "2025-04-08T08:10:00Z",
+      "posted_at": "2025-04-08T08:10:00Z",
       "title": "여름 피서는 시원한 홋카이도로!",
       "content": "홋카이도의 시원한 날씨와 풍경을 만끽하며 최고의 여름휴가를 보냈어요.",
       "likes": 110,
@@ -1269,7 +1267,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": "5",
-      "postedAt": "2025-03-18T11:30:00Z",
+      "posted_at": "2025-03-18T11:30:00Z",
       "title": "대만을 간다면 야시장은 꼭 들리기!",
       "content": "리우허야시장에서 다양한 먹거리를 즐기며 대만의 문화를 제대로 체험할 수 있어요.",
       "likes": 98,
@@ -1283,7 +1281,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "미림미림",
       "rating": "4",
-      "postedAt": "2025-04-02T14:45:00Z",
+      "posted_at": "2025-04-02T14:45:00Z",
       "title": "꿀 같은 휴가를 맛보고 왔습니다.",
       "content": "방콕에서의 휴가는 정말 달콤하고 즐거웠어요. 맛있는 음식도 가득!",
       "likes": 76,
@@ -1297,7 +1295,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은아은아",
       "rating": "5",
-      "postedAt": "2025-02-28T16:20:00Z",
+      "posted_at": "2025-02-28T16:20:00Z",
       "title": "밥 먹고 수영하고 밥 먹고 수영하고ㅎㅎ",
       "content": "나트랑에서의 일상, 그야말로 완벽한 휴식이었어요. 수영과 맛있는 음식은 최고!",
       "likes": 89,
@@ -1311,7 +1309,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은경은경",
       "rating": "5",
-      "postedAt": "2025-03-22T17:05:00Z",
+      "posted_at": "2025-03-22T17:05:00Z",
       "title": "발리 악마의 목구멍, 그 아름다운 풍경",
       "content": "파도가 높이 칠 때는 무서웠지만 너무 멋있었어요. 대자연을 느낄 수 있는 장소!",
       "likes": 102,
@@ -1325,7 +1323,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": "5",
-      "postedAt": "2025-03-30T10:05:00Z",
+      "posted_at": "2025-03-30T10:05:00Z",
       "title": "동양의 베네치아, 쑤저우",
       "content": "고즈넉하고 낮은 건물이 매력적인 동네! 한 번 가볼만한 곳이에요.",
       "likes": 85,
@@ -1339,7 +1337,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "미림미림",
       "rating": "3",
-      "postedAt": "2025-04-04T12:00:00Z",
+      "posted_at": "2025-04-04T12:00:00Z",
       "title": "USJ, 너무 많은 사람들 속에서",
       "content": "사람이 너무 많고, 워크숍 일정이라서 그리 좋은 경험은 아니었어요.",
       "likes": 41,
@@ -1353,7 +1351,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "다혜다혜",
       "rating": "3",
-      "postedAt": "2025-03-12T13:22:00Z",
+      "posted_at": "2025-03-12T13:22:00Z",
       "title": "속초, 날씨는 좋았지만 더운 날씨",
       "content": "덥지만 날씨가 좋아서 좋은 기억으로 남았습니다. 바다도 좋고.",
       "likes": 58,
@@ -1367,7 +1365,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "은아은아",
       "rating": "4",
-      "postedAt": "2025-02-25T11:15:00Z",
+      "posted_at": "2025-02-25T11:15:00Z",
       "title": "LA, 매력적이지만 특색은 잘 느껴지지 않았어요",
       "content": "좋았지만 특색이 엄청 느껴진다는 건 모르겠음. 그냥 평범한 느낌?",
       "likes": 53,
@@ -1381,7 +1379,7 @@
       "href": "/tripTalk/findReview",
       "nickname": "유경유경",
       "rating": "5",
-      "postedAt": "2025-03-10T14:30:00Z",
+      "posted_at": "2025-03-10T14:30:00Z",
       "title": "몽골, 나만의 독특한 여행지",
       "content": "내가 바로 트립터 대표 트립 옐로우. 몽골의 매력을 온전히 느낄 수 있었어요.",
       "likes": 123,
