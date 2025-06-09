@@ -44,10 +44,10 @@ export default function Section1_feelter() {
 
 
     return (
-        <div className="d-flex flex-column align-items-center justify-content-center">
+        <div className="d-flex flex-column align-items-center justify-content-center" style={{borderRadius:"20px"}}>
             {!isSubmitted && (
                 <div className="simple_feelter_inquiry">
-                    <h4 className="simple_feelter_tit text-blue">MY FEEL:TER</h4>
+                    <h4 className="simple_feelter_tit text-blue">여행을 계획하시나요?</h4>
                     <div className="simple_feelter_cont d-flex flex-column gap-3">
                         <div className="">
                             <h6>나의 여행 스타일은?</h6>

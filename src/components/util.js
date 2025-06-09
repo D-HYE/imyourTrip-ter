@@ -188,4 +188,30 @@ export function NotFound() {
       </main>
   );
 }
-
+//준비중 페이지
+export function CommingSoon({ showHeader = false }) {
+  return (
+      <div className="commingSoon">
+        {showHeader && (
+          <div className="filter_title d-flex align-items-center jsutify-content-between" >
+              <span className="plane_title_all d-flex align-items-center">전체보기</span>
+              <button className="front_btn">
+                <a href="#none">계획짜기</a>
+              </button>
+          </div>
+        )}
+          <div className="d-flex flex-column justify-content-center align-items-center gap-5 px-2" style={{padding:"5rem 0"}}>
+                  <div style={{fontFamily:"var(--theJamsil-extrabold)", color:"var(--trip-blue)", fontSize:"8rem"}}>!</div> 
+                  <img style={{maxWidth:"681px"}} src="https://d-hye.github.io/source/img/illustrator/coming_soon.svg" alt="comming_soon" />
+                  <p style={{fontFamily:"var(--theJamsil-bold)",fontSize:"var(--main-slide)", color:"var(--trip-blue)"}}>준비중 입니다.</p>
+                  {! showHeader &&(
+                  <div className="d-flex jsutify-content-center gap-4">
+                      <button onClick={() => window.history.back()} 
+                      style={{backgroundColor:"var(--trip-blue)", padding:"1rem 69px",borderRadius:"5px", boxShadow:"var(--dropShadow)" }}><span style={{fontFamily:"var(--theJamsil-bold)", fontSize:"var(--big-text)",color:"var(--trip-white)"}} >이전 페이지</span> </button>
+                      <button onClick={() => (window.location.href = "/") } style={{backgroundColor:"var(--trip-blue)", padding:"1rem 69px",borderRadius:"5px", boxShadow:"var(--dropShadow)" }}><span style={{fontFamily:"var(--theJamsil-bold)", fontSize:"var(--big-text)",color:"var(--trip-white)"}}>메인으로</span></button>
+                  </div>  
+                 )}                 
+            </div>
+        </div>
+  );
+}

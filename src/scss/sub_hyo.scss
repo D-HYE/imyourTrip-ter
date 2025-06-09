@@ -150,6 +150,7 @@
     .plane_title_all {
         font-family: var(--theJamsil-bold);
         font-size: var(--mediumbig-text);
+        flex-grow: 1;
     }
     .option_list{
         .title{
@@ -468,7 +469,7 @@ display:none;
         }
     }
     .Btn_disabled{
-        background-color: var(--trip-skyblue);
+        background-color: #ccc;
         color: var(--trip-gray3);
         cursor: default;
     }

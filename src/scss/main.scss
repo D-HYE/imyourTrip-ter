@@ -195,12 +195,14 @@
                     font-size: var( --medium-text); font-weight: 600; line-height: 1.45;
                     word-break: keep-all; text-align: center;
                     transition: .3s;
+                    color: var(--trip-white);
                 }
                 span{
                     display: block;
                     height: 0; overflow: hidden;
                     font-size: var(--small-text); line-height: 1.45;
                     transition: .3s;
+                    color: var(--trip-white);
                 }
             }
             &:hover{
@@ -445,7 +447,7 @@
 
     .section1{
         .main_swiper{
-            height: 100vw;
+            min-height: 480px;
             border-radius: 0;
             .swiper-slide{
                 .slide_desc{
@@ -467,6 +469,21 @@
                     width: 0.8rem; height: 0.8rem;
                     &.swiper-pagination-bullet-active{width: 2.4rem;}
                 }
+            }
+        }
+        .txt_box{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h4{
+                color: var(--trip-white);
+                font-size: var(--small-text);
+                font-weight: 400;
+            }
+            p{
+                color: var(--trip-white);
+                font-size: var(--desc-text);
+                font-weight: 400;
             }
         }
         .promo_banner a{

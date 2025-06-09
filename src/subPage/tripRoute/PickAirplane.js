@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { StyledBtn } from '../../styleComponents/ui';
-import { FillterBox } from "../../components/util";
+import { FillterBox, CommingSoon } from "../../components/util";
 import Barslider from "../../components/Barslider";
 import element from "../../scss/elements.module.scss";
+
 
 
 const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
@@ -50,15 +51,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
 
     // IATA 코드가 없으면 빈 화면 표시
     if (depIATA === null || arrIATA === null) {
-        return (<><div className="empty-message">텅~ 해당 항공권 정보가 없습니다.
-        <div className="d-flex gap-2">
-            <div className="front_btn">
-              <a href="#none">계획짜기</a>
-            </div>
-          </div>
-        </div>
-        </>
-        )
+        return (<CommingSoon showHeader={true}></CommingSoon>)
     }
 
 
@@ -181,7 +174,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
                 {selectedAirlines.map((selectedAirline, index) => (
                 <div className="plane_list d-flex align-items-end justify-content-between" key={index}>
                     <ul className="plane_left d-flex justify-content-center flex-column gap-2">
-                        <li class="d-flex" style={{ gap : "5rem"}}>
+                        <li className="d-flex" style={{ gap : "5rem"}}>
                             <div className="planeLogo_box d-flex flex-column align-items-center gap-2"> 
                                 <div className="planeLogo">
                                     {selectedAirline && <img src={selectedAirline.logo} alt={selectedAirline.name} />}
@@ -193,7 +186,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
                                     <p className="airport">{depIATA}</p>
                                     <p>{selectedProducts[index]?.go?.depTime}</p>
                                 </div>
-                                <i class="arrow-right"></i>
+                                <i className="arrow-right"></i>
                                 <div className="plane_time d-flex flex-column align-items-center gap-1">
                                     <p className="airport">{arrIATA}</p>
                                     <p>{selectedProducts[index]?.go?.arrTime}</p>
@@ -201,7 +194,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
                             </div>
                         </li>
                     {!isOneWay && selectedProducts[index]?.back && (
-                        <li class="d-flex" style={{ gap : "5rem"}}>
+                        <li className="d-flex" style={{ gap : "5rem"}}>
                             <div className="planeLogo_box d-flex flex-column align-items-center gap-2">
                                 <div className="planeLogo">
                                     {selectedAirline && <img src={selectedAirline.logo} alt={selectedAirline.name} />}
@@ -213,7 +206,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
                                     <p className="airport">{arrIATA}</p>
                                     <p>{selectedProducts[index]?.back?.depTime}</p>
                                 </div>
-                                <i class="arrow-right"></i>
+                                <i className="arrow-right"></i>
                                 <div className="plane_time d-flex flex-column align-items-center gap-1">
                                     <p className="airport">{depIATA}</p>
                                     <p>{selectedProducts[index]?.back?.arrTime}</p>

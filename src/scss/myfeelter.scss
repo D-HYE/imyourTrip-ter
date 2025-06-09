@@ -17,19 +17,19 @@
 
     }
     .simple_feelter_tit{
-        font-size: var(--medium-text); font-weight: 700;
+        font-size: var(--big-text); font-weight: 700;
         text-align: center;
     }
     .simple_feelter_cont{
         margin: 2.5rem 0 3.125rem;
         h6{
             margin-bottom: 0.5rem;
-            font-size: var(--semismall-text); font-weight: 500
+            font-size: var(--small-text); font-weight: 500
         }
         .radio_wrap{
             gap: 0.75rem;
             .radio_value{
-                padding: 0.25rem 1rem;
+                padding: 0.5rem 1rem;
                 font-size: var(--small-text);
                 border-radius: 20px; border: 1px solid var(--trip-gray1); background: var(--trip-white);
                 cursor: pointer;    
@@ -73,7 +73,7 @@
 @media only screen and (max-width: 768px) {
     .simple_feelter{
         display: none;
-        height: 100vw;
+        min-height: 480px;
         max-width: none;
         right: 50%; transform: translate(50%, -50%);
         .confirm_btn{
