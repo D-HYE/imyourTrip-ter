@@ -13,10 +13,12 @@ const PlanMakerForm = ({tripDate, setTripDate, count, setCount, onSearch, arriva
     onSearch(depInput, arrInput); // 부모로 값 전달
   };
   //여행일
+  
   const handleDateChange = ({ start, end }) => {
     setTripDate({ start, end });
   };
   //인원수
+  
   const increase = () => setCount((prev) => prev + 1);
   const decrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
 

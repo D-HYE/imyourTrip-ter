@@ -26,7 +26,7 @@ const ProductDetail = ({testData}) => {
     // //가격 계산   
     // const discountedPrice = originalPrice - originalPrice * discountRate;  
     return (
-        <div className="container_x pageBox img100 prodctDetail">
+        <div className="container_x pageBox img100 prodctDetail" style={{paddingTop: `5rem`}}>
             <div className="info_wrap d-flex gap-2">
                 <ImgBox width="28.75rem" height="460px" borderRadius="20px">
                     <img src={test.image} alt={test.title} />

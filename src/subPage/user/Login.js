@@ -21,14 +21,14 @@ export default function Login() {
 
     return (
         <section className="userLogin ">
-            <div className="form_area container_m ">
+            <div className="form_area container_m pageBox py-2">
                 <h3>안녕하세요 여행자님, <span>트립터와 함께 떠나볼까요?</span></h3>
                 <form onSubmit={handleSubmit(onValid)} noValidate>
                     <fieldset className="fieldset1">
                         <input
                             type="text"
                             placeholder="아이디"
-                            {...register("userID", { required: "아이디를 입력하세요." })}
+                            {...register("user_id", { required: "아이디를 입력하세요." })}
                         />
                     </fieldset>
 
@@ -36,7 +36,7 @@ export default function Login() {
                         <input
                             type="password"
                             placeholder="비밀번호"
-                            {...register("userPW", { required: "비밀번호를 입력하세요." })}
+                            {...register("user_pw", { required: "비밀번호를 입력하세요." })}
                         />
                     </fieldset>
                     <div className="findInfo">

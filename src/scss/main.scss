@@ -322,7 +322,10 @@
     .container{
         height: 27.5rem;
         .qrimg{
-            .img_box{width: 7.5rem; height: 7.5rem; background: #000;}
+            .img_box{
+                width: 7.5rem; height: 7.5rem;
+                img{width: 100%;}
+            }
             a{
                 display: block;
                 margin-top: 1.25rem;

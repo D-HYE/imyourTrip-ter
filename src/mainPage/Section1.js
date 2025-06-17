@@ -22,7 +22,7 @@ export default function Section1({slideData}){
     };
 
     return(
-        <div className="section section1">
+        <section className="section section1">
             <div id="main_slide" className="rel">
                 <Swiper modules={[Pagination, Autoplay]}
                     pagination={{ el: ".swiper-pagination", clickable: true }}
@@ -34,7 +34,7 @@ export default function Section1({slideData}){
                             className={`swiper-slide${idx + 1}`}
                             style={{ backgroundImage: `url("${item.src}")` }}
                         >
-                            <Link to="#none" className="">
+                            <Link to={`${item.href}`} className="">
                                 <div className="slide_desc abs">
                                     <h2>{item.title}{item.english && <span>{item.english}</span>}</h2>
                                     <p>{item.subtitle}</p>
@@ -95,6 +95,6 @@ export default function Section1({slideData}){
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

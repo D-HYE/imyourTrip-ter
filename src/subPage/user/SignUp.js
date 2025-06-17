@@ -39,7 +39,7 @@ const SignUp = () => {
           console.error("회원가입 실패:", error.message);
           alert("회원가입 중 오류가 발생했습니다.");
         } else {
-            setUserName(data.userName);
+            setUserName(data.user_name);
             setIsComplete(!isComplete)
         }
     };
@@ -47,7 +47,7 @@ const SignUp = () => {
     return (
         <>
             {!isComplete ? (
-                <div className="signup_area container_m">
+                <div className="signup_area container_m pageBox py-2">
                     <div className="signup_tab">
                         <ul className="d-flex justify-content-center gap-2">
                             <li className={`${step === 1 ? "active" : ""}`}>약관동의</li>
@@ -93,7 +93,7 @@ const SignUp = () => {
                     </form>
                 </div>
             ) : (
-                <div className="signup_result container_m">
+                <div className="signup_result container_m pageBox py-2">
                 <div className="img_box">
                     <img src="https://trip-ter.vercel.app/img/illustrator/airplane.png" alt="가입을 축하합니다!"/>
                 </div>

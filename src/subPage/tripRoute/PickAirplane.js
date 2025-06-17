@@ -18,7 +18,7 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
 
     //
     const [selectedAirlines, setSelectedAirlines] = useState([]);
-    const [selectedProducts, setSelectedProducts] = useState([]);  
+    const [selectedProducts, setSelectedProducts] = useState([]);
 
     useEffect(() => {
         if (!airplane?.airways || !airplane?.flightproduct) return;
@@ -36,9 +36,9 @@ const PickAirplane = ({ hyodata, departureCity, arrivalCity, onEdit}) => {
         setSelectedAirlines(randomAirlines);
         setSelectedProducts(randomProducts);
     }, [airplane]);
-    //찜기능
-    const [isHeart, setIsHeart] = useState(false);
-    const toggleHeart = (index) => {
+
+const [isHeart, setIsHeart] = useState(false);
+const toggleHeart = (index) => {
     setIsHeart((prev) =>({...prev,[index]:!prev[index]}) );}
 
     //city to IATA

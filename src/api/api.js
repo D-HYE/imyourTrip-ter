@@ -7,9 +7,9 @@ export const fetchPostData = async (tableName) => {
             .from(tableName)
             .select(`
                 *,
-                userInfo:userNum (
-                  userID,
-                  userNickname
+                user_info:user_num (
+                  user_id,
+                  user_nickname
                 )
               `)
         if (error) throw error; 
@@ -21,14 +21,14 @@ export const fetchPostData = async (tableName) => {
 
 };
 
-export const loginRegister = async (userInfo) => {
-    const { userID, userPW } = userInfo;
+export const loginRegister = async (user_info) => {
+    const { user_id, user_pw } = user_info;
 
     const { data, error } = await supabase
-      .from("userInfo")
+      .from("user_info")
       .select("*")
-      .eq("userID", userID)
-      .eq("userPW", userPW)
+      .eq("user_id", user_id)
+      .eq("user_pw", user_pw)
       .limit(1);
   
     if (error) {
@@ -44,18 +44,19 @@ export const loginRegister = async (userInfo) => {
 
 };
 
-export const signUpRegister = async (userInfo) => {
+export const signUpRegister = async (user_info) => {
     const { error } = await supabase
-      .from("userInfo")
+      .from("user_info")
       .insert({
-        userID: userInfo.userID,
-        userPW: userInfo.userPW,
-        userName: userInfo.userName,
-        userPhone: userInfo.userPhone,
-        userEmail: userInfo.userEmail,
-        userNickname: userInfo.userNickname,
-        marketingAgree: userInfo.marketingAgree,
-        locationAgree: userInfo.locationAgree
+        user_id: user_info.user_id,
+        user_pw: user_info.user_pw,
+        user_name: user_info.user_name,
+        user_phone: user_info.user_phone,
+        user_email: user_info.user_email,
+        user_nickname: user_info.user_nickname,
+        marketing_agree: user_info.marketing_agree,
+        location_agree: user_info.location_agree,
+        privacy_agree: user_info.privacy_agree
       });
   
     return error;

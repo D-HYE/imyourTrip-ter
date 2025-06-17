@@ -21,7 +21,7 @@ import testData from "../data/dummydata.json"
 
 
 export default function SubContent ({ activeTab, alldata }) {
-    const { postID } = useParams();
+    const { post_id } = useParams();
     const [postData, setPostData] = useState([]);
 
     let content;
@@ -54,9 +54,9 @@ export default function SubContent ({ activeTab, alldata }) {
         //tripTalk
         case 'findPlan':{
             const postData = testData["findPlan"];
-            content = !postID 
+            content = !post_id 
                 ? <BoardList boolean={false} postData={postData} />
-                : <BoardView postID={postID} postData={postData.find(post => post.postID === postID)} />;
+                : <BoardView post_id={post_id} postData={postData.find(post => post.post_id === post_id)} />;
             break;
         }
 
@@ -65,17 +65,17 @@ export default function SubContent ({ activeTab, alldata }) {
             break;
 
         case 'findFriend': {
-            content = !postID 
+            content = !post_id 
                 ? <BoardList boolean={true} postData={postData} />
-                : <BoardView postID={postID} postData={postData.find(post => post.postID === Number(postID))} />;   
+                : <BoardView post_id={post_id} postData={postData.find(post => post.post_id === Number(post_id))} />;   
             break;
         }
             
         //tripterEvent
-        case 'event1':
+        case 'tripterSpecial':
             content = <Event1/>;
             break;
-        case 'event2':
+        case 'coupon':
             content = <Event2/>;
             break;           
 
@@ -89,9 +89,9 @@ export default function SubContent ({ activeTab, alldata }) {
             break;       
         case 'ask': {
             const postData = testData["ask"];
-            content = !postID 
+            content = !post_id 
                 ? <BoardList boolean={true} postData={postData} />
-                : <BoardView postID={postID} postData={postData.find(post => post.postID === postID)} />;
+                : <BoardView post_id={post_id} postData={postData.find(post => post.post_id === post_id)} />;
             break;
         }
 

@@ -144,6 +144,7 @@
         }
     }
 }
+
 .filter_title {
     background-color: var(--trip-skyblue);
     padding:  1.25rem 0.625rem;
@@ -360,6 +361,7 @@
             color: var(--trip-gray3);
             a{
                 font-size: var(--semismall-text);
+                color: var(--trip-black);
                 
             }
         }
@@ -582,4 +584,8 @@ display:none;
         
 
     }
+    //계획짜기_항공 
+    #airplaneArea{
+         
+   }
 }

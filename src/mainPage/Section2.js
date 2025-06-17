@@ -9,8 +9,8 @@ export default function Section2({slideData}){
     if (!mdSlides) return <p>Loading...</p>;
 
     return(
-        <div class="section section2">
-        <h3 class="section_tit">
+        <div className="section section2">
+        <h3 className="section_tit">
              MD 추천 테마여행지
         </h3>
         <div id="md_slide">
@@ -37,9 +37,9 @@ export default function Section2({slideData}){
                 ))}
                 
 
-                <div class="swiper-button-next pc"></div>
-                <div class="swiper-button-prev pc"></div>
-                <div class="swiper-pagination mb"></div>
+                <div className="swiper-button-next pc"></div>
+                <div className="swiper-button-prev pc"></div>
+                <div className="swiper-pagination mb"></div>
 
             </Swiper>
         </div>

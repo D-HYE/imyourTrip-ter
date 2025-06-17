@@ -68,7 +68,7 @@ const Wishlist = ({tripDate, count}) => {
               </p>
             </div>
             <Wishplan 
-              tripDate={tripDate}
+              trip_date={tripDate}
               count={count}
             />
             <div className="wishlist_items">

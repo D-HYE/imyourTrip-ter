@@ -6,7 +6,7 @@ function Section7() {
         <div className="section section7">
             <div className="container d-flex gap-5 align-items-center justify-content-center">
                 <div className="qrimg">
-                    <div className="img_box pc"></div>
+                    <div className="img_box pc"><img src="https://d-hye.github.io/source/img_readme/craQR.png" alt="트립:터"/></div>
                     <Link to="#none">앱 다운로드</Link>
                 </div>
                 <div className="txt_box">

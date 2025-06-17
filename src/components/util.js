@@ -1,9 +1,10 @@
-import React, { useState, useRef, forwardRef } from "react";
+import React, { useState, useRef, forwardRef} from "react";
+import { useLocation } from 'react-router-dom';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { ko } from "date-fns/locale";
+import ekmodule from "../../src/scss/faq.ek.module.scss";
 
-import { Link,useLocation } from "react-router-dom";
+import { ko } from "date-fns/locale";
 
 //게시판 필터
 export function SelectBox({ children }) {
@@ -147,17 +148,48 @@ export function TabMenu({activeTab, setActiveTab}){
     "숙박",
     "투어",
     "티켓",
-    "트립카"
+    "트립카",
   ];
 
   return (
     <div className="tab_content">
-      <ul className="d-flex align-items-end m-0 p-0">
+      <ul className="d-flex align-items-end m-0 p-0 ">
         {tabs.map((tab) => (
           <li
             key={tab}
             className={`${tab === "트립카" ? "tripcar_tab" : ""} ${
               activeTab === tab ? "tabClick" : ""} d-flex align-items-center justify-content-center`}
+            onClick={() => setActiveTab(tab)}
+          >
+           {tab === "트립카" ? <a href="https://i-web.kr/green18/"><span>{tab}</span></a> : <span>{tab}</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+//FAQ 탭메뉴
+export function FaqTabMenu({activeTab, setActiveTab}){
+  const tabs = [
+    "전체보기",
+    "항공권",
+    "숙박",
+    "티켓",
+    "트립카",
+    "회원/기타"
+  ];
+
+  return (
+    <div className={`${ekmodule.faq_tab}`}>
+      <ul className={`${ekmodule.faqtabmenu} d-flex align-items-end m-0 p-0 `}>
+        {tabs.map((tab) => (
+          <li
+            key={tab}
+            className={`
+            ${tab === "트립카" ? ekmodule.faqtripcar : ""}
+            ${activeTab === tab ? ekmodule.faqtabClick : ""} 
+            d-flex align-items-center justify-content-center`}
             onClick={() => setActiveTab(tab)}
           >
             <span>{tab}</span>
@@ -188,6 +220,7 @@ export function NotFound() {
       </main>
   );
 }
+
 //준비중 페이지
 export function CommingSoon({ showHeader = false }) {
   return (
